@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/bootstrap-theme.min.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/master.css" type="text/css" >
+    <link rel="stylesheet" href="../static/css/mdb.css">
+    <!-- jQuery (required) & jQuery UI + theme (optional) -->
+    <link href="../static/docs/css/jquery-ui.min.css" rel="stylesheet">
+    <script src="../static/docs/js/jquery-latest.min.js"></script>
+	<script src="../static/docs/js/jquery-ui.min.js"></script>
+    <link href="../static/css/keyboard.css" rel="stylesheet">
+	<script src="../static/js/jquery.keyboard.js"></script>
+	<script src="../static/docs/js/bootstrap.min.js"></script>
+	<script src="../static/docs/js/demo.js"></script>
+	<script src="../static/docs/js/jquery.tipsy.min.js"></script>
+	<script src="../static/docs/js/prettify.js"></script>
+    <style>
+        .jumbotron {
+			width: {{ jumbotrom_w }}px;
+			height: {{ jumbotrom_h }}px;
+			margin-left: {{ jumbotrom_margin_left }}px;
+            margin-top: {{ jumbotrom_margin_top }}px;
+            padding:{{ jumbotrom_padding }}px;
+			margin-right: auto;
+            text-align: center;
+		}
+        .menu{
+            float: left;
+            width: {{ connection_menu_width }}px;
+            height: {{ connection_menu_height }}px;
+            margin-top: {{ connection_menu_margin_top }}px;
+
+
+		}.menu2{
+            float: right;
+            width: {{ connection_menu2_width }}px;
+            height: {{ connection_menu2_height }}px;
+            margin-top: {{ connection_menu2_margin_top }}px;
+
+		}.list-group-item {
+		    width: {{ connetion_list_group_item_width }}px;
+            height: {{ connetion_list_group_item_height }}px;
+		    padding: {{ connetion_list_group_item_padding }}px;
+
+		}img {
+            vertical-align: bottom;
+        }.container {
+            width:650px;
+            padding:0px;
+        }
+        @media screen and (min-width: 160px) {
+        .container{width:160px;}
+        }
+        @media screen and (min-width: 240px) {
+        .container{width:240px;}
+        }
+        @media screen and (min-width: 640px) {
+        .container{width:400px;}
+        }body {
+          background: url(../static/img/bg2.jpg) no-repeat center center fixed;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+        }.showScroll {
+            margin-left: 20px;
+            width:210px;
+            height: {{ connection_showscroll_height }}px;
+            overflow:scroll;
+            background-color:transparent;
+        }
+        button.btn-default:active {
+            background-color: #FFF;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+        button.btn-default:active:hover {
+            background-color: #3276B1;
+        }
+        button.ui-keyboard-button.btn {
+            padding: 1px 6px;
+        }.onoffswitch {
+            position: relative; width: 60px;
+            -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+        }.onoffswitch {
+            position: relative; width: 60px;
+            -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+        }
+        .onoffswitch-checkbox {
+            display: none;
+        }
+        .onoffswitch-label {
+            display: block; overflow: hidden; cursor: pointer;
+            height: 26px; padding: 0; line-height: 26px;
+            border: 2px solid #CCCCCC; border-radius: 26px;
+            background-color: #FFFFFF;
+            transition: background-color 0.3s ease-in;
+        }
+        .onoffswitch-label:before {
+            content: "";
+            display: block; width: 26px; margin: 0px;
+            background: #FFFFFF;
+            position: absolute; top: 0; bottom: 0;
+            right: 32px;
+            border: 2px solid #CCCCCC; border-radius: 26px;
+            transition: all 0.3s ease-in 0s;
+        }
+        .onoffswitch-checkbox:checked + .onoffswitch-label {
+            background-color: #49E845;
+        }
+        .onoffswitch-checkbox:checked + .onoffswitch-label, .onoffswitch-checkbox:checked + .onoffswitch-label:before {
+           border-color: #49E845;
+        }
+        .onoffswitch-checkbox:checked + .onoffswitch-label:before {
+            right: 0px;
+        }html{
+            width: 440px;
+            height: 255px;
+         }
+    </style>
+    <!-- Java Script -->
+    <script src="../static/angular.js"></script>
+    <script src="../static/js/Respond.js"></script>
+    <!-- Java Script Respond -->
+    {% extends "layout.html" %}
+    {% block body %}
+    <script type="text/javascript">
+    function run() {
+    autoteste()
+      function autoteste() {
+            if ('{{wifi}}' == 'ON') {
+
+                document.getElementById("checkbox").checked = true;
+
+            } else {
+
+                document.getElementById("checkbox").checked = false;
+
+            }
+      }
+    }
+    $(function() {
+      $(checkbox).click(function() {
+        if ($('#checkbox').is(':checked')) {
+          window.location.replace("/connection?a=ON");
+        } else {
+          window.location.replace("/connection?a=OFF");
+        }
+      });
+    });
+    $(document)
+      .ready(function() {
+          run();
+      });
+    </script>
+    <!-- Title -->
+    <title>Chip Welcome</title>
+</head>
+    <body>
+
+                <div class="jumbotron ">
+
+                    <div class="menu">
+
+                       <center><a href="/language"><img src="../static/img/back-g.png" width="{{ connection_btn_arrow_width }}" height="{{ connection_btn_arrow_height }}"/></a></center>
+
+                    </div>
+
+
+                    <div style="margin-left: {{ connection_container_margin_left }}px; margin-top: {{ connection_container_margin_top }}px" class="container">
+                        <center><h{{ connection_title_size }}  color="#FFFFFF" ><p>Conectividade</p></h{{ connection_title_size }}></center>
+                        <center><h3 style="margin-left: {{ connection_container_wifi_margin_left }}px" color="#FFFFFF"><p>WIFI</p></h3></center>
+                        <div style="margin-top: -43px; margin-left: 220px" class="onoffswitch">
+                            <input type="checkbox" name="checkbox" class="onoffswitch-checkbox" id="checkbox" >
+                            <label class="onoffswitch-label" for="checkbox"></label>
+                        </div>
+
+
+                        <!-- The Modal -->
+                        <div id="myModal" class="modal">
+
+                          <!-- Modal content -->
+                          <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <input id="text" type="text" placeholder=" Enter the pass...">
+                          </div>
+                        </div>
+                        <div style="margin-top: 10px; margin-left: 100px" class="amostra showScroll">
+                        {% for i in range(0, lennome) %}
+                              <center>
+                                  <a href="/connection?a=ON&b={{nome[i]}}" class="list-group-item">
+                                      <h6 style="margin-top: 5px;">{{ nome[i] }}</h6>
+                                  </a>
+                              </center>
+                        {% endfor %}
+                    </div>
+
+
+                    </div>
+
+                    <div style="margin-top: {{ connection_btn_arrow_margin_top }}px;margin-right: -0px" class="menu2">
+
+                        <center><a href="/register"><img src="../static/img/next-g.png" width="{{ connection_btn_arrow_width }}" height="{{ connection_btn_arrow_height }}"/></a></center>
+
+                    </div>
+
+
+            </div>
+        <!-- {% endblock %}-->
+
+        <!--  -->
+        <footer>
+
+        </footer>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../static/js/tether.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../static/js/mdb.min.js"></script>
+    </body>
+</html>
+
+

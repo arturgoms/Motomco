@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Css Custon and Bootstrap Config -->
+    <link rel="stylesheet" href="../../static/css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="../../static/css/bootstrap-theme.min.css" type="text/css">
+    <link rel="stylesheet" href="../../static/css/master.css" type="text/css" >
+    <link rel="stylesheet" href="../static/css/mdb.css">
+    <style>
+		.table {
+			margin-top: 20px;
+		}
+		.form-control {
+			margin-bottom: 5px;
+		}
+		.selecionado {
+			background-color: yellow;
+		}
+		.negrito {
+			font-weight: bold;
+		}
+		.search {
+		      background: url('../static/img/zoom-out.png') left center no-repeat;
+              padding-left: 15px;
+		}
+        body {
+              background: url('../static/img/splash.png') no-repeat center center fixed;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+        }
+    </style>
+    <!-- Java Script -->
+    <script src="../static/angular.js"></script>
+    <script src="../static/js/Respond.js"></script>
+    <!-- Java Script Respond -->
+    {% extends "layout.html" %}
+    {% block body %}
+    <script type="text/javascript">
+    function run() {
+    autoteste()
+      function autoteste() {
+        $.get('/internet', function(response, status, xhr) {
+            response.async = false;
+            if (response == 1) {
+                $.get('/atualizar', function(response, status, xhr) {
+                    response.async = false;
+                    if (response == 1) {
+                         $.get('/seriouslykill', function(response, status, xhr) {
+                                response.async = false;
+                                if (response == 1) {
+
+                                    window.location.href = "http://localhost:8080/";
+
+                                }
+                            });
+                    }else if (response == 0){
+
+                         $.get('/seriouslykill', function(response, status, xhr) {
+                                response.async = false;
+                                if (response == 1) {
+
+                                    
+                                    window.location.href = "http://localhost:8080/";
+
+
+                                }
+                            });
+
+                    }
+                });
+
+
+            }else if (response == 0){
+
+                window.location.replace("/connection");
+
+            }
+        });
+      }
+    }
+    $(document)
+      .ready(function() {
+        run();
+        $('#gif').ajaxStart( function() {
+        $(this).show();  // show Loading Div
+        } ).ajaxStop ( function(){
+        $(this).hide(); // hide loading div
+        });
+      });
+    </script>
+    <!-- Title -->
+    <title>Chip Welcome</title>
+    <div id="modal">
+            <img style="margin-top: 40%;width: 100px;height: 120px;margin-left: 45%;" src="../static/img/loading.gif" id="gif" alt="">
+    </div>
+</head>
+    <body>
+
+        <!-- {% endblock %}-->
+
+    <script type="text/javascript" src="../static/js/jquery-2.2.3.min.js"></script>
+
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../static/js/tether.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../static/js/mdb.min.js"></script>
+    </body>
+</html>
+
+

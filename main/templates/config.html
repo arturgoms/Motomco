@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Css Custon and Bootstrap Config -->
+    <link rel="stylesheet" href="../../static/css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="../../static/css/bootstrap-theme.min.css" type="text/css">
+    <link rel="stylesheet" href="../../static/css/master.css" type="text/css" >
+    <link rel="stylesheet" href="../static/css/mdb.css">
+    <style>
+        .jumbotron {
+			width: {{ jumbotrom_w }}px;
+			height: {{ jumbotrom_h }}px;
+			margin-left: {{ jumbotrom_margin_left }}px;
+            margin-top: {{ jumbotrom_margin_top }}px;
+            padding:{{ jumbotrom_padding }}px;
+			margin-right: auto;
+            text-align: center;
+		}
+        .menu{
+            float: left;
+            width: {{ menu_width }}px;
+            margin-top: {{ menu_margin_top }}px;
+
+		}.amostra{
+            margin-left: {{ amostra_margin_left }}px;
+		}.menu2{
+            float: left;
+            width: {{ menu2_width }}px;
+            height: {{ menu2_height }}px;
+            margin-right: {{ menu2_margin_right }}px;
+
+		}
+		.dropbtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            width: {{ config_btn_dropbtn_width }}%;
+        }
+        .dropbtn:hover, .dropbtn:focus {
+            background-color: #3e8e41;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            margin-top: -20px;
+            margin-left: -150px;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1
+        }
+        .show {display:block;}
+        body {
+          background: url(../static/img/bg2.jpg) no-repeat center center fixed;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+        }.dropdown-content{
+            margin-top: -100px;
+         }html{
+            height: {{ html_h }}px;
+            width: {{ html_w }}px;
+                                                     }
+    </style>
+    <!-- Java Script -->
+    <script src="../static/angular.js"></script>
+    <script src="../static/js/Respond.js"></script>
+    <!-- Java Script Respond -->
+    {% extends "layout.html" %}
+    {% block body %}
+    <script type="text/javascript">
+
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        function myFunctionPH() {
+            document.getElementById("myDropdownPH").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        function myFunctionunitemp() {
+            document.getElementById("myDropdownunitemp").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        $(function() {
+        var submit_form = function(e) {
+          $.getJSON($SCRIPT_ROOT + '/config?a=PT', {
+          }, function(data) {
+            $('#result').text(data.result);
+          });
+          return false;
+        };
+          $("#pt").click(function(e){
+
+            submit_form(e);
+            window.location.replace("/config");
+       });
+      });
+      $(function() {
+        var submit_form = function(e) {
+          $.getJSON($SCRIPT_ROOT + '/config?a=EN', {
+          }, function(data) {
+            $('#result').text(data.result);
+          });
+          return false;
+        };
+          $("#en").click(function(e){
+
+            submit_form(e);
+            window.location.replace("/config");
+       });
+      });
+            $(function() {
+        var submit_form = function(e) {
+          $.getJSON($SCRIPT_ROOT + '/medir', {
+          }, function(data) {
+            $('#result').text(data.result);
+          });
+          return false;
+        };
+          $("#medir").click(function(e){
+
+            submit_form(e);
+            window.location.replace("/config");
+       });
+      });
+      $(function() {
+        var submit_form = function(e) {
+          $.getJSON($SCRIPT_ROOT + '/config?b=0', {
+          }, function(data) {
+            $('#result').text(data.result);
+          });
+          return false;
+        };
+          $("#ph0").click(function(e){
+
+            submit_form(e);
+            window.location.replace("/config");
+       });
+      });
+        $(function() {
+        var submit_form = function(e) {
+          $.getJSON($SCRIPT_ROOT + '/config?b=1', {
+          }, function(data) {
+            $('#result').text(data.result);
+          });
+          return false;
+        };
+          $("#ph1").click(function(e){
+
+            submit_form(e);
+            window.location.replace("/config");
+       });
+      });
+        $(function() {
+        var submit_form = function(e) {
+          $.getJSON($SCRIPT_ROOT + '/config?b=2', {
+          }, function(data) {
+            $('#result').text(data.result);
+          });
+          return false;
+        };
+          $("#ph2").click(function(e){
+
+            submit_form(e);
+            window.location.replace("/config");
+       });
+      });
+        $(function() {
+        var submit_form = function(e) {
+          $.getJSON($SCRIPT_ROOT + '/config?b=3', {
+          }, function(data) {
+            $('#result').text(data.result);
+          });
+          return false;
+        };
+          $("#ph3").click(function(e){
+
+            submit_form(e);
+            window.location.replace("/config");
+       });
+      });
+                $(function() {
+        var submit_form = function(e) {
+          $.getJSON($SCRIPT_ROOT + '/config?c=C', {
+          }, function(data) {
+            $('#result').text(data.result);
+          });
+          return false;
+        };
+          $("#C").click(function(e){
+
+            submit_form(e);
+            window.location.replace("/config");
+       });
+      });
+                $(function() {
+        var submit_form = function(e) {
+          $.getJSON($SCRIPT_ROOT + '/config?c=F', {
+          }, function(data) {
+            $('#result').text(data.result);
+          });
+          return false;
+        };
+          $("#F").click(function(e){
+
+            submit_form(e);
+            window.location.replace("/config");
+       });
+      });
+    </script>
+    <!-- Title -->
+    <title>Chip Welcome</title>
+</head>
+    <body onselectstart='return false' ondragstart='return false'>
+
+
+                <div class="jumbotron ">
+
+                    <div class="menu">
+                     <p>
+                    <br>
+                        <center><a href="/selectcurvatop?a=0"><button class="btn btn-dark-green"><img src="../static/img/medir.png" width="{{ menu_icon_size }}" height="{{ menu_icon_size }}"/></button></a></center>
+                        <center><a href="/top">             <button class="btn btn-dark-green"><img src="../static/img/search.png" width="{{ menu_icon_size }}" height="{{ menu_icon_size }}"/></button></a></center>
+                        <center><a href="/config">            <button class="btn btn-dark-green active"><img src="../static/img/config.png" width="{{ menu_icon_size }}" height="{{ menu_icon_size }}"/></button></a></center>
+                        <span id="result"></span>
+
+                    </div>
+
+
+            <div class="card-block amostra">
+            <center><h{{ config_size }} style="margin-left: {{ config_margin_left }}px; margin-top: {{ config_margin_top }}px" color="#FFFFFF" class="animated fadeIn"><p>{{ config }}</p></h{{ config_size }}></center>
+            <p>
+                <button id="medir" style="margin-left: {{ config_btn_autoteste_margin_left }}px; margin-top: {{ config_btn_autoteste_margin_top }}px; width: {{ config_btn_autoteste_width }}px" class="btn btn-drak-green dropbtn">Autoteste</button>
+               <a href="/historico"><button style="margin-top:{{ config_btn_historico_margin_top }}px; margin-left: {{ config_btn_historico_margin_left }}px; width: {{ config_btn_historico_width }}px" class="btn btn-drak-green dropbtn">Histórico</button></a>
+
+
+
+                <div style="margin-left: {{ config_btn_dropdown_margin_left }}px;margin-top: {{ config_btn_dropdown_margin_top }}px; width: {{ config_btn_dropdown_width }}px" class="dropdown">
+                  <button onclick="myFunction()" class="btn btn-drak-green dropdown-toggle dropbtn">Language</button>
+                  <div id="myDropdown" class="dropdown-content">
+                    <a id="pt">Português</a>
+                    <a id="en">English</a>
+                  </div>
+                  <button onclick="myFunctionPH()" class="btn btn-drak-green dropdown-toggle dropbtn">PH</button>
+                  <div id="myDropdownPH" class="dropdown-content">
+                    <a id="ph0">kg/hl</a>
+                    <a id="ph1">lb/bu</a>
+                    <a id="ph2">lb/A bu</a>
+                    <a id="ph3">lb/W bu</a>
+                </div><br>
+                <button onclick="myFunctionunitemp()" class="btn btn-drak-green dropdown-toggle dropbtn">Unidade da Temperatura</button>
+                  <div id="myDropdownunitemp" class="dropdown-content">
+                    <a id="C">Celsius</a>
+                    <a id="F">Fahrenheit</a>
+                </div>
+                <a href="/logout"><button class="btn btn-drak-green dropdown-toggle dropbtn">Logout</button></a>
+                </div></center>
+            </div>
+
+
+</div>
+
+        <!-- {% endblock %}-->
+
+        <!--  -->
+        <footer>
+
+        </footer>
+
+    <script type="text/javascript" src="../static/js/jquery-2.2.3.min.js"></script>
+
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../static/js/tether.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../static/js/mdb.min.js"></script>
+    </body>
+</html>
+
+

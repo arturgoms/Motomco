@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns="http://www.w3.org/1999/html">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Css Custon and Bootstrap Config -->
+    <link rel="stylesheet" href="../../static/css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="../../static/css/bootstrap-theme.min.css" type="text/css">
+    <link rel="stylesheet" href="../../static/css/master.css" type="text/css" >
+    <link rel="stylesheet" href="../static/css/mdb.css">
+    <style>
+        .jumbotron {
+			width: {{ jumbotrom_w }}px;
+			height: {{ jumbotrom_h }}px;
+			margin-left: {{ jumbotrom_margin_left }}px;
+            margin-top: {{ jumbotrom_margin_top }}px;
+            padding:{{ jumbotrom_padding }}px;
+			margin-right: auto;
+            text-align: center;
+		}
+        .menu{
+            float: left;
+            width: {{ menu_width }}px;
+            margin-top: {{ menu_margin_top }}px;
+
+		}.amostra{
+		    margin-top: {{ result_amostra_margin_top }}px;
+            margin-left: {{ result_amostra_margin_left }}px;
+		}.menu2{
+            float: left;
+            margin-top: {{ result_menu2_margin_top }}px;
+            margin-left: {{ result_menu2_margin_left }}px;
+
+		}
+        body {
+          background: url(../static/img/bg2.jpg) no-repeat center center fixed;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+        }
+    </style>
+    <!-- Java Script -->
+    <script src="../static/angular.js"></script>
+    <script src="../static/js/Respond.js"></script>
+    <!-- Java Script Respond -->
+    {% extends "layout.html" %}
+    {% block body %}
+       <script type="text/javascript">
+
+
+       function run() {
+        umidade()
+          function umidade() {
+            $.get('/umidade', function(response, status, xhr) {
+                response.async = false;
+                if (response == 2) {
+                    umidade()
+                } else if (response == 4) {
+                    window.location.replace("/selectcurvatop?a=0");
+                } else{
+                  window.location.replace("/selectcurvatop?a=0");
+                }
+            });
+          }
+        }
+        $(document)
+          .ready(function() {
+            var title = "{{ nome }}";
+            var lenTitle = title.length;
+            var font = 0;
+
+            run();
+
+          });
+    </script>
+    <!-- Title -->
+    <title>Chip Welcome</title>
+</head>
+    <body>
+        <div class="jumbotron">
+
+                    <div class="menu">
+                     <p>
+                    <br>
+                        <center><a href="/selectcurvatop?a=0"><button class="btn btn-dark-green active"><img src="../static/img/medir.png" width="{{ menu_icon_size }}" height="{{ menu_icon_size }}"/></button></a></center>
+                        <center><a href="/top">             <button class="btn btn-dark-green "><img src="../static/img/search.png" width="{{ menu_icon_size }}" height="{{ menu_icon_size }}"/></button></a></center>
+                        <center><a href="/config">            <button class="btn btn-dark-green "><img src="../static/img/config.png" width="{{ menu_icon_size }}" height="{{ menu_icon_size }}"/></button></a></center>
+                        <span id="result"></span>
+
+                    </div>
+            <!--/.Card image-->
+
+            <!--Card content-->
+            <div style="margin-top: {{ result_dev_amostra_margin_top }}px; margin-left: {{ result_div_amostra_margin_left }}px" class="card-block amostra">
+
+              <div style="width: {{ result_div_menu2_width }}px" class="menu2">
+                 <b> <h1 id="title" style="margin-top: {{ result_div_title_margin_top }}px;margin-left:{{ result_div_title_margin_left }}px; padding: {{ result_div_title_padding }}px">{{ nome }}</h1></b>
+                <center><h1 id="umidade" style="margin-top: {{ result_div_umidade_margin_top }}px; width: {{ result_div_umidade_width }}px; margin-left: {{ result_div_umidade_margin_left }}px" class="card-title">Umidade</h1>
+                <p  style="font-size:{{ result_div_p1_font_size }}px; margin-top: {{ result_div_p1_margin_top }}px; width: {{ result_div_p1_width }}px; margin-left: {{ result_div_p1_margin_left }}px" class="card-title">{{ umidade }}%</p><br>
+
+                </center>
+                 <center><h2 style="margin-top: {{ result_div_temp_margin_top }}px; margin-left: {{ result_div_temp_margin_left }}px;width: {{ result_div_temp_width }}px" class="card-title">Temperatura</h2>
+                  <p style="font-size:{{ result_div_p2_font_size }}px; margin-top: {{ result_div_p2_margin_top }}px; margin-left: {{ result_div_p2_margin_left }}px; width: {{ result_div_p2_width }}px" class="card-title">{{ temperatura }}{{unitemp}}°</p><br>
+
+                </center>
+                  <center><h2 style="margin-top: {{ result_div_ph_margin_top }}px; margin-left: {{ result_div_ph_margin_left }}px" class="card-title">PH</h2>
+                  <p id="ph" style="font-size:{{ result_div_p3_font_size }}px;width: {{ result_div_p3_width }}px; margin-top: {{ result_div_p3_margin_top }}px;margin-left: {{ result_div_p3_margin_left }}px;" >{{ ph }}</p></center>
+              </div>
+            </div>
+            <div class="menu">
+                <center><a href="#"><button style="margin-left: {{ result_div_btn_qr_margin_left }}px; margin-top: {{ result_div_btn_qr_margin_top }}px;" class="btn btn-dark-green"><img src="../static/img/qr-code2.png"  width="{{ menu_icon_size }}" height="{{ menu_icon_size }}"/></button></a></center>
+                <center><a href="#"><button style="margin-left: {{ result_div_btn_padlock_margin_left }}px; margin-top: {{ result_div_btn_padlock_margin_top }}px" class="btn btn-dark-green"><img src="../static/img/padlock2.png"  width="{{ menu_icon_size }}" height="{{ menu_icon_size }}"/></button></a></center>
+                <center><a href="#"><button style="margin-left: {{ result_div_btn_printer_margin_left }}px;margin-top: {{ result_div_btn_printer_margin_top }}px" class="btn btn-dark-green"><img src="../static/img/dark-printer2.png"  width="{{ menu_icon_size }}" height="{{ menu_icon_size }}"/></button></a></center>
+            </div>
+            </div>
+        <!-- {% endblock %}-->
+
+    <script type="text/javascript" src="../static/js/jquery-2.2.3.min.js"></script>
+
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../static/js/tether.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../static/js/mdb.min.js"></script>
+    </body>
+</html>
+
+

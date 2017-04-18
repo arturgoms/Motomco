@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Css Custon and Bootstrap Config -->
+    <link rel="stylesheet" href="../../static/css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="../../static/css/bootstrap-theme.min.css" type="text/css">
+    <link rel="stylesheet" href="../../static/css/master.css" type="text/css" >
+    <link rel="stylesheet" href="../static/css/mdb.css">
+    <style>
+
+        .jumbotron {
+			width: {{ jumbotrom_w }}px;
+			height: {{ jumbotrom_h }}px;
+			margin-left: {{ jumbotrom_margin_left }}px;
+            margin-top: {{ jumbotrom_margin_top }}px;
+            padding:{{ jumbotrom_padding }}px;
+			margin-right: auto;
+            text-align: center;
+		}.menu{
+            float: left;
+            width: {{ menu_width }}px;
+            margin-top: {{ menu_margin_top }}px;
+
+		}.amostra{
+		    margin-top: -350px;
+            margin-left: 150px;
+            width: 425px;
+            padding:0px;
+            border:0px;
+		}.menu2{
+            float: left;
+            margin-left: 50px;
+            margin-top: 0px;
+            width: 150px;
+            height: 0px;
+		        padding:0px;
+
+		}body {
+          background: url(../static/img/bg2.jpg) no-repeat center center fixed;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+        }html{
+            width: 440px;
+            height: 255px;
+        }
+    </style>
+    <!-- Java Script -->
+    <script src="../static/angular.js"></script>
+    <script src="../static/js/Respond.js"></script>
+    <!-- Java Script Respond -->
+    {% extends "layout.html" %}
+    {% block body %}
+    <script type="text/javascript">
+            function bloquear(e){return false}
+    function desbloquear(){return true}
+    document.onselectstart=new Function (&quot;return false&quot;)
+    if (window.sidebar){document.onmousedown=bloquear
+    document.onclick=desbloquear}
+  $(function() {
+
+  //função que envia os dados para o servidor
+    var submit_form = function(e) {
+
+    //usa o Jquery para enviar uma Get para o servidor
+      $.getJSON($SCRIPT_ROOT + '/grupo/arroz/list', { //endereço da requisição
+        a: $('input[name="a"]').val(), //obtem o valor do imput de name "a" e envia como variável a
+        b: $('input[name="b"]').val()  //obtem o valor do imput de name "b" e envia como variável b
+      }, function(data) { //função executada quando o servidor responde a requisição
+        $('#result').text(data.result); //coloca o texto DENTRO do elemento de id="result"
+        $('input[name=a]').focus().select(); //coloca o foco no input de name "a"
+      });
+      return false;
+    };
+
+    $('a#calculate').bind('click', submit_form); //associa o clicke do link (tag a), de id "calculate"
+
+    $("curvaInit").click(function(e){
+            submit_form(e);
+       });
+
+    $('input[name=a]').focus(); //coloca o foco no input de name "a"
+  });
+    </script>
+    <!-- Title -->
+    <title>Chip Welcome</title>
+</head>
+    <body onselectstart='return false' ondragstart='return false'>
+
+        <div class="jumbotron ">
+
+                    <div class="menu">
+                     <p>
+                    <br>
+                        <center><a href="/selectcurvatop?a=0"><button class="btn btn-dark-green active"><img src="../static/img/medir.png" width="{{ menu_icon_size }}" height="{{ menu_icon_size }}"/></button></a></center>
+                        <center><a href="/top">             <button class="btn btn-dark-green"><img src="../static/img/search.png" width="{{ menu_icon_size }}" height="{{ menu_icon_size }}"/></button></a></center>
+                        <center><a href="/config">            <button class="btn btn-dark-green "><img src="../static/img/config.png" width="{{ menu_icon_size }}" height="{{ menu_icon_size }}"/></button></a></center>
+                        <span id="result"></span>
+
+                    </div>
+
+
+            <div style="margin-top: 0px; margin-left: 300px; width: 550px" class="amostra">
+                <center>
+                {% for i in range(0, lencurva) %}
+                      <center>
+                              <h2 style="margin-top: 10px;margin-left: -250px; width: 350px"size="3">{{ nome[i] }}</h2><br>
+                          <div style="margin-left: -200px; width: 500px;margin-top: -30px">
+                              <div style="margin-top: -10px; margin-left: 20px">
+                                <a href="historico?a={{a-1}}"><button style="margin-left: -70px; margin-top: -0px" class="btn btn-dark-green"><img src="../static/img/back.png" width="60" height="60"/></button></a>
+                                <img style="margin-top:-0px; margin-left: 100px;" src="../static/img/botao-grao-{{tipo[i]}}.png" width="120" height="120">
+                                <a href="historico?a={{a+1}}"><button style="margin-left: 110px; margin-top: -0px" class="btn btn-dark-green"><img src="../static/img/next.png" width="60" height="60"/></button></a>
+                              </div>
+                             <h2 style="margin-left: -40px; width: 400px; margin-top: -25px ">Data: {{data[i]}} </h2>
+                             <h4 style="margin-left: -45px; margin-top: 5px; width: 300px" size="2">Latitude: {{lat[i]}} Longitude: {{lng[i]}} </h4>
+                          </div>
+                      </center>
+                          <hr style="margin-top: -10px; width: 550px; margin-left: -130px">
+                          <br>
+                        <div style="margin-top: -20px; margin-left: 35px" class="menu2">
+                            <font style="margin-left: -310px; margin-top: 10px;" size="5">Umidade: <b>{{ umidade[i] }}</b> %</font><br>
+                            <font style="margin-left: -277px; margin-top: 10px;" size="5">Temperatura: <b>{{ temp[i] }}</b> °C</font><br>
+                            <font style="margin-left: -265px; margin-top: 10px;" size="5">PH (referência): <b>{{ ph[i] }}</b></font><br>
+                            <font style="margin-left: -350px; margin-top: 10px;" size="5">Peso: <b>{{ peso[i] }}</b> g</font><br>
+
+                        </div>
+                        <div style="margin-top: -20px; margin-left:220px; width: 100px" class="amostra">
+                            <font style="margin-left: -130px; margin-top: 10px;" size="5"><b>{{ dial[i] }}</b> :Dial</font><br>
+                            <font style="margin-left: -160px; margin-top: 10px;" size="5"><b>{{ dialc[i] }}</b> :Dial C.</font><br>
+                            <font style="margin-left: -110px; margin-top: 10px;" size="5"><b>{{ freqc[i] }}</b> :Freq. Cheio</font><br>
+                            <font style="margin-left: -100px; margin-top: 10px;" size="5"><b>{{ freqv[i] }}</b> :Freq. Vazio</font><br>
+
+                        </div>
+
+
+                    {% endfor %}</center>
+            </div>
+</div>
+
+<!-- {% endblock %}-->
+        </center>
+        </div>
+        <footer>
+        </footer>
+    </body>
+    <!-- JQuery -->
+    <script type="text/javascript" src="../static/js/jquery-2.2.3.min.js"></script>
+
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../static/js/tether.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../static/js/mdb.min.js"></script>
+</html>
+
+

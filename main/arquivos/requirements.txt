@@ -1,0 +1,12 @@
+flask
+requests
+dajax
+pyserial
+configparser
+flask-login
+gevent
+Flask-PyMongo
+python-networkmanager
+wifi
+flask-WTF
+passlib

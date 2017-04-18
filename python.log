@@ -1,0 +1,285 @@
+04/11/2017 11:40:06 AM: INFO - Server Start
+04/11/2017 11:42:16 AM: INFO - Server Start
+04/11/2017 01:26:14 PM: INFO - Server Start
+04/11/2017 01:31:30 PM: INFO - Server Start
+04/11/2017 01:35:28 PM: INFO - Server Start
+04/11/2017 01:35:38 PM: INFO - RWconf - Conf.ini file found
+04/11/2017 01:35:39 PM: INFO - Autotest - Frequency deals successfully 10861.0
+04/11/2017 01:35:39 PM: INFO - Autotest - Temperature deals successfully 28.2
+04/11/2017 01:35:40 PM: INFO - Autotest - Weight read successfully -0.9
+04/11/2017 01:35:40 PM: INFO - Autotest - Autotest successfully done
+04/11/2017 01:35:40 PM: WARNING - Login - Try to log in without authentication
+04/11/2017 01:36:34 PM: INFO - Server Start
+04/11/2017 01:36:35 PM: INFO - RWconf - Conf.ini file found
+04/11/2017 01:36:36 PM: INFO - Autotest - Frequency deals successfully 10861.0
+04/11/2017 01:36:36 PM: INFO - Autotest - Temperature deals successfully 28.2
+04/11/2017 01:36:37 PM: INFO - Autotest - Weight read successfully -1.1
+04/11/2017 01:36:37 PM: INFO - Autotest - Autotest successfully done
+04/11/2017 01:36:37 PM: WARNING - Login - Try to log in without authentication
+04/11/2017 01:44:43 PM: INFO - Server Start
+04/11/2017 01:45:02 PM: INFO - RWconf - Conf.ini file found
+04/11/2017 01:45:02 PM: INFO - Autotest - Frequency deals successfully 10863.0
+04/11/2017 01:45:03 PM: INFO - Autotest - Temperature deals successfully 28.1
+04/11/2017 01:45:04 PM: INFO - Autotest - Weight read successfully -0.7
+04/11/2017 01:45:04 PM: INFO - Autotest - Autotest successfully done
+04/11/2017 01:45:04 PM: WARNING - Login - Try to log in without authentication
+04/11/2017 03:32:03 PM: INFO - Settings - Set language to PT
+04/11/2017 03:32:03 PM: INFO - Settings - Set temperature of humidity to Celsius
+04/11/2017 03:32:05 PM: WARNING - Login - Try to log in without authentication
+04/11/2017 03:38:34 PM: INFO - Register - Error registering [Errno 2] No such file or directory: 'arquivos/cloud.json'
+04/11/2017 03:40:18 PM: INFO - Server Start
+04/11/2017 03:40:24 PM: INFO - Login - User logged in as Luiz
+04/11/2017 03:40:24 PM: INFO - Charts Handler - Chart information returned successfully
+04/11/2017 03:40:24 PM: INFO - Charts Handler - Top Chart returned successfully
+04/11/2017 03:42:37 PM: INFO - Server Start
+04/11/2017 03:42:54 PM: INFO - RWconf - Conf.ini file found
+04/11/2017 03:42:54 PM: INFO - Autotest - Frequency deals successfully 10886.0
+04/11/2017 03:42:55 PM: INFO - Autotest - Temperature deals successfully 26.3
+04/11/2017 03:42:56 PM: INFO - Autotest - Weight read successfully -1.6
+04/11/2017 03:42:56 PM: INFO - Autotest - Autotest successfully done
+04/11/2017 03:42:56 PM: ERROR - Charts Handler - Could not return information from chart - [Errno 2] No such file or directory: 'arquivos/top.txt'
+04/11/2017 03:42:56 PM: ERROR - Charts Handler - Could not return the first top chart - [Errno 2] No such file or directory: 'arquivos/top.txt'
+04/11/2017 03:43:58 PM: INFO - Server Start
+04/11/2017 03:44:07 PM: ERROR - Charts Handler - Could not return information from chart - [Errno 2] No such file or directory: 'arquivos/top.txt'
+04/11/2017 03:44:07 PM: ERROR - Charts Handler - Could not return the first top chart - [Errno 2] No such file or directory: 'arquivos/top.txt'
+04/11/2017 03:45:26 PM: INFO - Server Start
+04/11/2017 03:45:49 PM: INFO - RWconf - Conf.ini file found
+04/11/2017 03:45:50 PM: INFO - Autotest - Frequency deals successfully 10885.0
+04/11/2017 03:45:50 PM: INFO - Autotest - Temperature deals successfully 26.4
+04/11/2017 03:45:52 PM: INFO - Autotest - Weight read successfully -1.7
+04/11/2017 03:45:52 PM: INFO - Autotest - Autotest successfully done
+04/11/2017 03:45:52 PM: ERROR - Charts Handler - Could not return information from chart - [Errno 2] No such file or directory: 'arquivos/top.txt'
+04/11/2017 03:45:52 PM: ERROR - Charts Handler - Could not return the first top chart - [Errno 2] No such file or directory: 'arquivos/top.txt'
+04/11/2017 03:47:41 PM: INFO - Server Start
+04/11/2017 03:48:23 PM: INFO - Server Start
+04/11/2017 03:48:40 PM: INFO - RWconf - Conf.ini file found
+04/11/2017 03:48:41 PM: INFO - Autotest - Frequency deals successfully 10886.0
+04/11/2017 03:48:41 PM: INFO - Autotest - Temperature deals successfully 26.3
+04/11/2017 03:48:42 PM: INFO - Autotest - Weight read successfully -1.4
+04/11/2017 03:48:42 PM: INFO - Autotest - Autotest successfully done
+04/11/2017 03:48:42 PM: ERROR - Charts Handler - Could not return information from chart - [Errno 2] No such file or directory: 'arquivos/top.txt'
+04/11/2017 03:48:42 PM: ERROR - Charts Handler - Could not return the first top chart - [Errno 2] No such file or directory: 'arquivos/top.txt'
+04/11/2017 03:50:25 PM: INFO - Server Start
+04/11/2017 03:50:44 PM: INFO - Server Start
+04/11/2017 03:50:57 PM: INFO - RWconf - Conf.ini file found
+04/11/2017 03:50:58 PM: INFO - Autotest - Frequency deals successfully 10886.0
+04/11/2017 03:50:58 PM: INFO - Autotest - Temperature deals successfully 26.3
+04/11/2017 03:50:59 PM: INFO - Autotest - Weight read successfully -1.7
+04/11/2017 03:50:59 PM: INFO - Autotest - Autotest successfully done
+04/11/2017 03:50:59 PM: ERROR - Charts Handler - Could not return information from chart - [Errno 2] No such file or directory: 'arquivos/top.txt'
+04/11/2017 03:50:59 PM: ERROR - Charts Handler - Could not return the first top chart - [Errno 2] No such file or directory: 'arquivos/top.txt'
+04/12/2017 09:50:04 AM: INFO - Server Start
+04/12/2017 09:50:15 AM: INFO - RWconf - Conf.ini file found
+04/12/2017 09:50:15 AM: INFO - Autotest - Frequency deals successfully 10912.0
+04/12/2017 09:50:16 AM: INFO - Autotest - Temperature deals successfully 23.6
+04/12/2017 09:50:17 AM: INFO - Autotest - Weight read successfully 0.3
+04/12/2017 09:50:17 AM: INFO - Autotest - Autotest successfully done
+04/12/2017 09:50:17 AM: ERROR - Charts Handler - Could not return information from chart - [Errno 2] No such file or directory: 'arquivos/top.txt'
+04/12/2017 09:50:17 AM: ERROR - Charts Handler - Could not return the first top chart - [Errno 2] No such file or directory: 'arquivos/top.txt'
+04/12/2017 10:00:09 AM: INFO - Server Start
+04/12/2017 10:01:49 AM: INFO - Server Start
+04/12/2017 10:04:05 AM: INFO - Server Start
+04/12/2017 10:04:56 AM: INFO - Server Start
+04/12/2017 10:25:07 AM: INFO - Server Start
+04/12/2017 10:25:21 AM: INFO - RWconf - Conf.ini file found
+04/12/2017 10:25:22 AM: INFO - Autotest - Frequency deals successfully 10904.0
+04/12/2017 10:25:22 AM: INFO - Autotest - Temperature deals successfully 24.3
+04/12/2017 10:25:23 AM: INFO - Autotest - Weight read successfully 0.4
+04/12/2017 10:25:23 AM: INFO - Autotest - Autotest successfully done
+04/12/2017 10:25:23 AM: ERROR - Charts Handler - Could not return information from chart - No option 'lang' in section: 'DEFAULT'
+04/12/2017 10:25:23 AM: ERROR - Charts Handler - Could not return the first top chart - [Errno 2] No such file or directory: 'arquivos/top.txt'
+04/12/2017 10:28:24 AM: INFO - Server Start
+04/12/2017 10:28:39 AM: INFO - RWconf - Conf.ini file found
+04/12/2017 10:28:39 AM: INFO - Autotest - Frequency deals successfully 10904.0
+04/12/2017 10:28:40 AM: INFO - Autotest - Temperature deals successfully 24.3
+04/12/2017 10:28:41 AM: INFO - Autotest - Weight read successfully 0.3
+04/12/2017 10:28:41 AM: INFO - Autotest - Autotest successfully done
+04/12/2017 10:28:41 AM: ERROR - Charts Handler - Could not return information from chart - No option 'lang' in section: 'DEFAULT'
+04/12/2017 10:28:41 AM: ERROR - Charts Handler - Could not return the first top chart - [Errno 2] No such file or directory: 'arquivos/top.txt'
+04/12/2017 10:36:49 AM: INFO - Server Start
+04/12/2017 10:37:03 AM: INFO - RWconf - Conf.ini file found
+04/12/2017 10:37:04 AM: INFO - Autotest - Frequency deals successfully 10903.0
+04/12/2017 10:37:04 AM: INFO - Autotest - Temperature deals successfully 24.3
+04/12/2017 10:37:05 AM: INFO - Autotest - Weight read successfully 0.2
+04/12/2017 10:37:05 AM: INFO - Autotest - Autotest successfully done
+04/12/2017 10:37:05 AM: INFO - Charts Handler - Chart information returned successfully
+04/12/2017 10:37:05 AM: INFO - Charts Handler - Top Chart returned successfully
+04/12/2017 10:37:05 AM: INFO - Screen - Measure
+04/12/2017 10:37:09 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:37:13 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:37:14 AM: INFO - Settings - Set language to PT
+04/12/2017 10:37:14 AM: INFO - Settings - Set temperature of humidity to Celsius
+04/12/2017 10:37:16 AM: INFO - Charts Handler - Charts of ARROZ Successfully listed
+04/12/2017 10:37:16 AM: INFO - Charts Handler - Charts of ARROZ Successfully listed
+04/12/2017 10:37:16 AM: INFO - Charts Handler - Successfully separated charts
+04/12/2017 10:37:16 AM: INFO - Charts Handler - Successfully separated charts
+04/12/2017 10:37:16 AM: INFO - Charts Handler - Info OK
+04/12/2017 10:37:16 AM: INFO - Screen - Historic
+04/12/2017 10:37:19 AM: INFO - Screen - Top charts
+04/12/2017 10:37:21 AM: INFO - Charts Handler - Chart information returned successfully
+04/12/2017 10:37:21 AM: INFO - Charts Handler - Top Chart returned successfully
+04/12/2017 10:37:21 AM: INFO - Screen - Measure
+04/12/2017 10:37:23 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:37:27 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:37:31 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:37:35 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:37:39 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:37:44 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:37:47 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:37:51 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:37:55 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:37:59 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:38:03 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:38:07 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:38:11 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:38:15 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:38:18 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:38:22 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:38:26 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:38:30 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:38:34 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:38:38 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:38:41 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:38:45 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:38:49 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:38:53 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:38:57 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:39:01 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:39:04 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:39:08 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:39:12 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:39:16 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:39:20 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:39:24 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:39:28 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:39:31 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:39:35 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:39:39 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:39:43 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:39:47 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:39:51 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:39:54 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:39:58 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:40:02 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:40:06 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:40:10 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:40:14 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:40:18 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:40:21 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:40:25 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:40:29 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:40:33 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:40:37 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:40:41 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:40:45 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:40:48 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:40:53 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:40:57 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:41:01 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:41:05 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:41:36 AM: INFO - Server Start
+04/17/2017 10:19:14 AM: INFO - Server Start
+04/17/2017 10:52:25 AM: INFO - Server Start
+04/17/2017 10:58:33 AM: INFO - Server Start
+04/17/2017 10:58:45 AM: INFO - Server Start
+04/17/2017 11:18:33 AM: INFO - Server Start
+04/17/2017 01:30:52 PM: INFO - Server Start
+04/17/2017 01:31:22 PM: INFO - RWconf - Conf.ini file found
+04/17/2017 01:31:23 PM: INFO - Autotest - Frequency deals successfully 10889.0
+04/17/2017 01:31:24 PM: INFO - Autotest - Temperature deals successfully 25.9
+04/17/2017 01:31:25 PM: INFO - Autotest - Weight read successfully 9.4
+04/17/2017 01:31:25 PM: INFO - Autotest - Autotest successfully done
+04/17/2017 01:31:25 PM: WARNING - Login - Try to log in without authentication
+04/17/2017 01:36:44 PM: INFO - Server Start
+04/17/2017 01:38:34 PM: INFO - Server Start
+04/17/2017 01:39:32 PM: INFO - Server Start
+04/17/2017 05:38:58 PM: INFO - Server Start
+04/17/2017 05:43:15 PM: INFO - Server Start
+04/17/2017 05:54:24 PM: INFO - Server Start
+04/17/2017 06:04:11 PM: INFO - Server Start
+04/17/2017 06:10:10 PM: INFO - Server Start
+04/17/2017 06:12:54 PM: INFO - Server Start
+04/17/2017 06:19:47 PM: INFO - Server Start
+04/17/2017 06:21:23 PM: INFO - Server Start
+04/17/2017 06:35:54 PM: INFO - Server Start
+04/17/2017 06:41:36 PM: INFO - Server Start
+04/17/2017 06:43:23 PM: INFO - Server Start
+04/17/2017 06:43:26 PM: INFO - RWconf - Conf.ini file found
+04/17/2017 06:43:26 PM: INFO - Autotest - Frequency deals successfully 10885.0
+04/17/2017 06:43:26 PM: INFO - Autotest - Temperature deals successfully 26.3
+04/17/2017 06:43:28 PM: INFO - Autotest - Weight read successfully 4.3
+04/17/2017 06:43:28 PM: INFO - Autotest - Autotest successfully done
+04/17/2017 06:43:28 PM: WARNING - Login - Try to log in without authentication
+04/17/2017 06:43:56 PM: INFO - Login - User logged in as Luiz
+04/17/2017 06:43:56 PM: INFO - Charts Handler - Chart information returned successfully
+04/17/2017 06:43:56 PM: INFO - Charts Handler - Top Chart returned successfully
+04/17/2017 06:43:56 PM: INFO - Screen - Measure
+04/17/2017 06:43:58 PM: INFO - Serial - Empty Grain cell
+04/17/2017 06:44:03 PM: INFO - Serial - Empty Grain cell
+04/17/2017 06:44:06 PM: INFO - Serial - Empty Grain cell
+04/17/2017 06:44:09 PM: INFO - Serial - Empty Grain cell
+04/17/2017 06:44:12 PM: INFO - Serial - Empty Grain cell
+04/17/2017 06:44:15 PM: INFO - Serial - Empty Grain cell
+04/17/2017 06:44:18 PM: INFO - Serial - Empty Grain cell
+04/17/2017 06:44:21 PM: INFO - Serial - Empty Grain cell
+04/17/2017 06:44:24 PM: INFO - Serial - Empty Grain cell
+04/17/2017 06:44:27 PM: INFO - Serial - Empty Grain cell
+04/17/2017 06:44:30 PM: INFO - Serial - Empty Grain cell
+04/17/2017 06:44:33 PM: INFO - Serial - Empty Grain cell
+04/17/2017 06:44:36 PM: INFO - Serial - Empty Grain cell
+04/17/2017 06:44:39 PM: INFO - Serial - Empty Grain cell
+04/17/2017 06:44:42 PM: INFO - Serial - Empty Grain cell
+04/17/2017 06:44:45 PM: INFO - Serial - Empty Grain cell
+04/17/2017 06:44:48 PM: INFO - Serial - Empty Grain cell
+04/17/2017 06:44:51 PM: INFO - Serial - Empty Grain cell
+04/17/2017 06:44:54 PM: INFO - Serial - Empty Grain cell
+04/17/2017 06:44:57 PM: INFO - Serial - Empty Grain cell
+04/17/2017 06:51:07 PM: INFO - Server Start
+04/17/2017 06:51:09 PM: INFO - RWconf - Conf.ini file found
+04/17/2017 06:51:10 PM: INFO - Autotest - Temperature deals successfully 10883.0
+04/17/2017 06:51:11 PM: INFO - Autotest - Weight read successfully 4.7
+04/17/2017 06:51:11 PM: ERROR - Autotest - Erro na Frequencia
+04/17/2017 06:51:11 PM: WARNING - Login - Try to log in without authentication
+04/17/2017 06:53:46 PM: INFO - Server Start
+04/17/2017 06:54:31 PM: INFO - RWconf - Conf.ini file found
+04/17/2017 06:54:32 PM: INFO - Autotest - Frequency deals successfully 10880.0
+04/17/2017 06:54:32 PM: INFO - Autotest - Temperature deals successfully 26.6
+04/17/2017 06:54:33 PM: INFO - Autotest - Weight read successfully 4.6
+04/17/2017 06:54:33 PM: INFO - Autotest - Autotest successfully done
+04/17/2017 06:54:33 PM: WARNING - Login - Try to log in without authentication
+04/17/2017 06:56:42 PM: INFO - Server Start
+04/17/2017 06:59:13 PM: INFO - Server Start
+04/18/2017 12:55:35 PM: INFO - Server Start
+04/18/2017 01:02:55 PM: INFO - Server Start
+04/18/2017 01:37:07 PM: INFO - Server Start
+04/18/2017 01:39:26 PM: INFO - Server Start
+04/18/2017 01:39:28 PM: INFO - RWconf - Conf.ini file found
+04/18/2017 01:39:28 PM: INFO - Autotest - Frequency deals successfully 10905.0
+04/18/2017 01:39:29 PM: INFO - Autotest - Temperature deals successfully 24.4
+04/18/2017 01:39:30 PM: INFO - Autotest - Weight read successfully 4.6
+04/18/2017 01:39:30 PM: INFO - Autotest - Autotest successfully done
+04/18/2017 01:39:30 PM: WARNING - Login - Try to log in without authentication
+04/18/2017 01:41:02 PM: INFO - Server Start
+04/18/2017 01:42:52 PM: INFO - Server Start
+04/18/2017 01:42:53 PM: INFO - RWconf - Conf.ini file found
+04/18/2017 01:42:54 PM: INFO - Autotest - Frequency deals successfully 10905.0
+04/18/2017 01:42:54 PM: INFO - Autotest - Temperature deals successfully 24.4
+04/18/2017 01:42:55 PM: INFO - Autotest - Weight read successfully 4.6
+04/18/2017 01:42:55 PM: INFO - Autotest - Autotest successfully done
+04/18/2017 01:42:55 PM: WARNING - Login - Try to log in without authentication
+04/18/2017 01:45:49 PM: INFO - Server Start
+04/18/2017 01:45:50 PM: INFO - RWconf - Conf.ini file found
+04/18/2017 01:45:51 PM: INFO - Autotest - Frequency deals successfully 10904.0
+04/18/2017 01:45:51 PM: INFO - Autotest - Temperature deals successfully 24.5
+04/18/2017 01:45:52 PM: INFO - Autotest - Weight read successfully 4.7
+04/18/2017 01:45:52 PM: INFO - Autotest - Autotest successfully done
+04/18/2017 01:45:52 PM: WARNING - Login - Try to log in without authentication
+04/18/2017 01:48:44 PM: INFO - Server Start
+04/18/2017 01:48:47 PM: INFO - Server Start
+04/18/2017 02:02:57 PM: INFO - Server Start
+04/18/2017 02:02:58 PM: INFO - RWconf - Conf.ini file found
+04/18/2017 02:02:59 PM: INFO - Autotest - Frequency deals successfully 10897.0
+04/18/2017 02:02:59 PM: INFO - Autotest - Temperature deals successfully 25.1
+04/18/2017 02:03:00 PM: INFO - Autotest - Weight read successfully 4.8
+04/18/2017 02:03:00 PM: INFO - Autotest - Autotest successfully done
+04/18/2017 02:03:00 PM: WARNING - Login - Try to log in without authentication

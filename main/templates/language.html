@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+   <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Css Custon and Bootstrap Config -->
+    <link rel="stylesheet" href="../../static/css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="../../static/css/bootstrap-theme.min.css" type="text/css">
+    <link rel="stylesheet" href="../../static/css/master.css" type="text/css" >
+    <link rel="stylesheet" href="../static/css/mdb.css">
+    <style>
+        .jumbotron {
+			width: {{ jumbotrom_w }}px;
+			height: {{ jumbotrom_h }}px;
+			margin-left: {{ jumbotrom_margin_left }}px;
+            margin-top: {{ jumbotrom_margin_top }}px;
+            padding:{{ jumbotrom_padding }}px;
+			margin-right: auto;
+            text-align: center;
+		}
+
+        .menu2{
+            float: right;
+            width: {{ language_menu2_width }}px;
+            height: {{ language_menu2_height }}px;
+		    padding:{{ language_menu2_padding }}px;
+            margin-top: {{ language_menu2_margin_top }}px;
+            margin-left: {{ language_menu2_margin_left }}px;
+
+		}
+		img {
+            vertical-align: bottom;
+        }.container {
+            margin-left: {{ language_container_margin_left }}px;
+            margin-top: {{ language_container_margin_top }}px;
+            width:{{ language_container_width }}px;
+            }
+        .photo {
+        width:{{ language_photo_width }}px;
+        height: {{ language_photo_height }}px;
+        font-size:{{ language_photo_font_size }}%;
+        text-align:center;
+        vertical-align:top;
+        display:inline-block;
+
+        }
+
+        @media screen and (min-width: {{ language_container_screen_1_min_width }}px) {
+        .container{width:{{ language_container_screen_1_width }}px;}
+        }
+        @media screen and (min-width: {{ language_container_screen_2_min_width }}px) {
+        .container{width:{{ language_container_screen_2_width }}px;}
+        }
+        @media screen and (min-width: {{ language_container_screen_3_min_width }}px) {
+        .container{width:{{ language_container_screen_3_width }}px;}
+        }body {
+          background: url(../static/img/bg2.jpg) no-repeat center center fixed;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+        }html{
+            width: 440px;
+            height: 255px;
+         }
+    </style>
+    <!-- Java Script -->
+    <script src="../static/angular.js"></script>
+    <script src="../static/js/Respond.js"></script>
+    <!-- Java Script Respond -->
+    {% extends "layout.html" %}
+    {% block body %}
+    <script type="text/javascript">
+        $(function() {
+        var submit_form = function(e) {
+          $.getJSON($SCRIPT_ROOT + '/language?a=PT', {
+          }, function(data) {
+            $('#result').text(data.result);
+          });
+          return false;
+        };
+          $("#pt").click(function(e){
+
+            submit_form(e);
+            window.location.replace("/language");
+       });
+      });
+      $(function() {
+        var submit_form = function(e) {
+          $.getJSON($SCRIPT_ROOT + '/language?a=EN', {
+          }, function(data) {
+            $('#result').text(data.result);
+          });
+          return false;
+        };
+          $("#en").click(function(e){
+
+            submit_form(e);
+            window.location.replace("/language");
+       });
+      });
+
+    </script>
+    <!-- Title -->
+    <title>Chip Welcome</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+</head>
+    <body>
+
+                <div class="jumbotron ">
+
+
+                    <center><h{{ language_title_size }} style="margin-top: 0px" color="#FFFFFF" class="animated fadeIn"><p>{{language}}</p></h{{ language_title_size }}></center>
+                    <div  class="container">
+
+                        <div class="photo">
+                            <a id="pt"><img class="animated fadeIn" src="../static/img/botao-brazil.png" height="{{ language_btn_flag_width }}" width="{{ language_btn_flag_height }}"><figcaption>{{portugues}}</figcaption></a>
+                        </div>
+                        <div class="photo">
+                            <a id="en"><img class="animated fadeIn" src="../static/img/botao-usa.png" height="{{ language_btn_flag_width }}" width="{{ language_btn_flag_height }}"><figcaption>{{ingles}}</figcaption></a>
+                        </div>
+                        <div class="photo">
+                            <a id="es"><img class="animated fadeIn" src="../static/img/botao-spain.png" height="{{ language_btn_flag_width }}" width="{{ language_btn_flag_height }}"><figcaption>{{espanhol}}</figcaption></a>
+                        </div>
+                        <div class="photo">
+                            <a id="fr"><img class="animated fadeIn" src="../static/img/botao-france.png" height="{{ language_btn_flag_width }}" width="{{ language_btn_flag_height }}"><figcaption>{{frances}}</figcaption></a>
+                        </div>
+                        <div class="photo">
+                            <a id="al"><img class="animated fadeIn" src="../static/img/botao-germany.png" height="{{ language_btn_flag_width }}" width="{{ language_btn_flag_height }}"><figcaption>{{alemao}}</figcaption></a>
+                        </div>
+                        <div class="photo">
+                            <a id="it"><img class="animated fadeIn" src="../static/img/botao-italian.png" height="{{ language_btn_flag_width }}" width="{{ language_btn_flag_height }}"><figcaption>{{italiano}}</figcaption></a>
+                        </div>
+
+
+                    </div>
+
+                    <div class="menu2">
+
+                        <center><a href="connection"><img src="../static/img/next-g.png" width="{{ language_btn_arrow_width }}" height="{{ language_btn_arrow_height }}"/></a></center>
+
+                    </div>
+
+            </div>
+        <!-- {% endblock %}-->
+
+        <!--  -->
+        <footer>
+
+        </footer>
+
+    <script type="text/javascript" src="../static/js/jquery-2.2.3.min.js"></script>
+
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../static/js/tether.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../static/js/mdb.min.js"></script>
+    </body>
+</html>
+
+

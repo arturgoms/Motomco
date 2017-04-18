@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../static/css/bootstrap.css" type="text/css">
+    <style>
+		.jumbotron {
+
+            margin-top: 8px;
+			width: 440px;
+			height: 230px;
+			text-align: center;
+			margin-left: 20px;
+            margin-top: 20px;
+			margin-right: auto;
+			padding:5px
+		}
+		.list-group {
+		    width: 450px;
+		    margin-left: 630px;
+		}
+		.table {
+			margin-top: 20px;
+		}
+		.a {
+			text-color: #ccc;
+		}
+		.form-control {
+			margin-bottom: 5px;
+		}
+		.selecionado {
+			background-color: yellow;
+		}
+		.negrito {
+			font-weight: bold;
+		}
+		.search {
+		      background: url('../static/img/zoom-out.png') left center no-repeat;
+              padding-left: 15px;
+		}
+		.container{
+            display: flex
+        }
+	</style>
+    <link rel="stylesheet" href="../../static/css/bootstrap-theme.min.css" type="text/css">
+    <link rel="stylesheet" href="../../static/css/master.css" type="text/css" >
+    <link rel="stylesheet" href="../static/css/mdb.css">
+    <!-- Java Script -->
+    <script src="../static/angular.js"></script>
+    <script src="static/js/Respond.js"></script>
+    {% extends "layout.html" %}
+     {% block body %}
+<script type="text/javascript">
+  $( ".wow" ).addClass( "fadeInLeft" );
+  $( ".wow" ).addClass( "fadeInRight" );
+  $( ".wow" ).addClass( "fadeInUp" );
+  $( ".wow" ).addClass( "fadeInDown" );
+
+  $(function() {
+    var submit_form = function(e) {
+      $.getJSON($SCRIPT_ROOT + '/list', {
+        a: $('input[name="a"]').val(),
+        b: $('input[name="b"]').val(),
+        c: $('input[name="c"]').val()
+      }, function(data) {
+        $('#result').text(data.result);
+        $('input[name=a]').focus().select();
+      });
+      return false;
+    };
+    $('a#calculate').bind('click', submit_form);
+    $("#buttonArroz").click(function(e){
+        submit_form(e);
+    });
+    $("#buttonFeijao").click(function(e){
+        submit_form(e);
+    });
+    $("#buttonMilho").click(function(e){
+        submit_form(e);
+    });
+    $("#buttonSoja").click(function(e){
+        submit_form(e);
+    });
+    $("#buttonoutros").click(function(e){
+        submit_form(e);
+    });
+    $("#buttonTrigo").click(function(e){
+        submit_form(e);
+    });
+    $("#buttonGirassol").click(function(e){
+        submit_form(e);
+    });
+    $("#buttonOutros").click(function(e){
+        submit_form(e);
+    });
+    $('input[name=a]').focus();
+  });
+</script>
+    <!-- Title -->
+    <title>Chip Welcome</title>
+</head>
+    <body>
+        <video width="648" height="432" id="my-video" class="video" autoplay="autoplay" loop="loop" muted="">
+        <source src="/static/img/bg.mp4" type="video/mp4" /></video>
+        <header>
+
+        </header>
+        <!--  -->
+
+    <!--Footer-->
+        <div class="container">
+            <div class="jumbotron"><!-- <a href="/lastcurvas"><img class="animated wow fadeInLeft" src="../static/img/favorite.png" height="60" width="60"></a><br><p> -->
+                <center><h2 color="#FFFFFF" class="animated fadeIn"><p>Seleção de Curvas</p></h2></center>
+                <center><a href="/grupo/arroz"><img class="animated wow fadeInLeft" src="../static/img/botao-grao-arroz.png" height="80" width="80"></a>
+                        <a href="/grupo/feijao"><img class="animated wow fadeInUp" src="../static/img/botao-grao-feijao.png" height="80" width="80"></a>
+                        <a href="/grupo/milho"><img class="animated wow fadeInUp" src="../static/img/botao-grao-milho.png" height="80" width="80"></a>
+                        <a href="/grupo/soja"><img class="animated wow fadeInRight" src="../static/img/botao-grao-soja.png" height="80" width="80"></a></center>
+                <center><a href="/grupo/outros"><img class="animated wow fadeInLeft" src="../static/img/botao-grao-outros.png" height="80" width="80"></a>
+                        <a href="/grupo/trigo"><img class="animated wow fadeInDown" src="../static/img/botao-grao-trigo.png" height="80" width="80"></a>
+                        <a href="/grupo/girassol"><img class="animated wow fadeInDown" src="../static/img/botao-grao-girasol.png" height="80" width="80"></a>
+                        <a href="/grupo/custom"><img class="animated wow fadeInRight" src="../static/img/botao-grao-custom.png" height="80" width="80"></a></center>
+                <center><a href="/" class="btn btn-dark-green">Voltar</a></center>
+
+            </div>
+
+            <div class="list-group animated wow fadeInRight " >
+                <center><h2 color="#FFFFFF" class="animated fadeIn list-group-item"><p>Top</p></h2></center>
+                {% for i in range(0, lencurva) %}
+                      <center>
+                          <!-- a = 0 e b = {{ i }} -->
+                          <a href="/selectcurvatop?a={{ i }}" class="list-group-item">
+                              <p>{{ nome[i] }}</p>
+                              <p>{{ temp[i] }}</p>
+                              <p>{{ umidade[i] }}</p>
+                          </a>
+                      </center>
+                    {% endfor %}
+
+            </div>
+<!-- {% endblock %}-->
+        </center>
+        </div>
+        <!--  -->
+        <footer>
+
+        </footer>
+
+        <script type="text/javascript" src="../static/js/jquery-2.2.3.min.js"></script>
+
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="../static/js/tether.min.js"></script>
+
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="../static/js/mdb.min.js"></script>
+    </body>
+</html>
+
+

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Css Custon and Bootstrap Config -->
+    <link rel="stylesheet" href="../../static/css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="../../static/css/bootstrap-theme.min.css" type="text/css">
+    <link rel="stylesheet" href="../../static/css/master.css" type="text/css" >
+    <link rel="stylesheet" href="../static/css/mdb.css">
+    <style>
+        .jumbotron {
+			width: {{ jumbotrom_w }}px;
+			height: {{ jumbotrom_h }}px;
+			margin-left: {{ jumbotrom_margin_left }}px;
+            margin-top: {{ jumbotrom_margin_top }}px;
+            padding:{{ jumbotrom_padding }}px;
+			margin-right: auto;
+            text-align: center;
+		}.menu{
+            float: left;
+            width: {{ menu_width }}px;
+            margin-top: {{ menu_margin_top }}px;
+
+		}.amostra{
+		    margin-top: 0px;
+            margin-left: 0px;
+            padding:0px;
+            border:0px;
+		}.container {
+            width:200px;
+            height: 100px;
+            padding:0px;
+            }
+        .photo {
+            margin-top: 10px;
+            width:100px;
+            height: 130px;
+            font-size:80%;
+            margin-left: 40px;
+            text-align:center;
+            horiz-align: left;
+            display: inline-flex;
+            padding: 10px;
+
+        }
+
+        @media screen and (min-width: 160px) {
+        .container{width:200px;}
+        }
+        @media screen and (min-width: 240px) {
+        .container{width:100px;}
+        }
+        @media screen and (min-width: 230px) {
+        .container{width:200px;}
+        }body {
+          background: url(../static/img/bg2.jpg) no-repeat center center fixed;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+        }html{
+            width: 420px;
+            height: 240px;
+            padding: 0px;
+                                                     }
+    </style>
+    <!-- Java Script -->
+    <script src="../static/angular.js"></script>
+    <script src="../static/js/Respond.js"></script>
+    <!-- Java Script Respond -->
+    {% extends "layout.html" %}
+    {% block body %}
+    <script type="text/javascript">
+            function bloquear(e){return false}
+    function desbloquear(){return true}
+    document.onselectstart=new Function (&quot;return false&quot;)
+    if (window.sidebar){document.onmousedown=bloquear
+    document.onclick=desbloquear}
+  $(function() {
+
+  //função que envia os dados para o servidor
+    var submit_form = function(e) {
+
+    //usa o Jquery para enviar uma Get para o servidor
+      $.getJSON($SCRIPT_ROOT + '/grupo/arroz/list', { //endereço da requisição
+        a: $('input[name="a"]').val(), //obtem o valor do imput de name "a" e envia como variável a
+        b: $('input[name="b"]').val()  //obtem o valor do imput de name "b" e envia como variável b
+      }, function(data) { //função executada quando o servidor responde a requisição
+        $('#result').text(data.result); //coloca o texto DENTRO do elemento de id="result"
+        $('input[name=a]').focus().select(); //coloca o foco no input de name "a"
+      });
+      return false;
+    };
+
+    $('a#calculate').bind('click', submit_form); //associa o clicke do link (tag a), de id "calculate"
+
+    $("curvaInit").click(function(e){
+            submit_form(e);
+       });
+
+    $('input[name=a]').focus(); //coloca o foco no input de name "a"
+  });
+    </script>
+    <!-- Title -->
+    <title>Chip Welcome</title>
+</head>
+    <body onselectstart='return false' ondragstart='return false'>
+        <div class="jumbotron ">
+
+                    <div class="menu">
+                     <p>
+                    <br>
+                        <center><a href="/selectcurvatop?a=0"><button class="btn btn-dark-green"><img src="../static/img/medir.png" width="{{ menu_icon_size }}" height="{{ menu_icon_size }}"/></button></a></center>
+                        <center><a href="/top">             <button class="btn btn-dark-green active"><img src="../static/img/search.png" width="{{ menu_icon_size }}" height="{{ menu_icon_size }}"/></button></a></center>
+                        <center><a href="/config">            <button class="btn btn-dark-green "><img src="../static/img/config.png" width="{{ menu_icon_size }}" height="{{ menu_icon_size }}"/></button></a></center>
+                        <span id="result"></span>
+
+                    </div>
+
+            <center><h2 style="margin-left: 40px" color="#FFFFFF" class="animated fadeIn"><p>{{ curva }}</p></h2></center>
+            <div style="margin-left: -300px; margin-top: -25px" class="amostra">
+                <div class="container">
+                    <div class="photo">
+                        <a href="/grupo/arroz"><img class="animated fadeIn" src="../static/img/botao-grao-arroz.png" height="120" width="120"><figcaption><h5>{{ arroz }}</h5></figcaption></a>
+                    </div>
+                    <div class="photo">
+                        <a href="/grupo/feijao"><img class="animated fadeIn" src="../static/img/botao-grao-feijao.png" height="120" width="120"><figcaption><h5>{{ feijao }}</h5></figcaption></a>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-left: -10px; margin-top: -120px" class="amostra">
+                <div class="container">
+                    <div class="photo">
+                        <a href="/grupo/milho"><img class="animated fadeIn" src="../static/img/botao-grao-milho.png" height="120" width="120"><figcaption><h5>{{ milho }}</h5></figcaption></a>
+                    </div>
+                    <div class="photo">
+                        <a href="/grupo/soja"><img class="animated fadeIn" src="../static/img/botao-grao-soja.png" height="120" width="120"><figcaption><h5>{{ soja }}</h5></figcaption></a>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-left: 300px; margin-top: -120px" class="amostra">
+                <div class="container">
+                    <div class="photo">
+                        <a href="/grupo/outros"><img class="animated fadeIn" src="../static/img/botao-grao-outros.png" height="120" width="120"><figcaption><h5>{{ outro }}</h5></figcaption></a>
+                    </div>
+                    <div class="photo">
+                        <a href="/grupo/trigo"><img class="animated fadeIn" src="../static/img/botao-grao-trigo.png" height="120" width="120"><figcaption><h5>{{ trigo }}</h5></figcaption></a>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-left: 550px; margin-top: -120px" class="amostra">
+                <div class="container">
+                    <div class="photo">
+                        <a href="/grupo/girassol"><img class="animated fadeIn" src="../static/img/botao-grao-girasol.png" height="120" width="120"><figcaption><h5>{{ girassol }}</h5></figcaption></a>
+                    </div>
+                    <div class="photo">
+                        <a href="/grupo/custom"><img class="animated fadeIn" src="../static/img/botao-grao-custom.png" height="120" width="120"><figcaption><h5>{{ custom }}</h5></figcaption></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        <!-- {% endblock %}-->
+
+        <!--  -->
+        <footer>
+
+        </footer>
+
+    <script type="text/javascript" src="../static/js/jquery-2.2.3.min.js"></script>
+
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../static/js/tether.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../static/js/mdb.min.js"></script>
+    </body>
+</html>
+
+
