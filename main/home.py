@@ -1,5 +1,7 @@
 import codecs
 import sys
+
+import serial
 from flask import Flask, jsonify, render_template, request, redirect, url_for, session, flash
 from flask import json
 from arquivos.SerialTTY import gps
@@ -19,6 +21,7 @@ import logging
 import gc
 # encoding: utf-8
 import os
+
 reload(sys)
 sys.setdefaultencoding("utf-8")
 lcdSet = configparser.ConfigParser()
@@ -41,16 +44,22 @@ topDir = 'main/arquivos/top.txt'
 cloudDir = 'main/arquivos/cloud.json'
 cssDir = 'main/arquivos/css.ini'
 
-logger = logging.getLogger('log')
+windows = 'COM4'
+linux = '/dev/ttyUSB0'
+porta = windows
 
+logger = logging.getLogger('log')
+senha1 = 0
 # CRITICAL - 50
 # ERROR - 40
 # WARNING - 30
 # INFO - 20
 # DEBUG - 10
-logging.basicConfig(filename='python.log', level=10, format='%(asctime)s: %(levelname)s - %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
+logging.basicConfig(filename='python.log', level=10, format='%(asctime)s: %(levelname)s - %(message)s',
+                    datefmt='%m/%d/%Y %I:%M:%S %p')
 
-@app.route("/") # Pagina inicial: faz o autoteste e redireciona para a tela de medir
+
+@app.route("/")  # Pagina inicial: faz o autoteste e redireciona para a tela de medir
 def index():
     config = configparser.ConfigParser()
     config.read(confDir)
@@ -61,7 +70,8 @@ def index():
     else:
         return render_template("index.html")
 
-def login_required(f): # Funcao que verifica se o usuario esta logado, se nao estiver ela redireciona para a pagina de login
+
+def login_required(f):  # Funcao que verifica se o usuario esta logado, se nao estiver ela redireciona para a pagina de login
     @wraps(f)
     def wrap(*args, **kwargs):
         if 'logged_in' in session:
@@ -73,7 +83,8 @@ def login_required(f): # Funcao que verifica se o usuario esta logado, se nao es
 
     return wrap
 
-@app.route('/medir') #Funcao utilizada pela pagina inicial para executar o autoteste
+
+@app.route('/medir')  # Funcao utilizada pela pagina inicial para executar o autoteste
 def medir():
     autoteste = initAutoTest()
     config = configparser.ConfigParser()
@@ -91,7 +102,7 @@ def medir():
             return str(0.1)
 
 
-@app.route("/language") #Pagina para escolha do idioma no primeiro uso
+@app.route("/language")  # Pagina para escolha do idioma no primeiro uso
 def language():
     config = configparser.ConfigParser()
     config.read(confDir)
@@ -117,8 +128,8 @@ def language():
     css = configparser.ConfigParser()
     css.read(cssDir)
 
-
-    return render_template('language.html', language=language, portugues=portugues, ingles=ingles, italiano=italiano, frances=frances, alemao=alemao, espanhol=espanhol
+    return render_template('language.html', language=language, portugues=portugues, ingles=ingles, italiano=italiano,
+                           frances=frances, alemao=alemao, espanhol=espanhol
                            , jumbotrom_h=css.get(str(lcd_type), 'all_jumbotrom_h')
                            , jumbotrom_w=css.get(str(lcd_type), 'all_jumbotrom_w')
                            , jumbotrom_margin_left=css.get(str(lcd_type), 'all_jumbotrom_margin_left')
@@ -138,19 +149,25 @@ def language():
                            , language_container_margin_left=css.get(str(lcd_type), 'language_container_margin_left')
                            , language_container_margin_top=css.get(str(lcd_type), 'language_container_margin_top')
                            , language_container_width=css.get(str(lcd_type), 'language_container_width')
-                           , language_container_screen_1_width=css.get(str(lcd_type), 'language_container_screen_1_width')
-                           , language_container_screen_1_min_width=css.get(str(lcd_type), 'language_container_screen_1_min_width')
-                           , language_container_screen_2_width=css.get(str(lcd_type),'language_container_screen_2_width')
-                           , language_container_screen_2_min_width=css.get(str(lcd_type),'language_container_screen_2_min_width')
-                           , language_container_screen_3_width=css.get(str(lcd_type), 'language_container_screen_3_width')
-                           , language_container_screen_3_min_width=css.get(str(lcd_type), 'language_container_screen_3_min_width')
+                           ,
+                           language_container_screen_1_width=css.get(str(lcd_type), 'language_container_screen_1_width')
+                           , language_container_screen_1_min_width=css.get(str(lcd_type),
+                                                                           'language_container_screen_1_min_width')
+                           ,
+                           language_container_screen_2_width=css.get(str(lcd_type), 'language_container_screen_2_width')
+                           , language_container_screen_2_min_width=css.get(str(lcd_type),
+                                                                           'language_container_screen_2_min_width')
+                           ,
+                           language_container_screen_3_width=css.get(str(lcd_type), 'language_container_screen_3_width')
+                           , language_container_screen_3_min_width=css.get(str(lcd_type),
+                                                                           'language_container_screen_3_min_width')
                            , language_btn_flag_width=css.get(str(lcd_type), 'language_btn_flag_width')
                            , language_btn_flag_height=css.get(str(lcd_type), 'language_btn_flag_height')
                            , language_btn_arrow_width=css.get(str(lcd_type), 'language_btn_arrow_width')
                            , language_btn_arrow_height=css.get(str(lcd_type), 'language_btn_arrow_height'))
 
 
-@app.route('/connection') #Pagina para escolha da rede wireless no primeiro uso
+@app.route('/connection')  # Pagina para escolha da rede wireless no primeiro uso
 def connection():
     a = request.args.get('a', 'OFF', type=str)
     b = request.args.get('b', None, type=str)
@@ -203,39 +220,40 @@ def connection():
     css = configparser.ConfigParser()
     css.read(cssDir)
 
-
     return render_template('connection.html', wifi=wifi, nome=nome, lennome=lennome
-    ,jumbotrom_h = css.get(str(lcd_type), 'all_jumbotrom_h')
-    ,jumbotrom_w = css.get(str(lcd_type), 'all_jumbotrom_w')
-    ,jumbotrom_margin_left = css.get(str(lcd_type), 'all_jumbotrom_margin_left')
-    ,jumbotrom_margin_top = css.get(str(lcd_type), 'all_jumbotrom_margin_top')
-    ,jumbotrom_padding = css.get(str(lcd_type), 'all_jumbotrom_padding')
-    ,html_h = css.get(str(lcd_type), 'all_html_h')
-    ,html_w = css.get(str(lcd_type), 'all_html_w')
-    ,connection_title_size = css.get(str(lcd_type), 'connection_title_size')
-    ,connection_menu_width = css.get(str(lcd_type), 'connection_menu_width')
-    ,connection_menu_height = css.get(str(lcd_type), 'connection_menu_height')
-    ,connection_menu_margin_top = css.get(str(lcd_type), 'connection_menu_margin_top')
-    ,connection_menu2_width = css.get(str(lcd_type), 'connection_menu2_width')
-    ,connection_menu2_height = css.get(str(lcd_type), 'connection_menu2_height')
-    ,connection_menu2_margin_top = css.get(str(lcd_type), 'connection_menu2_margin_top')
-    ,connetion_list_group_item_width = css.get(str(lcd_type), 'connetion_list_group_item_width')
-    ,connetion_list_group_item_height = css.get(str(lcd_type), 'connetion_list_group_item_height')
-    ,connetion_list_group_item_padding = css.get(str(lcd_type), 'connetion_list_group_item_padding')
-    ,connection_container_margin_left = css.get(str(lcd_type), 'connection_container_margin_left')
-    ,connection_container_margin_top = css.get(str(lcd_type), 'connection_container_margin_top')
-    ,connection_container_wifi_margin_left=css.get(str(lcd_type), 'connection_container_wifi_margin_left')
-    ,connection_showscroll_height=css.get(str(lcd_type), 'connection_showscroll_height')
-    ,connection_btn_arrow_width=css.get(str(lcd_type), 'connection_btn_arrow_width')
-    ,connection_btn_arrow_height=css.get(str(lcd_type), 'connection_btn_arrow_height')
-    ,connection_btn_arrow_margin_top=css.get(str(lcd_type), 'connection_btn_arrow_margin_top') )
+                           , jumbotrom_h=css.get(str(lcd_type), 'all_jumbotrom_h')
+                           , jumbotrom_w=css.get(str(lcd_type), 'all_jumbotrom_w')
+                           , jumbotrom_margin_left=css.get(str(lcd_type), 'all_jumbotrom_margin_left')
+                           , jumbotrom_margin_top=css.get(str(lcd_type), 'all_jumbotrom_margin_top')
+                           , jumbotrom_padding=css.get(str(lcd_type), 'all_jumbotrom_padding')
+                           , html_h=css.get(str(lcd_type), 'all_html_h')
+                           , html_w=css.get(str(lcd_type), 'all_html_w')
+                           , connection_title_size=css.get(str(lcd_type), 'connection_title_size')
+                           , connection_menu_width=css.get(str(lcd_type), 'connection_menu_width')
+                           , connection_menu_height=css.get(str(lcd_type), 'connection_menu_height')
+                           , connection_menu_margin_top=css.get(str(lcd_type), 'connection_menu_margin_top')
+                           , connection_menu2_width=css.get(str(lcd_type), 'connection_menu2_width')
+                           , connection_menu2_height=css.get(str(lcd_type), 'connection_menu2_height')
+                           , connection_menu2_margin_top=css.get(str(lcd_type), 'connection_menu2_margin_top')
+                           , connetion_list_group_item_width=css.get(str(lcd_type), 'connetion_list_group_item_width')
+                           , connetion_list_group_item_height=css.get(str(lcd_type), 'connetion_list_group_item_height')
+                           ,
+                           connetion_list_group_item_padding=css.get(str(lcd_type), 'connetion_list_group_item_padding')
+                           , connection_container_margin_left=css.get(str(lcd_type), 'connection_container_margin_left')
+                           , connection_container_margin_top=css.get(str(lcd_type), 'connection_container_margin_top')
+                           , connection_container_wifi_margin_left=css.get(str(lcd_type),
+                                                                           'connection_container_wifi_margin_left')
+                           , connection_showscroll_height=css.get(str(lcd_type), 'connection_showscroll_height')
+                           , connection_btn_arrow_width=css.get(str(lcd_type), 'connection_btn_arrow_width')
+                           , connection_btn_arrow_height=css.get(str(lcd_type), 'connection_btn_arrow_height')
+                           , connection_btn_arrow_margin_top=css.get(str(lcd_type), 'connection_btn_arrow_margin_top'))
 
 
-
-@app.route("/password", methods=['GET', 'POST']) #Pagina para inserir a senha depois de selecionada a rede wireless
+@app.route("/password", methods=['GET', 'POST'])  # Pagina para inserir a senha depois de selecionada a rede wireless
 def password():
     winame = "wlan0"
     b = request.args.get('rede', None, type=str)
+
     def commandExists(command):
         def canExecute(file):
             return os.path.isfile(file) and os.access(file, os.X_OK)
@@ -245,6 +263,7 @@ def password():
             if canExecute(file):
                 return True
         return False
+
     if request.method == 'POST':
         senha = request.form['senha']
         connectstatus = os.popen("iwconfig " + 'wlan0' + " essid " + b + " key s:" + senha)
@@ -272,12 +291,8 @@ def password():
     return render_template("password.html", rede=b)
 
 
-
-
-
-@app.route('/login/', methods=["GET", "POST"]) #Pagina de login
+@app.route('/login/', methods=["GET", "POST"])  # Pagina de login
 def login_page():
-
     error = ''
     try:
         clouds = cloud()
@@ -310,41 +325,41 @@ def login_page():
         css = configparser.ConfigParser()
         css.read(cssDir)
         return render_template("login.html", error=error
-        ,jumbotrom_h = css.get(str(lcd_type), 'all_jumbotrom_h')
-        ,jumbotrom_w = css.get(str(lcd_type), 'all_jumbotrom_w')
-        ,jumbotrom_margin_left=css.get(str(lcd_type), 'all_jumbotrom_margin_left')
-        ,jumbotrom_margin_top=css.get(str(lcd_type), 'all_jumbotrom_margin_top')
-        ,jumbotrom_padding=css.get(str(lcd_type), 'all_jumbotrom_padding')
-        ,html_h = css.get(str(lcd_type), 'all_html_h')
-        ,html_w = css.get(str(lcd_type), 'all_html_w')
-        ,login_title_size=css.get(str(lcd_type), 'login_title_size')
-        ,login_btn_arrow_width=css.get(str(lcd_type), 'login_btn_arrow_width')
-        ,login_btn_arrow_height=css.get(str(lcd_type), 'login_btn_arrow_height')
-        ,login_amostra_margin_left=css.get(str(lcd_type), 'login_amostra_margin_left')
-        ,login_amostra_margin_top=css.get(str(lcd_type), 'login_amostra_margin_top'))
+                               , jumbotrom_h=css.get(str(lcd_type), 'all_jumbotrom_h')
+                               , jumbotrom_w=css.get(str(lcd_type), 'all_jumbotrom_w')
+                               , jumbotrom_margin_left=css.get(str(lcd_type), 'all_jumbotrom_margin_left')
+                               , jumbotrom_margin_top=css.get(str(lcd_type), 'all_jumbotrom_margin_top')
+                               , jumbotrom_padding=css.get(str(lcd_type), 'all_jumbotrom_padding')
+                               , html_h=css.get(str(lcd_type), 'all_html_h')
+                               , html_w=css.get(str(lcd_type), 'all_html_w')
+                               , login_title_size=css.get(str(lcd_type), 'login_title_size')
+                               , login_btn_arrow_width=css.get(str(lcd_type), 'login_btn_arrow_width')
+                               , login_btn_arrow_height=css.get(str(lcd_type), 'login_btn_arrow_height')
+                               , login_amostra_margin_left=css.get(str(lcd_type), 'login_amostra_margin_left')
+                               , login_amostra_margin_top=css.get(str(lcd_type), 'login_amostra_margin_top'))
 
     except Exception as e:
         # flash(e)
         css = configparser.ConfigParser()
         css.read(cssDir)
-        #logger.error("Login - Failed to log in")
-        #error = "Invalid credentials, try again."
+        # logger.error("Login - Failed to log in")
+        # error = "Invalid credentials, try again."
         return render_template("login.html", error=error
-        ,jumbotrom_h = css.get(str(lcd_type), 'all_jumbotrom_h')
-        ,jumbotrom_w = css.get(str(lcd_type), 'all_jumbotrom_w')
-        ,jumbotrom_margin_left=css.get(str(lcd_type), 'all_jumbotrom_margin_left')
-        ,jumbotrom_margin_top=css.get(str(lcd_type), 'all_jumbotrom_margin_top')
-        ,jumbotrom_padding=css.get(str(lcd_type), 'all_jumbotrom_padding')
-        ,html_h = css.get(str(lcd_type), 'all_html_h')
-        ,html_w = css.get(str(lcd_type), 'all_html_w')
-        ,login_title_size=css.get(str(lcd_type), 'login_title_size')
-        ,login_btn_arrow_width=css.get(str(lcd_type), 'login_btn_arrow_width')
-        ,login_btn_arrow_height=css.get(str(lcd_type), 'login_btn_arrow_height')
-        ,login_amostra_margin_left=css.get(str(lcd_type), 'login_amostra_margin_left')
-        ,login_amostra_margin_top=css.get(str(lcd_type), 'login_amostra_margin_top'))
+                               , jumbotrom_h=css.get(str(lcd_type), 'all_jumbotrom_h')
+                               , jumbotrom_w=css.get(str(lcd_type), 'all_jumbotrom_w')
+                               , jumbotrom_margin_left=css.get(str(lcd_type), 'all_jumbotrom_margin_left')
+                               , jumbotrom_margin_top=css.get(str(lcd_type), 'all_jumbotrom_margin_top')
+                               , jumbotrom_padding=css.get(str(lcd_type), 'all_jumbotrom_padding')
+                               , html_h=css.get(str(lcd_type), 'all_html_h')
+                               , html_w=css.get(str(lcd_type), 'all_html_w')
+                               , login_title_size=css.get(str(lcd_type), 'login_title_size')
+                               , login_btn_arrow_width=css.get(str(lcd_type), 'login_btn_arrow_width')
+                               , login_btn_arrow_height=css.get(str(lcd_type), 'login_btn_arrow_height')
+                               , login_amostra_margin_left=css.get(str(lcd_type), 'login_amostra_margin_left')
+                               , login_amostra_margin_top=css.get(str(lcd_type), 'login_amostra_margin_top'))
 
 
-@app.route('/logout') #Pagina de logout
+@app.route('/logout')  # Pagina de logout
 @login_required
 def logout():
     session.pop('logged_in', None)
@@ -352,7 +367,8 @@ def logout():
     logger.info("Login - User logged out")
     return redirect(url_for('getBasicinfoTop'))
 
-@app.route('/register/', methods=["GET", "POST"]) #Pagina de registro do usuario
+
+@app.route('/register/', methods=["GET", "POST"])  # Pagina de registro do usuario
 def register_page():
     config = configparser.ConfigParser()
     config.read(confDir)
@@ -361,17 +377,17 @@ def register_page():
         form = RegistrationForm(request.form)
 
         if request.method == "POST" and form.validate():
-            #username = form.username.data
+            # username = form.username.data
             username = request.form['username']
-            #email = form.email.data
-            #firstname = form.firstname.data
+            # email = form.email.data
+            # firstname = form.firstname.data
             firstname = request.form['firstname']
             lastname = form.lastname.data
             lastname = request.form['lastname']
-            #nserie = form.nserie.data
-            #password = sha256_crypt.encrypt((str(form.password.data)))
+            # nserie = form.nserie.data
+            # password = sha256_crypt.encrypt((str(form.password.data)))
             password = sha256_crypt.encrypt((str(request.form['password'])))
-            #confirm = sha256_crypt.encrypt((str(form.confirm.data)))
+            # confirm = sha256_crypt.encrypt((str(form.confirm.data)))
             confirm = sha256_crypt.encrypt((str(request.form['confirm'])))
             config = configparser.ConfigParser()
             config.read(confDir)
@@ -389,8 +405,6 @@ def register_page():
                     logger.info("Register - User already exists")
                     return render_template('register.html', form=form, error=erro)
 
-
-
             clouds.user_register(username, firstname, lastname, password, nserie)
 
             session['logged_in'] = True
@@ -402,46 +416,64 @@ def register_page():
         css = configparser.ConfigParser()
         css.read(cssDir)
         return render_template("register.html", form=form
-        ,jumbotrom_h = css.get(str(lcd_type), 'all_jumbotrom_h')
-        ,jumbotrom_w = css.get(str(lcd_type), 'all_jumbotrom_w')
-        ,jumbotrom_margin_left=css.get(str(lcd_type), 'all_jumbotrom_margin_left')
-        ,jumbotrom_margin_top=css.get(str(lcd_type), 'all_jumbotrom_margin_top')
-        ,jumbotrom_padding=css.get(str(lcd_type), 'all_jumbotrom_padding')
-        ,html_h = css.get(str(lcd_type), 'all_html_h')
-        ,html_w = css.get(str(lcd_type), 'all_html_w')
-       , register_title_size=css.get(str(lcd_type), 'register_title_size')
-       , register_title_margin_left=css.get(str(lcd_type), 'register_title_margin_left')
-       , register_menu_margin_top=css.get(str(lcd_type), 'register_menu_margin_top')
-       , register_btn_arrow_width=css.get(str(lcd_type), 'register_btn_arrow_width')
-       , register_btn_arrow_height=css.get(str(lcd_type), 'register_btn_arrow_height')
-       , register_amostra_margin_left=css.get(str(lcd_type), 'register_amostra_margin_left')
-       , register_amostra_width=css.get(str(lcd_type), 'register_amostra_width')
-       , register_amostra_firstname_width=css.get(str(lcd_type), 'register_amostra_firstname_width')
-       , register_amostra_firstname_margin_top=css.get(str(lcd_type), 'register_amostra_firstname_margin_top')
-       , register_amostra_lastname_width=css.get(str(lcd_type), 'register_amostra_lastname_width')
-       , register_amostra_lastname_margin_top=css.get(str(lcd_type), 'register_amostra_lastname_margin_top')
-       , register_amostra_lastname_margin_left=css.get(str(lcd_type), 'register_amostra_lastname_margin_left')
-       , register_amostra_username_width=css.get(str(lcd_type), 'register_amostra_username_width')
-       , register_amostra_username_margin_top=css.get(str(lcd_type), 'register_amostra_username_margin_top')
-       , register_amostra_username_margin_left=css.get(str(lcd_type), 'register_amostra_username_margin_left')
-       , register_amostra_password_width=css.get(str(lcd_type), 'register_amostra_password_width')
-       , register_amostra_password_margin_top=css.get(str(lcd_type), 'register_amostra_password_margin_top')
-       , register_amostra_password_margin_left=css.get(str(lcd_type), 'register_amostra_password_margin_left')
-       , register_amostra_confirm_width=css.get(str(lcd_type), 'register_amostra_confirm_width')
-       , register_amostra_confirm_margin_top=css.get(str(lcd_type), 'register_amostra_confirm_margin_top')
-       , register_amostra_confirm_margin_left=css.get(str(lcd_type), 'register_amostra_confirm_margin_left')
-       , register_amostra_accept_tos_width=css.get(str(lcd_type), 'register_amostra_accept_tos_width')
-       , register_amostra_accept_tos_margin_left=css.get(str(lcd_type), 'register_amostra_accept_tos_margin_left')
-       , register_amostra_btn_register_margin_top=css.get(str(lcd_type),'register_amostra_btn_register_margin_top')
-       ,register_amostra_btn_register_margin_left=css.get(str(lcd_type), 'register_amostra_btn_register_margin_left')
-       ,register_amostra_error_margin_top=css.get(str(lcd_type), 'register_amostra_error_margin_top'))
+                               , jumbotrom_h=css.get(str(lcd_type), 'all_jumbotrom_h')
+                               , jumbotrom_w=css.get(str(lcd_type), 'all_jumbotrom_w')
+                               , jumbotrom_margin_left=css.get(str(lcd_type), 'all_jumbotrom_margin_left')
+                               , jumbotrom_margin_top=css.get(str(lcd_type), 'all_jumbotrom_margin_top')
+                               , jumbotrom_padding=css.get(str(lcd_type), 'all_jumbotrom_padding')
+                               , html_h=css.get(str(lcd_type), 'all_html_h')
+                               , html_w=css.get(str(lcd_type), 'all_html_w')
+                               , register_title_size=css.get(str(lcd_type), 'register_title_size')
+                               , register_title_margin_left=css.get(str(lcd_type), 'register_title_margin_left')
+                               , register_menu_margin_top=css.get(str(lcd_type), 'register_menu_margin_top')
+                               , register_btn_arrow_width=css.get(str(lcd_type), 'register_btn_arrow_width')
+                               , register_btn_arrow_height=css.get(str(lcd_type), 'register_btn_arrow_height')
+                               , register_amostra_margin_left=css.get(str(lcd_type), 'register_amostra_margin_left')
+                               , register_amostra_width=css.get(str(lcd_type), 'register_amostra_width')
+                               , register_amostra_firstname_width=css.get(str(lcd_type),
+                                                                          'register_amostra_firstname_width')
+                               , register_amostra_firstname_margin_top=css.get(str(lcd_type),
+                                                                               'register_amostra_firstname_margin_top')
+                               ,
+                               register_amostra_lastname_width=css.get(str(lcd_type), 'register_amostra_lastname_width')
+                               , register_amostra_lastname_margin_top=css.get(str(lcd_type),
+                                                                              'register_amostra_lastname_margin_top')
+                               , register_amostra_lastname_margin_left=css.get(str(lcd_type),
+                                                                               'register_amostra_lastname_margin_left')
+                               ,
+                               register_amostra_username_width=css.get(str(lcd_type), 'register_amostra_username_width')
+                               , register_amostra_username_margin_top=css.get(str(lcd_type),
+                                                                              'register_amostra_username_margin_top')
+                               , register_amostra_username_margin_left=css.get(str(lcd_type),
+                                                                               'register_amostra_username_margin_left')
+                               ,
+                               register_amostra_password_width=css.get(str(lcd_type), 'register_amostra_password_width')
+                               , register_amostra_password_margin_top=css.get(str(lcd_type),
+                                                                              'register_amostra_password_margin_top')
+                               , register_amostra_password_margin_left=css.get(str(lcd_type),
+                                                                               'register_amostra_password_margin_left')
+                               , register_amostra_confirm_width=css.get(str(lcd_type), 'register_amostra_confirm_width')
+                               , register_amostra_confirm_margin_top=css.get(str(lcd_type),
+                                                                             'register_amostra_confirm_margin_top')
+                               , register_amostra_confirm_margin_left=css.get(str(lcd_type),
+                                                                              'register_amostra_confirm_margin_left')
+                               , register_amostra_accept_tos_width=css.get(str(lcd_type),
+                                                                           'register_amostra_accept_tos_width')
+                               , register_amostra_accept_tos_margin_left=css.get(str(lcd_type),
+                                                                                 'register_amostra_accept_tos_margin_left')
+                               , register_amostra_btn_register_margin_top=css.get(str(lcd_type),
+                                                                                  'register_amostra_btn_register_margin_top')
+                               , register_amostra_btn_register_margin_left=css.get(str(lcd_type),
+                                                                                   'register_amostra_btn_register_margin_left')
+                               , register_amostra_error_margin_top=css.get(str(lcd_type),
+                                                                           'register_amostra_error_margin_top'))
 
     except Exception as e:
         logger.info("Register - Error registering {}".format(e))
         return (str(e))
 
 
-class RegistrationForm(Form): #Formulario para a paginade registro
+class RegistrationForm(Form):  # Formulario para a paginade registro
 
     username = TextField('Username', [validators.Length(min=4, max=20)])
     firstname = TextField('First Name', [validators.Length(min=0, max=10)])
@@ -455,12 +487,8 @@ class RegistrationForm(Form): #Formulario para a paginade registro
                               [validators.Required()])
 
 
-
-
-
-
 @login_required
-@app.route("/historico") #Pagina de Historico
+@app.route("/historico")  # Pagina de Historico
 def historico():
     a = request.args.get('a', 365258, type=int)
     curvaFiltradas = listGroup('ARROZ')
@@ -494,7 +522,7 @@ def historico():
     css = configparser.ConfigParser()
     css.read(cssDir)
     if a == b:
-        a= b-1
+        a = b - 1
         if a == 365258:
             for index in range(0, lenHistorico):
                 leitura = historico[index]
@@ -507,17 +535,17 @@ def historico():
                 tipo.append(leituraSplit[11])
 
             return render_template('historico.html', nome=nome, temp=temp, umidade=umidade, lencurva=lenHistorico,
-                                       ph=ph, data=data, tipo=tipo,  a=a, b=b
-                    ,jumbotrom_h = css.get(str(lcd_type), 'all_jumbotrom_h')
-                    ,jumbotrom_w = css.get(str(lcd_type), 'all_jumbotrom_w')
-                    ,jumbotrom_margin_left=css.get(str(lcd_type), 'all_jumbotrom_margin_left')
-                    ,jumbotrom_margin_top=css.get(str(lcd_type), 'all_jumbotrom_margin_top')
-                    ,jumbotrom_padding=css.get(str(lcd_type), 'all_jumbotrom_padding')
-                    ,html_h = css.get(str(lcd_type), 'all_html_h')
-                    ,html_w = css.get(str(lcd_type), 'all_html_w')
-                   , menu_icon_size=css.get(str(lcd_type), 'config_menu_icon_size')
-                   , menu_width=css.get(str(lcd_type), 'config_menu_width')
-                   , menu_margin_top=css.get(str(lcd_type), 'config_menu_margin_top')
+                                   ph=ph, data=data, tipo=tipo, a=a, b=b
+                                   , jumbotrom_h=css.get(str(lcd_type), 'all_jumbotrom_h')
+                                   , jumbotrom_w=css.get(str(lcd_type), 'all_jumbotrom_w')
+                                   , jumbotrom_margin_left=css.get(str(lcd_type), 'all_jumbotrom_margin_left')
+                                   , jumbotrom_margin_top=css.get(str(lcd_type), 'all_jumbotrom_margin_top')
+                                   , jumbotrom_padding=css.get(str(lcd_type), 'all_jumbotrom_padding')
+                                   , html_h=css.get(str(lcd_type), 'all_html_h')
+                                   , html_w=css.get(str(lcd_type), 'all_html_w')
+                                   , menu_icon_size=css.get(str(lcd_type), 'config_menu_icon_size')
+                                   , menu_width=css.get(str(lcd_type), 'config_menu_width')
+                                   , menu_margin_top=css.get(str(lcd_type), 'config_menu_margin_top')
                                    )
         else:
             leitura = historico[a]
@@ -547,17 +575,18 @@ def historico():
                 logger.error("GPS - Error finding signal")
             return render_template('historicoLista.html', nome=nome, temp=temp, umidade=umidade, lencurva=lenHistorico,
                                    ph=ph, data=data, tipo=tipo, peso=peso,
-                                   dial=dial, dialc=dialc, freqc=freqc, freqv=freqv, id=cont, a=a, b=b, lat=lat, lng =lng,jumbotrom_h = css.get(str(lcd_type), 'all_jumbotrom_h')
-                    ,jumbotrom_w = css.get(str(lcd_type), 'all_jumbotrom_w')
-                    ,jumbotrom_margin_left=css.get(str(lcd_type), 'all_jumbotrom_margin_left')
-                    ,jumbotrom_margin_top=css.get(str(lcd_type), 'all_jumbotrom_margin_top')
-                    ,jumbotrom_padding=css.get(str(lcd_type), 'all_jumbotrom_padding')
-                    ,html_h = css.get(str(lcd_type), 'all_html_h')
-                    ,html_w = css.get(str(lcd_type), 'all_html_w')
-                   , menu_icon_size=css.get(str(lcd_type), 'config_menu_icon_size')
-                   , menu_width=css.get(str(lcd_type), 'config_menu_width')
-                   , menu_margin_top=css.get(str(lcd_type), 'config_menu_margin_top'))
-    elif a <0:
+                                   dial=dial, dialc=dialc, freqc=freqc, freqv=freqv, id=cont, a=a, b=b, lat=lat,
+                                   lng=lng, jumbotrom_h=css.get(str(lcd_type), 'all_jumbotrom_h')
+                                   , jumbotrom_w=css.get(str(lcd_type), 'all_jumbotrom_w')
+                                   , jumbotrom_margin_left=css.get(str(lcd_type), 'all_jumbotrom_margin_left')
+                                   , jumbotrom_margin_top=css.get(str(lcd_type), 'all_jumbotrom_margin_top')
+                                   , jumbotrom_padding=css.get(str(lcd_type), 'all_jumbotrom_padding')
+                                   , html_h=css.get(str(lcd_type), 'all_html_h')
+                                   , html_w=css.get(str(lcd_type), 'all_html_w')
+                                   , menu_icon_size=css.get(str(lcd_type), 'config_menu_icon_size')
+                                   , menu_width=css.get(str(lcd_type), 'config_menu_width')
+                                   , menu_margin_top=css.get(str(lcd_type), 'config_menu_margin_top'))
+    elif a < 0:
         a = 0
         leitura = historico[a]
         lenHistorico = 1
@@ -586,16 +615,17 @@ def historico():
             logger.error("GPS - Error finding signal")
         return render_template('historicoLista.html', nome=nome, temp=temp, umidade=umidade, lencurva=lenHistorico,
                                ph=ph, data=data, tipo=tipo, peso=peso,
-                               dial=dial, dialc=dialc, freqc=freqc, freqv=freqv, id=cont, a=a, b=b, lat=lat, lng =lng,jumbotrom_h = css.get(str(lcd_type), 'all_jumbotrom_h')
-                    ,jumbotrom_w = css.get(str(lcd_type), 'all_jumbotrom_w')
-                    ,jumbotrom_margin_left=css.get(str(lcd_type), 'all_jumbotrom_margin_left')
-                    ,jumbotrom_margin_top=css.get(str(lcd_type), 'all_jumbotrom_margin_top')
-                    ,jumbotrom_padding=css.get(str(lcd_type), 'all_jumbotrom_padding')
-                    ,html_h = css.get(str(lcd_type), 'all_html_h')
-                    ,html_w = css.get(str(lcd_type), 'all_html_w')
-                   , menu_icon_size=css.get(str(lcd_type), 'config_menu_icon_size')
-                   , menu_width=css.get(str(lcd_type), 'config_menu_width')
-                   , menu_margin_top=css.get(str(lcd_type), 'config_menu_margin_top'))
+                               dial=dial, dialc=dialc, freqc=freqc, freqv=freqv, id=cont, a=a, b=b, lat=lat, lng=lng,
+                               jumbotrom_h=css.get(str(lcd_type), 'all_jumbotrom_h')
+                               , jumbotrom_w=css.get(str(lcd_type), 'all_jumbotrom_w')
+                               , jumbotrom_margin_left=css.get(str(lcd_type), 'all_jumbotrom_margin_left')
+                               , jumbotrom_margin_top=css.get(str(lcd_type), 'all_jumbotrom_margin_top')
+                               , jumbotrom_padding=css.get(str(lcd_type), 'all_jumbotrom_padding')
+                               , html_h=css.get(str(lcd_type), 'all_html_h')
+                               , html_w=css.get(str(lcd_type), 'all_html_w')
+                               , menu_icon_size=css.get(str(lcd_type), 'config_menu_icon_size')
+                               , menu_width=css.get(str(lcd_type), 'config_menu_width')
+                               , menu_margin_top=css.get(str(lcd_type), 'config_menu_margin_top'))
     else:
         if a == 365258:
             for index in range(0, lenHistorico):
@@ -608,19 +638,18 @@ def historico():
                 data.append(leituraSplit[10])
                 tipo.append(leituraSplit[11])
 
-
             return render_template('historico.html', nome=nome, temp=temp, umidade=umidade, lencurva=lenHistorico,
-                    ph=ph, data=data, tipo=tipo,  a=a, b=b
-                    ,jumbotrom_h = css.get(str(lcd_type), 'all_jumbotrom_h')
-                    ,jumbotrom_w = css.get(str(lcd_type), 'all_jumbotrom_w')
-                    ,jumbotrom_margin_left=css.get(str(lcd_type), 'all_jumbotrom_margin_left')
-                    ,jumbotrom_margin_top=css.get(str(lcd_type), 'all_jumbotrom_margin_top')
-                    ,jumbotrom_padding=css.get(str(lcd_type), 'all_jumbotrom_padding')
-                    ,html_h = css.get(str(lcd_type), 'all_html_h')
-                    ,html_w = css.get(str(lcd_type), 'all_html_w')
-                   , menu_icon_size=css.get(str(lcd_type), 'config_menu_icon_size')
-                   , menu_width=css.get(str(lcd_type), 'config_menu_width')
-                   , menu_margin_top=css.get(str(lcd_type), 'config_menu_margin_top'))
+                                   ph=ph, data=data, tipo=tipo, a=a, b=b
+                                   , jumbotrom_h=css.get(str(lcd_type), 'all_jumbotrom_h')
+                                   , jumbotrom_w=css.get(str(lcd_type), 'all_jumbotrom_w')
+                                   , jumbotrom_margin_left=css.get(str(lcd_type), 'all_jumbotrom_margin_left')
+                                   , jumbotrom_margin_top=css.get(str(lcd_type), 'all_jumbotrom_margin_top')
+                                   , jumbotrom_padding=css.get(str(lcd_type), 'all_jumbotrom_padding')
+                                   , html_h=css.get(str(lcd_type), 'all_html_h')
+                                   , html_w=css.get(str(lcd_type), 'all_html_w')
+                                   , menu_icon_size=css.get(str(lcd_type), 'config_menu_icon_size')
+                                   , menu_width=css.get(str(lcd_type), 'config_menu_width')
+                                   , menu_margin_top=css.get(str(lcd_type), 'config_menu_margin_top'))
         else:
             leitura = historico[a]
             lenHistorico = 1
@@ -648,20 +677,22 @@ def historico():
             lng = 0
             logger.error("GPS - Error finding signal")
 
-        return render_template('historicoLista.html', nome=nome, temp=temp, umidade=umidade, lencurva=lenHistorico, ph=ph, data=data, tipo=tipo, peso=peso,
-                               dial=dial, dialc=dialc, freqc=freqc, freqv=freqv, id=cont, a=a, b=b, lat=lat, lng =lng,jumbotrom_h = css.get(str(lcd_type), 'all_jumbotrom_h')
-                    ,jumbotrom_w = css.get(str(lcd_type), 'all_jumbotrom_w')
-                    ,jumbotrom_margin_left=css.get(str(lcd_type), 'all_jumbotrom_margin_left')
-                    ,jumbotrom_margin_top=css.get(str(lcd_type), 'all_jumbotrom_margin_top')
-                    ,jumbotrom_padding=css.get(str(lcd_type), 'all_jumbotrom_padding')
-                    ,html_h = css.get(str(lcd_type), 'all_html_h')
-                    ,html_w = css.get(str(lcd_type), 'all_html_w')
-                   , menu_icon_size=css.get(str(lcd_type), 'config_menu_icon_size')
-                   , menu_width=css.get(str(lcd_type), 'config_menu_width')
-                   , menu_margin_top=css.get(str(lcd_type), 'config_menu_margin_top'))
+        return render_template('historicoLista.html', nome=nome, temp=temp, umidade=umidade, lencurva=lenHistorico,
+                               ph=ph, data=data, tipo=tipo, peso=peso,
+                               dial=dial, dialc=dialc, freqc=freqc, freqv=freqv, id=cont, a=a, b=b, lat=lat, lng=lng,
+                               jumbotrom_h=css.get(str(lcd_type), 'all_jumbotrom_h')
+                               , jumbotrom_w=css.get(str(lcd_type), 'all_jumbotrom_w')
+                               , jumbotrom_margin_left=css.get(str(lcd_type), 'all_jumbotrom_margin_left')
+                               , jumbotrom_margin_top=css.get(str(lcd_type), 'all_jumbotrom_margin_top')
+                               , jumbotrom_padding=css.get(str(lcd_type), 'all_jumbotrom_padding')
+                               , html_h=css.get(str(lcd_type), 'all_html_h')
+                               , html_w=css.get(str(lcd_type), 'all_html_w')
+                               , menu_icon_size=css.get(str(lcd_type), 'config_menu_icon_size')
+                               , menu_width=css.get(str(lcd_type), 'config_menu_width')
+                               , menu_margin_top=css.get(str(lcd_type), 'config_menu_margin_top'))
 
 
-@app.route('/umidade') # Confere o resultado da serial
+@app.route('/umidade')  # Confere o resultado da serial
 @login_required
 def umidadeWeb():
     config = configparser.ConfigParser()
@@ -693,7 +724,10 @@ def umidadeWeb():
     else:
 
         return str(5)
-@app.route("/resultado") #Pagina que faz o calculo da umidade e mostra o resultado, alem de enviar os dados para a nuvem
+
+
+@app.route(
+    "/resultado")  # Pagina que faz o calculo da umidade e mostra o resultado, alem de enviar os dados para a nuvem
 @login_required
 def resultado():
     css = configparser.ConfigParser()
@@ -711,7 +745,8 @@ def resultado():
                            , menu_width=css.get(str(lcd_type), 'config_menu_width')
                            , menu_margin_top=css.get(str(lcd_type), 'config_menu_margin_top'))
 
-@app.route("/result") #Pagina que faz o calculo da umidade e mostra o resultado, alem de enviar os dados para a nuvem
+
+@app.route("/result")  # Pagina que faz o calculo da umidade e mostra o resultado, alem de enviar os dados para a nuvem
 @login_required
 def result():
     global freqv
@@ -732,7 +767,7 @@ def result():
     umidadeFull = curva[3]
     Faixaumidade = ' Faixa de umidade ' + umidadeFull[0] + ' - ' + umidadeFull[1]
     ph = 0
-    umidadeFinal =0
+    umidadeFinal = 0
     temperatura = 0
     try:
         countUmidade = 0
@@ -799,8 +834,8 @@ def result():
 
 
     except Exception as e:
-            logger.critical("Humidity - {}".format(e))
-            print e
+        logger.critical("Humidity - {}".format(e))
+        print e
 
     css = configparser.ConfigParser()
     css.read(cssDir)
@@ -848,10 +883,14 @@ def result():
                            , result_div_p3_margin_left=css.get(str(lcd_type), 'result_div_p3_margin_left')
                            , result_div_btn_qr_margin_left=css.get(str(lcd_type), 'result_div_btn_qr_margin_left')
                            , result_div_btn_qr_margin_top=css.get(str(lcd_type), 'result_div_btn_qr_margin_top')
-                           , result_div_btn_padlock_margin_left=css.get(str(lcd_type), 'result_div_btn_padlock_margin_left')
-                           , result_div_btn_padlock_margin_top=css.get(str(lcd_type), 'result_div_btn_padlock_margin_top')
-                           , result_div_btn_printer_margin_left=css.get(str(lcd_type), 'result_div_btn_printer_margin_left')
-                           , result_div_btn_printer_margin_top=css.get(str(lcd_type), 'result_div_btn_printer_margin_top'))
+                           , result_div_btn_padlock_margin_left=css.get(str(lcd_type),
+                                                                        'result_div_btn_padlock_margin_left')
+                           ,
+                           result_div_btn_padlock_margin_top=css.get(str(lcd_type), 'result_div_btn_padlock_margin_top')
+                           , result_div_btn_printer_margin_left=css.get(str(lcd_type),
+                                                                        'result_div_btn_printer_margin_left')
+                           , result_div_btn_printer_margin_top=css.get(str(lcd_type),
+                                                                       'result_div_btn_printer_margin_top'))
 
 
 @app.route("/flash")  # Pagina que mostra mensagens na tela
@@ -860,9 +899,290 @@ def flashStr():
     return render_template("flash.html")
 
 
+@app.route("/key")  # Pagina que mostra mensagens na tela
+def key():
+    global senha1
+    from arquivos.private import token
+    code = 0
+    id = request.args.get('token', 0, type=str)
+    id = int(id, 10)
+    senha = token()
+    code = senha.gera(id)
+    senha = code.split(';')
+    senha1 = senha[2]
+    return str(senha[0] + ';' + senha[1])
+
+
+@app.route("/assistencia")  # Pagina de configuracao
+def assistencia():
+    config = configparser.ConfigParser()
+    config.read(confDir)
+    language = config.get('DEFAULT', 'LANG')
+    ph = config.get('DEFAULT', 'PH')
+    unit = config.get('DEFAULT', 'unitemp')
+    private = config.get('DEFAULT', 'private')
+    config.read(langDir)
+    config = config.get(language, 'config')
+    a = request.args.get('a', language, type=str)
+
+    # if private == 'true':
+    writeConf('DEFAULT', 'private', 'false')
+    if a == 'PT':
+        writeConf('DEFAULT', 'LANG', 'PT')
+        logger.info("Settings - Set language to PT")
+    elif a == 'EN':
+        writeConf('DEFAULT', 'LANG', 'EN')
+        logger.info("Settings - Set language to EN")
+
+    b = request.args.get('b', ph, type=int)
+
+    if b == 0:
+        writeConf('DEFAULT', 'PH', 'kg/hl')
+        logger.info("Settings - Set PH to kg/hl")
+    elif b == 1:
+        writeConf('DEFAULT', 'PH', 'lb/bu')
+        logger.info("Settings - Set PH to lb/bu")
+    elif b == 2:
+        writeConf('DEFAULT', 'PH', 'lb/A bu')
+        logger.info("Settings - Set PH to lb/A bu")
+    elif b == 3:
+        writeConf('DEFAULT', 'PH', 'lb/W bu')
+        logger.info("Settings - Set PH to lb/W bu")
+
+    c = request.args.get('c', unit, type=str)
+
+    if c == 'C':
+        writeConf('DEFAULT', 'unitemp', 'C')
+        logger.info("Settings - Set temperature of humidity to Celsius")
+    elif c == 'F':
+        writeConf('DEFAULT', 'unitemp', 'F')
+        logger.info("Settings - Set temperature of humidity to Fahrenheit")
+
+    css = configparser.ConfigParser()
+    css.read(cssDir)
+
+    return render_template("assistencia.html", config=config
+                           , jumbotrom_h=css.get(str(lcd_type), 'all_jumbotrom_h')
+                           , jumbotrom_w=css.get(str(lcd_type), 'all_jumbotrom_w')
+                           , jumbotrom_margin_left=css.get(str(lcd_type), 'all_jumbotrom_margin_left')
+                           , jumbotrom_margin_top=css.get(str(lcd_type), 'all_jumbotrom_margin_top')
+                           , jumbotrom_padding=css.get(str(lcd_type), 'all_jumbotrom_padding')
+                           , html_h=css.get(str(lcd_type), 'all_html_h')
+                           , html_w=css.get(str(lcd_type), 'all_html_w')
+                           , menu_icon_size=css.get(str(lcd_type), 'config_menu_icon_size')
+                           , menu_width=css.get(str(lcd_type), 'config_menu_width')
+                           , menu_margin_top=css.get(str(lcd_type), 'config_menu_margin_top')
+                           , menu2_width=css.get(str(lcd_type), 'config_menu2_width')
+                           , menu2_height=css.get(str(lcd_type), 'config_menu2_height')
+                           , menu2_margin_right=css.get(str(lcd_type), 'config_menu2_margin_right')
+                           , amostra_margin_left=css.get(str(lcd_type), 'config_amostra_margin_left')
+                           , config_size=css.get(str(lcd_type), 'config_title_size')
+                           , config_margin_left=css.get(str(lcd_type), 'config_title_margin_left')
+                           , config_margin_top=css.get(str(lcd_type), 'config_title_margin_top')
+                           , config_btn_dropbtn_width=css.get(str(lcd_type), 'config_btn_dropbtn_width')
+                           , config_btn_autoteste_margin_left=css.get(str(lcd_type), 'config_btn_autoteste_margin_left')
+                           , config_btn_autoteste_margin_top=css.get(str(lcd_type), 'config_btn_autoteste_margin_top')
+                           , config_btn_autoteste_width=css.get(str(lcd_type), 'config_btn_autoteste_width')
+                           , config_btn_historico_margin_left=css.get(str(lcd_type), 'config_btn_historico_margin_left')
+                           , config_btn_historico_margin_top=css.get(str(lcd_type), 'config_btn_historico_margin_top')
+                           , config_btn_historico_width=css.get(str(lcd_type), 'config_btn_historico_width')
+                           , config_btn_dropdown_margin_left=css.get(str(lcd_type), 'config_btn_dropdown_margin_left')
+                           , config_btn_dropdown_margin_top=css.get(str(lcd_type), 'config_btn_dropdown_margin_top')
+                           , config_btn_dropdown_width=css.get(str(lcd_type), 'config_btn_dropdown_width'))
+
+    # else:
+    # return redirect(url_for('private'))
+
+
+@app.route("/assistencia/company", methods=['GET', 'POST'])  # Pagina de configuracao
+def company():
+    config = configparser.ConfigParser()
+    config.read(confDir)
+    company = config.get('DEFAULT', 'company')
+    if request.method == 'POST':
+        company = request.form['company']
+        writeConf("DEFAULT", 'company', company)
+    css = configparser.ConfigParser()
+    css.read(cssDir)
+
+    return render_template("company.html", config=config, company=company
+                           , jumbotrom_h=css.get(str(lcd_type), 'all_jumbotrom_h')
+                           , jumbotrom_w=css.get(str(lcd_type), 'all_jumbotrom_w')
+                           , jumbotrom_margin_left=css.get(str(lcd_type), 'all_jumbotrom_margin_left')
+                           , jumbotrom_margin_top=css.get(str(lcd_type), 'all_jumbotrom_margin_top')
+                           , jumbotrom_padding=css.get(str(lcd_type), 'all_jumbotrom_padding')
+                           , html_h=css.get(str(lcd_type), 'all_html_h')
+                           , html_w=css.get(str(lcd_type), 'all_html_w')
+                           , menu_icon_size=css.get(str(lcd_type), 'config_menu_icon_size')
+                           , menu_width=css.get(str(lcd_type), 'config_menu_width')
+                           , menu_margin_top=css.get(str(lcd_type), 'config_menu_margin_top')
+                           , menu2_width=css.get(str(lcd_type), 'config_menu2_width')
+                           , menu2_height=css.get(str(lcd_type), 'config_menu2_height')
+                           , menu2_margin_right=css.get(str(lcd_type), 'config_menu2_margin_right')
+                           , amostra_margin_left=css.get(str(lcd_type), 'config_amostra_margin_left')
+                           , config_size=css.get(str(lcd_type), 'config_title_size')
+                           , config_margin_left=css.get(str(lcd_type), 'config_title_margin_left')
+                           , config_margin_top=css.get(str(lcd_type), 'config_title_margin_top')
+                           , config_btn_dropbtn_width=css.get(str(lcd_type), 'config_btn_dropbtn_width')
+                           , config_btn_autoteste_margin_left=css.get(str(lcd_type), 'config_btn_autoteste_margin_left')
+                           , config_btn_autoteste_margin_top=css.get(str(lcd_type), 'config_btn_autoteste_margin_top')
+                           , config_btn_autoteste_width=css.get(str(lcd_type), 'config_btn_autoteste_width')
+                           , config_btn_historico_margin_left=css.get(str(lcd_type), 'config_btn_historico_margin_left')
+                           , config_btn_historico_margin_top=css.get(str(lcd_type), 'config_btn_historico_margin_top')
+                           , config_btn_historico_width=css.get(str(lcd_type), 'config_btn_historico_width')
+                           , config_btn_dropdown_margin_left=css.get(str(lcd_type), 'config_btn_dropdown_margin_left')
+                           , config_btn_dropdown_margin_top=css.get(str(lcd_type), 'config_btn_dropdown_margin_top')
+                           , config_btn_dropdown_width=css.get(str(lcd_type), 'config_btn_dropdown_width'))
+
+
+@app.route("/assistencia/sensors", methods=['GET', 'POST'])  # Pagina de configuracao
+def sensors():
+    config = configparser.ConfigParser()
+    config.read(confDir)
+    company = config.get('DEFAULT', 'company')
+    if request.method == 'POST':
+        company = request.form['company']
+        writeConf("DEFAULT", 'company', company)
+    css = configparser.ConfigParser()
+    css.read(cssDir)
+    try:
+        port = serial.Serial(porta, baudrate=115200, timeout=1)
+        while True:
+            port.write("07CHECK")
+            resposta = port.read(200)
+            if resposta == '':
+                print 'TIMEOUT'
+            else:
+                break
+    except Exception as e:
+        print("Erro' %s" % e)
+
+    return render_template("sensors.html", config=config, company=company, sensor=resposta
+                           , jumbotrom_h=css.get(str(lcd_type), 'all_jumbotrom_h')
+                           , jumbotrom_w=css.get(str(lcd_type), 'all_jumbotrom_w')
+                           , jumbotrom_margin_left=css.get(str(lcd_type), 'all_jumbotrom_margin_left')
+                           , jumbotrom_margin_top=css.get(str(lcd_type), 'all_jumbotrom_margin_top')
+                           , jumbotrom_padding=css.get(str(lcd_type), 'all_jumbotrom_padding')
+                           , html_h=css.get(str(lcd_type), 'all_html_h')
+                           , html_w=css.get(str(lcd_type), 'all_html_w')
+                           , menu_icon_size=css.get(str(lcd_type), 'config_menu_icon_size')
+                           , menu_width=css.get(str(lcd_type), 'config_menu_width')
+                           , menu_margin_top=css.get(str(lcd_type), 'config_menu_margin_top')
+                           , menu2_width=css.get(str(lcd_type), 'config_menu2_width')
+                           , menu2_height=css.get(str(lcd_type), 'config_menu2_height')
+                           , menu2_margin_right=css.get(str(lcd_type), 'config_menu2_margin_right')
+                           , amostra_margin_left=css.get(str(lcd_type), 'config_amostra_margin_left')
+                           , config_size=css.get(str(lcd_type), 'config_title_size')
+                           , config_margin_left=css.get(str(lcd_type), 'config_title_margin_left')
+                           , config_margin_top=css.get(str(lcd_type), 'config_title_margin_top')
+                           , config_btn_dropbtn_width=css.get(str(lcd_type), 'config_btn_dropbtn_width')
+                           , config_btn_autoteste_margin_left=css.get(str(lcd_type), 'config_btn_autoteste_margin_left')
+                           , config_btn_autoteste_margin_top=css.get(str(lcd_type), 'config_btn_autoteste_margin_top')
+                           , config_btn_autoteste_width=css.get(str(lcd_type), 'config_btn_autoteste_width')
+                           , config_btn_historico_margin_left=css.get(str(lcd_type), 'config_btn_historico_margin_left')
+                           , config_btn_historico_margin_top=css.get(str(lcd_type), 'config_btn_historico_margin_top')
+                           , config_btn_historico_width=css.get(str(lcd_type), 'config_btn_historico_width')
+                           , config_btn_dropdown_margin_left=css.get(str(lcd_type), 'config_btn_dropdown_margin_left')
+                           , config_btn_dropdown_margin_top=css.get(str(lcd_type), 'config_btn_dropdown_margin_top')
+                           , config_btn_dropdown_width=css.get(str(lcd_type), 'config_btn_dropdown_width'))
+
+
+@app.route("/private", methods=['GET', 'POST'])  # Pagina de configuracao
+def private():
+    global senha1
+    writeConf('DEFAULT', 'private', 'false')
+    from arquivos.private import token
+    config = configparser.ConfigParser()
+    config.read(confDir)
+    language = config.get('DEFAULT', 'LANG')
+    ph = config.get('DEFAULT', 'PH')
+    unit = config.get('DEFAULT', 'unitemp')
+    config.read(langDir)
+    config = config.get(language, 'config')
+    a = request.args.get('a', language, type=str)
+    key = request.args.get('key', 0, type=int)
+    senha = token()
+    nsCode = senha.gera(key)
+    print ' senha gerada ' + str(senha1)
+    if request.method == 'POST':
+        token = request.form['token']
+        print ' senha recebida ' + token
+        if token == str(senha1):
+            print "deu boa"
+            writeConf('DEFAULT', 'private', 'true')
+            return redirect(url_for('assistencia'))
+        else:
+            writeConf('DEFAULT', 'private', 'false')
+            print "deu ruim"
+            return redirect(url_for('private'))
+
+    if a == 'PT':
+        writeConf('DEFAULT', 'LANG', 'PT')
+        logger.info("Settings - Set language to PT")
+    elif a == 'EN':
+        writeConf('DEFAULT', 'LANG', 'EN')
+        logger.info("Settings - Set language to EN")
+
+    b = request.args.get('b', ph, type=int)
+
+    if b == 0:
+        writeConf('DEFAULT', 'PH', 'kg/hl')
+        logger.info("Settings - Set PH to kg/hl")
+    elif b == 1:
+        writeConf('DEFAULT', 'PH', 'lb/bu')
+        logger.info("Settings - Set PH to lb/bu")
+    elif b == 2:
+        writeConf('DEFAULT', 'PH', 'lb/A bu')
+        logger.info("Settings - Set PH to lb/A bu")
+    elif b == 3:
+        writeConf('DEFAULT', 'PH', 'lb/W bu')
+        logger.info("Settings - Set PH to lb/W bu")
+
+    c = request.args.get('c', unit, type=str)
+
+    if c == 'C':
+        writeConf('DEFAULT', 'unitemp', 'C')
+        logger.info("Settings - Set temperature of humidity to Celsius")
+    elif c == 'F':
+        writeConf('DEFAULT', 'unitemp', 'F')
+        logger.info("Settings - Set temperature of humidity to Fahrenheit")
+
+    css = configparser.ConfigParser()
+    css.read(cssDir)
+
+    return render_template("private.html", config=config
+                           , jumbotrom_h=css.get(str(lcd_type), 'all_jumbotrom_h')
+                           , jumbotrom_w=css.get(str(lcd_type), 'all_jumbotrom_w')
+                           , jumbotrom_margin_left=css.get(str(lcd_type), 'all_jumbotrom_margin_left')
+                           , jumbotrom_margin_top=css.get(str(lcd_type), 'all_jumbotrom_margin_top')
+                           , jumbotrom_padding=css.get(str(lcd_type), 'all_jumbotrom_padding')
+                           , html_h=css.get(str(lcd_type), 'all_html_h')
+                           , html_w=css.get(str(lcd_type), 'all_html_w')
+                           , menu_icon_size=css.get(str(lcd_type), 'config_menu_icon_size')
+                           , menu_width=css.get(str(lcd_type), 'config_menu_width')
+                           , menu_margin_top=css.get(str(lcd_type), 'config_menu_margin_top')
+                           , menu2_width=css.get(str(lcd_type), 'config_menu2_width')
+                           , menu2_height=css.get(str(lcd_type), 'config_menu2_height')
+                           , menu2_margin_right=css.get(str(lcd_type), 'config_menu2_margin_right')
+                           , amostra_margin_left=css.get(str(lcd_type), 'config_amostra_margin_left')
+                           , config_size=css.get(str(lcd_type), 'config_title_size')
+                           , config_margin_left=css.get(str(lcd_type), 'config_title_margin_left')
+                           , config_margin_top=css.get(str(lcd_type), 'config_title_margin_top')
+                           , config_btn_dropbtn_width=css.get(str(lcd_type), 'config_btn_dropbtn_width')
+                           , config_btn_autoteste_margin_left=css.get(str(lcd_type), 'config_btn_autoteste_margin_left')
+                           , config_btn_autoteste_margin_top=css.get(str(lcd_type), 'config_btn_autoteste_margin_top')
+                           , config_btn_autoteste_width=css.get(str(lcd_type), 'config_btn_autoteste_width')
+                           , config_btn_historico_margin_left=css.get(str(lcd_type), 'config_btn_historico_margin_left')
+                           , config_btn_historico_margin_top=css.get(str(lcd_type), 'config_btn_historico_margin_top')
+                           , config_btn_historico_width=css.get(str(lcd_type), 'config_btn_historico_width')
+                           , config_btn_dropdown_margin_left=css.get(str(lcd_type), 'config_btn_dropdown_margin_left')
+                           , config_btn_dropdown_margin_top=css.get(str(lcd_type), 'config_btn_dropdown_margin_top')
+                           , config_btn_dropdown_width=css.get(str(lcd_type), 'config_btn_dropdown_width')
+                           , code=nsCode)
+
+
 @app.route("/config")  # Pagina de configuracao
 def config():
-
     config = configparser.ConfigParser()
     config.read(confDir)
     language = config.get('DEFAULT', 'LANG')
@@ -906,7 +1226,6 @@ def config():
     css = configparser.ConfigParser()
     css.read(cssDir)
 
-
     return render_template("config.html", config=config
                            , jumbotrom_h=css.get(str(lcd_type), 'all_jumbotrom_h')
                            , jumbotrom_w=css.get(str(lcd_type), 'all_jumbotrom_w')
@@ -937,10 +1256,9 @@ def config():
                            , config_btn_dropdown_width=css.get(str(lcd_type), 'config_btn_dropdown_width'))
 
 
-@app.route('/selectcurvatop') # Pagina de medir
+@app.route('/selectcurvatop')  # Pagina de medir
 @login_required
 def getBasicinfoTop():
-
     writeConf('DEFAULT', 'first-time', 'NO')
     config = configparser.ConfigParser()
     config.read(confDir)
@@ -1030,7 +1348,7 @@ def getBasicinfoTop():
                            )
 
 
-@app.route('/selectcurva') # Pagina que seleciona a curva
+@app.route('/selectcurva')  # Pagina que seleciona a curva
 @login_required
 def getBasicinfo():
     config = configparser.ConfigParser()
@@ -1074,7 +1392,7 @@ def getBasicinfo():
     except ValueError:
         print 'id nao encontrado'
         # se a curva clicada e diferente do top 1
-    for i in range(0,5):
+    for i in range(0, 5):
         lastCurvaAux = lastCurva[i]
         gh = curvaFull[0]
         if lastCurvaAux[0] == curvaFull[0]:
@@ -1134,7 +1452,8 @@ def getBasicinfo():
                            , medir_info_size=css.get(str(lcd_type), 'medir_info_size')
                            )
 
-@app.route('/top') # Pagina que mostra as ultima curvas selecionadas
+
+@app.route('/top')  # Pagina que mostra as ultima curvas selecionadas
 @login_required
 def top():
     config = configparser.ConfigParser()
@@ -1231,8 +1550,7 @@ def top():
                            , top_list_group_item_padding=css.get(str(lcd_type), 'top_list_group_item_padding'))
 
 
-
-@app.route('/top/grupo') # Pagina que mostra os grupos de curvas
+@app.route('/top/grupo')  # Pagina que mostra os grupos de curvas
 @login_required
 def topGrupo():
     config = configparser.ConfigParser()
@@ -1278,7 +1596,7 @@ def topGrupo():
         elif lang == 'EN':
             firstname, secondname = nameSplit[1].split(',')
             realname = firstname + ' ' + secondname
-            nome.append(realname)   # pegar apenas o nome em ingles
+            nome.append(realname)  # pegar apenas o nome em ingles
 
         tempFull = ((curvaNome.split('<temp>'))[1].split('<temp>')[0])
         temp.append(tempFull.split(';'))
@@ -1310,19 +1628,19 @@ def topGrupo():
                            lencurva1=lenCurva1,
                            arroz=arroz, feijao=feijao, milho=milho, soja=soja, outro=outro, trigo=trigo,
                            girassol=girassol, custom=custom
-                           ,jumbotrom_h=css.get(str(lcd_type), 'all_jumbotrom_h')
-                           ,jumbotrom_w = css.get(str(lcd_type), 'all_jumbotrom_w')
-                           ,jumbotrom_margin_left=css.get(str(lcd_type), 'all_jumbotrom_margin_left')
-                           ,jumbotrom_margin_top=css.get(str(lcd_type), 'all_jumbotrom_margin_top')
-                           ,jumbotrom_padding=css.get(str(lcd_type), 'all_jumbotrom_padding')
-                           ,html_h = css.get(str(lcd_type), 'all_html_h')
-                           ,html_w = css.get(str(lcd_type), 'all_html_w')
-                           ,menu_icon_size=css.get(str(lcd_type), 'config_menu_icon_size')
-                           ,menu_width=css.get(str(lcd_type), 'config_menu_width')
-                           ,menu_margin_top=css.get(str(lcd_type), 'config_menu_margin_top'))
+                           , jumbotrom_h=css.get(str(lcd_type), 'all_jumbotrom_h')
+                           , jumbotrom_w=css.get(str(lcd_type), 'all_jumbotrom_w')
+                           , jumbotrom_margin_left=css.get(str(lcd_type), 'all_jumbotrom_margin_left')
+                           , jumbotrom_margin_top=css.get(str(lcd_type), 'all_jumbotrom_margin_top')
+                           , jumbotrom_padding=css.get(str(lcd_type), 'all_jumbotrom_padding')
+                           , html_h=css.get(str(lcd_type), 'all_html_h')
+                           , html_w=css.get(str(lcd_type), 'all_html_w')
+                           , menu_icon_size=css.get(str(lcd_type), 'config_menu_icon_size')
+                           , menu_width=css.get(str(lcd_type), 'config_menu_width')
+                           , menu_margin_top=css.get(str(lcd_type), 'config_menu_margin_top'))
 
 
-@app.route('/grupo/arroz') # Pagina que mostra as curvas do grupo arroz
+@app.route('/grupo/arroz')  # Pagina que mostra as curvas do grupo arroz
 @login_required
 def arroz():
     curvaFiltradas = listGroup('ARROZ')
@@ -1367,7 +1685,7 @@ def arroz():
         elif lang == 'EN':
             firstname, secondname = nameSplit[1].split(',')
             realname = firstname + ' ' + secondname
-            nome.append(realname)   # pegar apenas o nome em ingles
+            nome.append(realname)  # pegar apenas o nome em ingles
         tempFull = ((curvaNome.split('<temp>'))[1].split('<temp>')[0])
         temp.append(tempFull.split(';'))
         tempFormat.append(temp[index])
@@ -1388,16 +1706,16 @@ def arroz():
     return render_template('arroz.html', nome=nome, temp=temp, umidade=umidade, lencurva=lenCurva, arroz=arroz,
                            feijao=feijao, milho=milho, soja=soja, outro=outro, trigo=trigo, girassol=girassol,
                            custom=custom
-                           ,jumbotrom_h=css.get(str(lcd_type), 'all_jumbotrom_h')
-                           ,jumbotrom_w = css.get(str(lcd_type), 'all_jumbotrom_w')
-                           ,jumbotrom_margin_left=css.get(str(lcd_type), 'all_jumbotrom_margin_left')
-                           ,jumbotrom_margin_top=css.get(str(lcd_type), 'all_jumbotrom_margin_top')
-                           ,jumbotrom_padding=css.get(str(lcd_type), 'all_jumbotrom_padding')
-                           ,html_h = css.get(str(lcd_type), 'all_html_h')
-                           ,html_w = css.get(str(lcd_type), 'all_html_w')
-                           ,menu_icon_size=css.get(str(lcd_type), 'config_menu_icon_size')
-                           ,menu_width=css.get(str(lcd_type), 'config_menu_width')
-                           ,menu_margin_top=css.get(str(lcd_type), 'config_menu_margin_top'))
+                           , jumbotrom_h=css.get(str(lcd_type), 'all_jumbotrom_h')
+                           , jumbotrom_w=css.get(str(lcd_type), 'all_jumbotrom_w')
+                           , jumbotrom_margin_left=css.get(str(lcd_type), 'all_jumbotrom_margin_left')
+                           , jumbotrom_margin_top=css.get(str(lcd_type), 'all_jumbotrom_margin_top')
+                           , jumbotrom_padding=css.get(str(lcd_type), 'all_jumbotrom_padding')
+                           , html_h=css.get(str(lcd_type), 'all_html_h')
+                           , html_w=css.get(str(lcd_type), 'all_html_w')
+                           , menu_icon_size=css.get(str(lcd_type), 'config_menu_icon_size')
+                           , menu_width=css.get(str(lcd_type), 'config_menu_width')
+                           , menu_margin_top=css.get(str(lcd_type), 'config_menu_margin_top'))
 
 
 @app.route('/grupo/feijao')  # Pagina que mostra as curvas do grupo Feijao
@@ -1445,7 +1763,7 @@ def feijao():
         elif lang == 'EN':
             firstname, secondname = nameSplit[1].split(',')
             realname = firstname + ' ' + secondname
-            nome.append(realname)   # pegar apenas o nome em ingles
+            nome.append(realname)  # pegar apenas o nome em ingles
 
         tempFull = ((curvaNome.split('<temp>'))[1].split('<temp>')[0])
         temp.append(tempFull.split(';'))
@@ -1477,7 +1795,8 @@ def feijao():
                            , menu_width=css.get(str(lcd_type), 'config_menu_width')
                            , menu_margin_top=css.get(str(lcd_type), 'config_menu_margin_top'))
 
-@app.route('/grupo/milho') # Pagina que mostra as curvas do grupo Milho
+
+@app.route('/grupo/milho')  # Pagina que mostra as curvas do grupo Milho
 @login_required
 def milho():
     config = configparser.ConfigParser()
@@ -1521,7 +1840,7 @@ def milho():
         elif lang == 'EN':
             firstname, secondname = nameSplit[1].split(',')
             realname = firstname + ' ' + secondname
-            nome.append(realname)   # pegar apenas o nome em ingles
+            nome.append(realname)  # pegar apenas o nome em ingles
 
         tempFull = ((curvaNome.split('<temp>'))[1].split('<temp>')[0])
         temp.append(tempFull.split(';'))
@@ -1554,7 +1873,7 @@ def milho():
                            , menu_margin_top=css.get(str(lcd_type), 'config_menu_margin_top'))
 
 
-@app.route('/grupo/soja') # Pagina que mostra as curvas do grupo Soja
+@app.route('/grupo/soja')  # Pagina que mostra as curvas do grupo Soja
 @login_required
 def soja():
     config = configparser.ConfigParser()
@@ -1598,7 +1917,7 @@ def soja():
         elif lang == 'EN':
             firstname, secondname = nameSplit[1].split(',')
             realname = firstname + ' ' + secondname
-            nome.append(realname)   # pegar apenas o nome em ingles
+            nome.append(realname)  # pegar apenas o nome em ingles
 
         tempFull = ((curvaNome.split('<temp>'))[1].split('<temp>')[0])
         temp.append(tempFull.split(';'))
@@ -1631,7 +1950,7 @@ def soja():
                            , menu_margin_top=css.get(str(lcd_type), 'config_menu_margin_top'))
 
 
-@app.route('/grupo/outros') # Pagina que mostra as curvas do grupo Outros
+@app.route('/grupo/outros')  # Pagina que mostra as curvas do grupo Outros
 @login_required
 def outros():
     config = configparser.ConfigParser()
@@ -1675,7 +1994,7 @@ def outros():
         elif lang == 'EN':
             firstname, secondname = nameSplit[1].split(',')
             realname = firstname + ' ' + secondname
-            nome.append(realname)   # pegar apenas o nome em ingles
+            nome.append(realname)  # pegar apenas o nome em ingles
 
         tempFull = ((curvaNome.split('<temp>'))[1].split('<temp>')[0])
         temp.append(tempFull.split(';'))
@@ -1708,7 +2027,7 @@ def outros():
                            , menu_margin_top=css.get(str(lcd_type), 'config_menu_margin_top'))
 
 
-@app.route('/grupo/trigo') # Pagina que mostra as curvas do grupo Trigo
+@app.route('/grupo/trigo')  # Pagina que mostra as curvas do grupo Trigo
 @login_required
 def trigo():
     config = configparser.ConfigParser()
@@ -1752,7 +2071,7 @@ def trigo():
         elif lang == 'EN':
             firstname, secondname = nameSplit[1].split(',')
             realname = firstname + ' ' + secondname
-            nome.append(realname)   # pegar apenas o nome em ingles
+            nome.append(realname)  # pegar apenas o nome em ingles
 
         tempFull = ((curvaNome.split('<temp>'))[1].split('<temp>')[0])
         temp.append(tempFull.split(';'))
@@ -1785,7 +2104,7 @@ def trigo():
                            , menu_margin_top=css.get(str(lcd_type), 'config_menu_margin_top'))
 
 
-@app.route('/grupo/girassol') # Pagina que mostra as curvas do grupo Girassol
+@app.route('/grupo/girassol')  # Pagina que mostra as curvas do grupo Girassol
 @login_required
 def girassol():
     config = configparser.ConfigParser()
@@ -1829,7 +2148,7 @@ def girassol():
         elif lang == 'EN':
             firstname, secondname = nameSplit[1].split(',')
             realname = firstname + ' ' + secondname
-            nome.append(realname)   # pegar apenas o nome em ingles
+            nome.append(realname)  # pegar apenas o nome em ingles
 
         tempFull = ((curvaNome.split('<temp>'))[1].split('<temp>')[0])
         temp.append(tempFull.split(';'))
@@ -1873,4 +2192,3 @@ if __name__ == '__main__':
     logger.info("Server Start")
     http_server = WSGIServer(('0.0.0.0', 8080), app)
     http_server.serve_forever()
-

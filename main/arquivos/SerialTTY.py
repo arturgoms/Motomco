@@ -153,5 +153,9 @@ class calibra:
             print("Erro' %s" % e)
 
 if __name__ == '__main__':
-    a = getHx('07SHAF1')
+    a = getHx('07PESO1')
     print a
+    b = getOsc('07FREQV')
+    print b
+    c = getOsc('07TEMPA')
+    print c

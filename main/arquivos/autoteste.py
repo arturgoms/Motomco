@@ -7,9 +7,9 @@ __author__ = ["Artur Gomes", "github.com/arturgoms"]
 import sys
 reload(sys)
 sys.setdefaultencoding("utf-8")
-from arquivos.umidade import *
-from arquivos.jsonHandler import historic, cloud
-from arquivos.rwconf import writeConf
+from umidade import *
+from jsonHandler import historic, cloud
+from rwconf import writeConf
 import logging
 import platform
 import ctypes

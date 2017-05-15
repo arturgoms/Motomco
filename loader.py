@@ -9,6 +9,7 @@ from flask import redirect
 from flask import render_template
 from flask import request
 from flask import url_for
+import subprocess
 from gevent.pywsgi import WSGIServer
 import zipfile
 import os
@@ -20,7 +21,7 @@ cssDir = 'css.ini'
 lcd_type = '5'
 windows = 'COM4'
 linux = '/dev/ttyUSB0'
-porta = linux
+porta = windows
 app = Flask(__name__)
 @app.route("/")
 def index():
@@ -162,6 +163,8 @@ def password():
 
 @app.route('/atualizar')
 def atualizar():
+    versaoMBSplit = 0
+    versaoMB = ""
     try:
         port = serial.Serial(porta, baudrate=115200, timeout=1)
         while True:
@@ -501,7 +504,8 @@ def atualizar():
 def seriouslykill():
     import subprocess
     print 'Chamando o servidor'
-    subprocess.call("sudo python main/home.py &", shell=True)
+    #subprocess.call("sudo python main/home.py &", shell=True)  # linux
+    subprocess.call("c:/Python27/python.exe main/home.py &", shell=True) # windows
     time.sleep(2)
     return str(1)
 
@@ -525,5 +529,6 @@ def verifConf(): # verifica se existe o arquivo conf.ini, se nao tiver ele cria
         return 1
 
 if __name__ == '__main__':
-    verifConf()
-    app.run(host="0.0.0.0")
+    #verifConf()
+    #app.run(host="0.0.0.0")
+    subprocess.call("c:/Python27/python.exe main/home.py &", shell=True)

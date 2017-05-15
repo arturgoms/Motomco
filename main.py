@@ -1,10 +1,14 @@
 __author__ = ["Artur Gomes", "github.com/arturgoms"]
 import gi
+
 gi.require_version('WebKit2', '4.0')
 gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk, GLib
 from gi.repository import WebKit2
 from threading import Thread
+import cairo
+import time
+import subprocess
 
 Gtk.rc_parse_string("""style "hide-scrollbar-style"
 {
@@ -26,22 +30,26 @@ widget_class "*Scrollbar" style "hide-scrollbar-style"
 widget_class "*ScrolledWindow" style "hide-scrollbar-style"
 """)
 
-class  ReloadView:
+
+class ReloadView:
     def __init__(self):
-        import subprocess
-        print 'Chamando o servidor'
-        subprocess.call("sudo python loader.py &", shell=True)
+        # subprocess.call("sudo python loader.py &", shell=True)
+        # time.sleep(3)
         window = Gtk.Window()
-        window.set_size_request(800, 472)
+        window.set_size_request(800, 475)
         window.set_position(Gtk.WindowPosition.CENTER)
         window.set_decorated(False)
         window.set_resizable(False)
+        window.fullscreen()
+
         window.set_icon_from_file('/home/pi/Desktop/loader/static/img/logo2.png')
         self.view = WebKit2.WebView()
         window.connect("realize", self.realize_cb)
-        self.view.load_uri('http://127.0.0.1:5000')
+        self.view.load_uri('http://localhost:5000')
         window.add(self.view)
         window.show_all()
+
+    # window.get_window().set_cursor(cursor)
 
     def realize_cb(self, widget):
         pixmap = Gtk.gdk.Pixmap(None, 1, 1, 1)
@@ -49,7 +57,7 @@ class  ReloadView:
         cursor = Gtk.gdk.Cursor(pixmap, pixmap, color, color, 0, 0)
         widget.window.set_cursor(cursor)
 
+
 if __name__ == "__main__":
     ReloadView()
     Gtk.main()
-

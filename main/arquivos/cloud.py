@@ -1,7 +1,7 @@
 import json
 import os
 import urllib2
-from arquivos.rwconf import *
+from rwconf import *
 import ast
 import configparser
 import subprocess

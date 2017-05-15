@@ -3,7 +3,7 @@ __author__ = ["Artur Gomes", "github.com/arturgoms"]
 import configparser
 import json
 from time import gmtime, strftime
-from arquivos.SerialTTY import gps
+from SerialTTY import gps
 from flask import session
 import json
 import logging

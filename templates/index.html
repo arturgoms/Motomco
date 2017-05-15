@@ -53,9 +53,7 @@
                          $.get('/seriouslykill', function(response, status, xhr) {
                                 response.async = false;
                                 if (response == 1) {
-
                                     window.location.href = "http://localhost:8080/";
-
                                 }
                             });
                     }else if (response == 0){
@@ -63,18 +61,11 @@
                          $.get('/seriouslykill', function(response, status, xhr) {
                                 response.async = false;
                                 if (response == 1) {
-
-                                    
                                     window.location.href = "http://localhost:8080/";
-
-
                                 }
                             });
-
                     }
                 });
-
-
             }else if (response == 0){
 
                 window.location.replace("/connection");

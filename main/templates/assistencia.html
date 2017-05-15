@@ -283,40 +283,36 @@
                     <br>
                         <center><a href="/selectcurvatop?a=0"><button class="btn btn-dark-green"><img src="../static/img/medir.png" width="{{ menu_icon_size }}" height="{{ menu_icon_size }}"/></button></a></center>
                         <center><a href="/top">             <button class="btn btn-dark-green"><img src="../static/img/search.png" width="{{ menu_icon_size }}" height="{{ menu_icon_size }}"/></button></a></center>
-                        <center><a href="/config">            <button class="btn btn-dark-green active"><img src="../static/img/config.png" width="{{ menu_icon_size }}" height="{{ menu_icon_size }}"/></button></a></center>
+                        <center><a href="/config">            <button class="btn btn-dark-green active"><img src="../static/img/back.png" width="{{ menu_icon_size }}" height="{{ menu_icon_size }}"/></button></a></center>
                         <span id="result"></span>
 
                     </div>
 
 
             <div class="card-block amostra">
-            <center><h{{ config_size }} style="margin-left: {{ config_margin_left }}px; margin-top: {{ config_margin_top }}px" color="#FFFFFF" class="animated fadeIn"><p>{{ config }}</p></h{{ config_size }}></center>
-            <p>
-               <a href="/private"> <button  style="margin-left: {{ config_btn_autoteste_margin_left }}px; margin-top: {{ config_btn_autoteste_margin_top }}px; width: {{ config_btn_autoteste_width }}px" class="btn btn-drak-green dropbtn">Assistência</button></a>
-               <a href="/historico"><button style="margin-top:{{ config_btn_historico_margin_top }}px; margin-left: {{ config_btn_historico_margin_left }}px; width: {{ config_btn_historico_width }}px" class="btn btn-drak-green dropbtn">Histórico</button></a>
+            <center><h{{ config_size }} style="margin-left: {{ config_margin_left }}px; margin-top: {{ config_margin_top }}px" color="#FFFFFF" class="animated fadeIn"><p>Assistencia</p></h{{ config_size }}></center>
+            <p><div>
+                    <a href="/assistencia/company"> <button  style="margin-left: 15px; margin-top: 10px; width: 150px" class="btn btn-drak-green dropbtn">Company</button></a>
+                    <a href="/assistencia/sensors"><button style="margin-left: 15px; margin-top: 10px; width: 150px" class="btn btn-drak-green dropbtn">Sensors</button></a>
+               </div>
+               <div>
+                    <a href="/assistencia/frequency"> <button  style="margin-left: 15px; margin-top: -10px; width: 150px" class="btn btn-drak-green dropbtn">Frequency</button></a>
+                    <a href="/assistencia/summary"><button style="margin-left: 15px; margin-top: -10px; width: 150px" class="btn btn-drak-green dropbtn">Summary</button></a>
+               </div>
+               <div>
+                    <a href="/assistencia/date"> <button  style="margin-left: 15px; margin-top: -10px; width: 150px" class="btn btn-drak-green dropbtn">Date/Time</button></a>
+                    <a href="/assistencia/charts"><button style="margin-left: 15px; margin-top: -10px; width: 150px" class="btn btn-drak-green dropbtn">Charts</button></a>
+               </div>
+               <div>
+                   <a href="/assistencia/scale"> <button  style="margin-left: 15px; margin-top: -10px; width: 150px" class="btn btn-drak-green dropbtn">Scale</button></a>
+                   <a href="/assistencia/install"><button style="margin-left: 15px; margin-top: -10px; width: 150px" class="btn btn-drak-green dropbtn">Install Program</button></a>
+               <div>
+                   <a href="/assistencia/clear"> <button  style="margin-left: 15px; margin-top: -10px; width: 150px" class="btn btn-drak-green dropbtn">Clear</button></a>
+                   <a href="/assistencia/serial"><button style="margin-left: 15px; margin-top: -10px; width: 150px" class="btn btn-drak-green dropbtn">Serial Number</button></a>
+               <div>
+                   <a href="/assistencia/linux"><button style="margin-left: 15px; margin-top: -10px; width: 150px" class="btn btn-drak-green dropbtn">Linux access</button></a>
 
-
-
-                <div style="margin-left: {{ config_btn_dropdown_margin_left }}px;margin-top: {{ config_btn_dropdown_margin_top }}px; width: {{ config_btn_dropdown_width }}px" class="dropdown">
-                  <button onclick="myFunction()" class="btn btn-drak-green dropdown-toggle dropbtn">Language</button>
-                  <div id="myDropdown" class="dropdown-content">
-                    <a id="pt">Português</a>
-                    <a id="en">English</a>
-                  </div>
-                  <button onclick="myFunctionPH()" class="btn btn-drak-green dropdown-toggle dropbtn">PH</button>
-                  <div id="myDropdownPH" class="dropdown-content">
-                    <a id="ph0">kg/hl</a>
-                    <a id="ph1">lb/bu</a>
-                    <a id="ph2">lb/A bu</a>
-                    <a id="ph3">lb/W bu</a>
-                </div><br>
-                <button onclick="myFunctionunitemp()" class="btn btn-drak-green dropdown-toggle dropbtn">Unidade da Temperatura</button>
-                  <div id="myDropdownunitemp" class="dropdown-content">
-                    <a id="C">Celsius</a>
-                    <a id="F">Fahrenheit</a>
-                </div>
-                <a href="/logout"><button class="btn btn-drak-green dropdown-toggle dropbtn">Logout</button></a>
-                </div></center>
+               </div></center>
             </div>
 
 

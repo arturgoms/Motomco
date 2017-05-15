@@ -13,7 +13,7 @@ def get():
 
 def getSerial(input):
     try:
-        port = serial.Serial('COM3', baudrate=115200, timeout=100)
+        port = serial.Serial('COM4', baudrate=115200, timeout=1)
         while True:
             port.write(input)
 
@@ -44,5 +44,11 @@ def readOsc(str):
     return(respostaF)
 
 if __name__ == '__main__':
-    a = getSerial("07FREQV")
-    print a
+    port = serial.Serial('COM4', baudrate=115200, timeout=1)
+    while True:
+        port.write("07CHECK")
+        resposta = port.read(200)
+        if resposta == '':
+            print 'TIMEOUT'
+        else:
+            print resposta

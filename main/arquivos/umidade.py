@@ -4,10 +4,10 @@ __author__ = ["Artur Gomes", "github.com/arturgoms"]
 import sys
 reload(sys)
 sys.setdefaultencoding("utf-8")
-from arquivos.curvasHandler import getBasicInfoTop
+from curvasHandler import getBasicInfoTop
 from getSerial import readOsc, readHx, getSerial, getBalanca, getTeste
 from SerialTTY import getOsc, getHx
-from arquivos.rwconf import *
+from rwconf import *
 from math import sqrt
 import configparser
 config = configparser.ConfigParser()
@@ -16,10 +16,10 @@ std_dial = []
 eqp_freq = []
 
 calc1 = 0
-tabDir = 'arquivos/tab.txt'
-confDir = 'conf.ini'
-langDir = 'lang.ini'
-topDir = 'arquivos/top.txt'
+tabDir = 'main/arquivos/tab.txt'
+confDir = 'main/conf.ini'
+langDir = 'main/lang.ini'
+topDir = 'main/arquivos/top.txt'
 
 def calcUmidade(temp, dial): # dial corrigido
 

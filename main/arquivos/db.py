@@ -1,7 +1,7 @@
 import MySQLdb
 
 from flask import session
-from arquivos.rwconf import writeConf
+from rwconf import writeConf
 from MySQLdb import escape_string as thwart
 import configparser
 config = configparser.ConfigParser()
