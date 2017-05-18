@@ -114,58 +114,7 @@
     {% extends "layout.html" %}
     {% block body %}
     <script type="text/javascript">
-    var running = 1;
-        function processData(data) {
-          // taking care of data
-        }
 
-        function handler() {
-          if(this.status == 200 &&
-            this.responseXML != null &&
-            this.responseXML.getElementById('test').textContent) {
-            // success!
-            processData(this.responseXML.getElementById('test').textContent);
-          } else {
-            // something went wrong
-          }
-        }
-        function run() {
-            sensor();
-              function sensor() {
-                setTimeout(function() {
-                    var client = new XMLHttpRequest();
-                    client.onload = handler;
-                    client.open("GET", "/sensors/request", false);
-                    client.send();
-                    var data = client.responseText;
-                    var dataStr = data.split(",");
-                    var peso = dataStr[0];
-                    var tempgr = dataStr[1];
-                    var tempar = dataStr[2];
-                    var tempeq = dataStr[3];
-                    var freq = dataStr[4];
-                    var acx = dataStr[5];
-                    var acy = dataStr[6];
-                    var acz = dataStr[7];
-
-                    document.getElementById("peso").innerHTML = peso;
-                    document.getElementById("tempgr").innerHTML = tempgr;
-                    document.getElementById("tempar").innerHTML = tempar;
-                    document.getElementById("tempeq").innerHTML = tempeq;
-                    document.getElementById("freq").innerHTML = freq;
-                    document.getElementById("acx").innerHTML = acx;
-                    document.getElementById("acy").innerHTML = acy;
-                    document.getElementById("acz").innerHTML = acz;
-                    document.getElementById("run").innerHTML = running;
-                    running++;
-                    sensor();
-              }, 200);
-              }
-            }
-         $(document).ready(function() {
-
-            run();
-         });
     </script>
     <!-- Title -->
     <title>Chip Welcome</title>
@@ -173,44 +122,37 @@
     <body onselectstart='return false' ondragstart='return false'>
 
 
-                <div class="jumbotron ">
+        <div class="jumbotron ">
 
                     <div class="menu">
-                     <p>
-                    <br>
+                        <p>
+                         <br>
                         <center><a href="/selectcurvatop?a=0"><button class="btn btn-dark-green"><img src="../static/img/medir.png" width="{{ menu_icon_size }}" height="{{ menu_icon_size }}"/></button></a></center>
                         <center><a href="/top">             <button class="btn btn-dark-green"><img src="../static/img/search.png" width="{{ menu_icon_size }}" height="{{ menu_icon_size }}"/></button></a></center>
-                        <center><a href="/assistencia">            <button class="btn btn-dark-green active"><img src="../static/img/back.png" width="{{ menu_icon_size }}" height="{{ menu_icon_size }}"/></button></a></center>
+                        <center><a href="/assistencia/frequency">            <button class="btn btn-dark-green active"><img src="../static/img/back.png" width="{{ menu_icon_size }}" height="{{ menu_icon_size }}"/></button></a></center>
                         <span id="result"></span>
-
                     </div>
 
 
             <div class="card-block amostra">
-            <center><h{{ config_size }} style="margin-left: {{ config_margin_left }}px; margin-top: {{ config_margin_top }}px" color="#FFFFFF" class="animated fadeIn"><p>Sensors</p></h{{ config_size }}></center>
+            <center><h{{ config_size }} style="margin-left: {{ config_margin_left }}px; margin-top: {{ config_margin_top }}px" color="#FFFFFF" class="animated fadeIn"><p>Table Parameters</p></h{{ config_size }}></center>
+            <p><h4>Frequência atual: {{ saved }}</h4>
+                <h4>Frequência Nova: {{ new }}</h4>
             </div>
 
-                <div style="margin-top: -380px; margin-left: 250px" id="sensors">
+            </div>
 
-                    <font style="margin-left: -310px; margin-top: 10px;"  size="5">Peso: <b id="peso" >0</b> g</font><br>
-                    <font style="margin-left: -310px; margin-top: 10px;"  size="5">Temperatura Copo: <b id="tempgr" >0</b>°C</font><br>
-                    <font style="margin-left: -310px; margin-top: 10px;"  size="5">Temperatura Ar: <b id="tempar" >0</b>°C</font><br>
-                    <font style="margin-left: -310px; margin-top: 10px;"  size="5">Temperatura Equip.: <b id="tempeq" >0</b>°C</font><br>
-                    <font style="margin-left: -310px; margin-top: 10px;"  size="5">Frequencia Vazio: <b id="freq" >0</b></font><br>
-                    <font style="margin-left: -310px; margin-top: 10px;"  size="5">Acelerometro X: <b id="acx" >0</b></font><br>
-                    <font style="margin-left: -310px; margin-top: 10px;"  size="5">Acelerometro Y:<b id="acy" >0</b></font><br>
-                    <font style="margin-left: -310px; margin-top: 10px;"  size="5">Acelerometro Z: <b id="acz" >0</b></font><br>
-                    <font style="margin-left: -310px; margin-top: 10px;"  size="5">Running Times: <b id="run" >0</b></font><br>
-                    <!--
-                    <p>Frequencia Vazio: {{ freqV }}</p>
-                    <p>Acelerometro X: {{ acX }}</p>
-                    <p>Acelerometro Y: {{ acY }}</p>
-                    <p>Acelerometro Z: {{ acZ }}</p>-->
+                <div style="margin-top: -350px; margin-left: 250px">
+                      <form action="" method="post">
+                        <input style="width: 200px" id="text" type="text"  name="freqvnew">
+                        <input class="btn btn-primary btn-dark-green" type="submit" value="Validate">
+                      </form>
                 </div>
             </div>
+            </div>
 
 
-</div>
+        </div>
 
         <!-- {% endblock %}-->
 

@@ -43,6 +43,7 @@ langDir = 'main/lang.ini'
 topDir = 'main/arquivos/top.txt'
 cloudDir = 'main/arquivos/cloud.json'
 cssDir = 'main/arquivos/css.ini'
+tableDir = 'main/arquivos/tab.txt'
 
 windows = 'COM4'
 linux = '/dev/ttyUSB0'
@@ -754,11 +755,11 @@ def result():
     tempa = 0
     config = configparser.ConfigParser()
     config.read(confDir)
+    freqv = config.get('DEFAULT', 'freqv')
     lang = config.get('DEFAULT', 'LANG')
     config.read(langDir)
     resultado = config.get(lang, 'resultado')
     unitemp = 'C'
-    freqv = 10926
     a = request.args.get('a', 0, type=int)
     curva = getBasicInfoTop(a)
     nome = curva[1]
@@ -1034,6 +1035,39 @@ def company():
                            , config_btn_dropdown_margin_top=css.get(str(lcd_type), 'config_btn_dropdown_margin_top')
                            , config_btn_dropdown_width=css.get(str(lcd_type), 'config_btn_dropdown_width'))
 
+@app.route("/sensors/request")
+def sensorsRequest():
+    try:
+        port = serial.Serial(porta, baudrate=115200, timeout=1)
+        while True:
+            port.write("07CHECK")
+            resposta = port.read(200)
+            if resposta == '':
+                print 'TIMEOUT'
+            else:
+                sensores = resposta.split('split')
+                sensores = sensores[2]
+                sensores = sensores.split('|')
+                peso = sensores[0].split(':')
+                peso = peso[1]
+                tempEQ = sensores[1].split(':')
+                tempEQ = tempEQ[1]
+                tempAR = sensores[2].split(':')
+                tempAR = tempAR[1]
+                tempGR = sensores[3].split(':')
+                tempGR = tempGR[1]
+                freqV = sensores[4].split(':')
+                freqV = freqV[1]
+                acX = sensores[5].split(':')
+                acX = acX[1]
+                acY = sensores[6].split(':')
+                acY = acY[1]
+                acZ = sensores[7].split(':')
+                acZ = acZ[1]
+                return str(peso + ',' + tempEQ + ',' + tempAR + ',' + tempGR + ',' + freqV + ',' + acX + ',' + acY + ',' + acZ + ',' )
+                break
+    except Exception as e:
+        return ("Erro' %s" % e)
 
 @app.route("/assistencia/sensors", methods=['GET', 'POST'])  # Pagina de configuracao
 def sensors():
@@ -1045,19 +1079,7 @@ def sensors():
         writeConf("DEFAULT", 'company', company)
     css = configparser.ConfigParser()
     css.read(cssDir)
-    try:
-        port = serial.Serial(porta, baudrate=115200, timeout=1)
-        while True:
-            port.write("07CHECK")
-            resposta = port.read(200)
-            if resposta == '':
-                print 'TIMEOUT'
-            else:
-                break
-    except Exception as e:
-        print("Erro' %s" % e)
-
-    return render_template("sensors.html", config=config, company=company, sensor=resposta
+    return render_template("sensors.html", config=config, company=company
                            , jumbotrom_h=css.get(str(lcd_type), 'all_jumbotrom_h')
                            , jumbotrom_w=css.get(str(lcd_type), 'all_jumbotrom_w')
                            , jumbotrom_margin_left=css.get(str(lcd_type), 'all_jumbotrom_margin_left')
@@ -1086,6 +1108,140 @@ def sensors():
                            , config_btn_dropdown_margin_top=css.get(str(lcd_type), 'config_btn_dropdown_margin_top')
                            , config_btn_dropdown_width=css.get(str(lcd_type), 'config_btn_dropdown_width'))
 
+
+@app.route("/assistencia/frequency", methods=['GET', 'POST'])  # Pagina de configuracao
+def frequency():
+    config = configparser.ConfigParser()
+    config.read(confDir)
+    company = config.get('DEFAULT', 'company')
+    if request.method == 'POST':
+        company = request.form['company']
+        writeConf("DEFAULT", 'company', company)
+    css = configparser.ConfigParser()
+    css.read(cssDir)
+    return render_template("frequency.html", config=config, company=company
+                           , jumbotrom_h=css.get(str(lcd_type), 'all_jumbotrom_h')
+                           , jumbotrom_w=css.get(str(lcd_type), 'all_jumbotrom_w')
+                           , jumbotrom_margin_left=css.get(str(lcd_type), 'all_jumbotrom_margin_left')
+                           , jumbotrom_margin_top=css.get(str(lcd_type), 'all_jumbotrom_margin_top')
+                           , jumbotrom_padding=css.get(str(lcd_type), 'all_jumbotrom_padding')
+                           , html_h=css.get(str(lcd_type), 'all_html_h')
+                           , html_w=css.get(str(lcd_type), 'all_html_w')
+                           , menu_icon_size=css.get(str(lcd_type), 'config_menu_icon_size')
+                           , menu_width=css.get(str(lcd_type), 'config_menu_width')
+                           , menu_margin_top=css.get(str(lcd_type), 'config_menu_margin_top')
+                           , menu2_width=css.get(str(lcd_type), 'config_menu2_width')
+                           , menu2_height=css.get(str(lcd_type), 'config_menu2_height')
+                           , menu2_margin_right=css.get(str(lcd_type), 'config_menu2_margin_right')
+                           , amostra_margin_left=css.get(str(lcd_type), 'config_amostra_margin_left')
+                           , config_size=css.get(str(lcd_type), 'config_title_size')
+                           , config_margin_left=css.get(str(lcd_type), 'config_title_margin_left')
+                           , config_margin_top=css.get(str(lcd_type), 'config_title_margin_top')
+                           , config_btn_dropbtn_width=css.get(str(lcd_type), 'config_btn_dropbtn_width')
+                           , config_btn_autoteste_margin_left=css.get(str(lcd_type), 'config_btn_autoteste_margin_left')
+                           , config_btn_autoteste_margin_top=css.get(str(lcd_type), 'config_btn_autoteste_margin_top')
+                           , config_btn_autoteste_width=css.get(str(lcd_type), 'config_btn_autoteste_width')
+                           , config_btn_historico_margin_left=css.get(str(lcd_type), 'config_btn_historico_margin_left')
+                           , config_btn_historico_margin_top=css.get(str(lcd_type), 'config_btn_historico_margin_top')
+                           , config_btn_historico_width=css.get(str(lcd_type), 'config_btn_historico_width')
+                           , config_btn_dropdown_margin_left=css.get(str(lcd_type), 'config_btn_dropdown_margin_left')
+                           , config_btn_dropdown_margin_top=css.get(str(lcd_type), 'config_btn_dropdown_margin_top')
+                           , config_btn_dropdown_width=css.get(str(lcd_type), 'config_btn_dropdown_width'))
+
+
+@app.route("/assistencia/table")  # Pagina de configuracao
+def table():
+    config = configparser.ConfigParser()
+    config.read(confDir)
+    tab = open(tableDir, 'r')
+    tablePar = []
+    for parameters in tab:
+        tablePar.append(parameters)
+    tableSplit = tablePar[0].split(';')
+    css = configparser.ConfigParser()
+    css.read(cssDir)
+    return render_template("table.html", config=config, table=tableSplit
+                           , jumbotrom_h=css.get(str(lcd_type), 'all_jumbotrom_h')
+                           , jumbotrom_w=css.get(str(lcd_type), 'all_jumbotrom_w')
+                           , jumbotrom_margin_left=css.get(str(lcd_type), 'all_jumbotrom_margin_left')
+                           , jumbotrom_margin_top=css.get(str(lcd_type), 'all_jumbotrom_margin_top')
+                           , jumbotrom_padding=css.get(str(lcd_type), 'all_jumbotrom_padding')
+                           , html_h=css.get(str(lcd_type), 'all_html_h')
+                           , html_w=css.get(str(lcd_type), 'all_html_w')
+                           , menu_icon_size=css.get(str(lcd_type), 'config_menu_icon_size')
+                           , menu_width=css.get(str(lcd_type), 'config_menu_width')
+                           , menu_margin_top=css.get(str(lcd_type), 'config_menu_margin_top')
+                           , menu2_width=css.get(str(lcd_type), 'config_menu2_width')
+                           , menu2_height=css.get(str(lcd_type), 'config_menu2_height')
+                           , menu2_margin_right=css.get(str(lcd_type), 'config_menu2_margin_right')
+                           , amostra_margin_left=css.get(str(lcd_type), 'config_amostra_margin_left')
+                           , config_size=css.get(str(lcd_type), 'config_title_size')
+                           , config_margin_left=css.get(str(lcd_type), 'config_title_margin_left')
+                           , config_margin_top=css.get(str(lcd_type), 'config_title_margin_top')
+                           , config_btn_dropbtn_width=css.get(str(lcd_type), 'config_btn_dropbtn_width')
+                           , config_btn_autoteste_margin_left=css.get(str(lcd_type), 'config_btn_autoteste_margin_left')
+                           , config_btn_autoteste_margin_top=css.get(str(lcd_type), 'config_btn_autoteste_margin_top')
+                           , config_btn_autoteste_width=css.get(str(lcd_type), 'config_btn_autoteste_width')
+                           , config_btn_historico_margin_left=css.get(str(lcd_type), 'config_btn_historico_margin_left')
+                           , config_btn_historico_margin_top=css.get(str(lcd_type), 'config_btn_historico_margin_top')
+                           , config_btn_historico_width=css.get(str(lcd_type), 'config_btn_historico_width')
+                           , config_btn_dropdown_margin_left=css.get(str(lcd_type), 'config_btn_dropdown_margin_left')
+                           , config_btn_dropdown_margin_top=css.get(str(lcd_type), 'config_btn_dropdown_margin_top')
+                           , config_btn_dropdown_width=css.get(str(lcd_type), 'config_btn_dropdown_width'))
+
+
+@app.route("/assistencia/empty", methods=['GET', 'POST'])  # Pagina de configuracao
+def empty():
+    config = configparser.ConfigParser()
+    config.read(confDir)
+    saved = config.get('DEFAULT', 'freqv')
+    freq = 0
+    try:
+        port = serial.Serial(porta, baudrate=115200, timeout=1)
+        while True:
+            port.write("07FREQV")
+            resposta = port.read(64)
+            if resposta == '':
+                print 'TIMEOUT'
+            else:
+                freq = resposta
+    except Exception as e:
+        return ("Erro' %s" % e)
+
+
+    if request.method == 'POST':
+        freqvnew = request.form['freqvnew']
+        writeConf("DEFAULT", 'freqv', freqvnew)
+    css = configparser.ConfigParser()
+    css.read(cssDir)
+    return render_template("empty.html", config=config, saved=saved, new=freq
+                           , jumbotrom_h=css.get(str(lcd_type), 'all_jumbotrom_h')
+                           , jumbotrom_w=css.get(str(lcd_type), 'all_jumbotrom_w')
+                           , jumbotrom_margin_left=css.get(str(lcd_type), 'all_jumbotrom_margin_left')
+                           , jumbotrom_margin_top=css.get(str(lcd_type), 'all_jumbotrom_margin_top')
+                           , jumbotrom_padding=css.get(str(lcd_type), 'all_jumbotrom_padding')
+                           , html_h=css.get(str(lcd_type), 'all_html_h')
+                           , html_w=css.get(str(lcd_type), 'all_html_w')
+                           , menu_icon_size=css.get(str(lcd_type), 'config_menu_icon_size')
+                           , menu_width=css.get(str(lcd_type), 'config_menu_width')
+                           , menu_margin_top=css.get(str(lcd_type), 'config_menu_margin_top')
+                           , menu2_width=css.get(str(lcd_type), 'config_menu2_width')
+                           , menu2_height=css.get(str(lcd_type), 'config_menu2_height')
+                           , menu2_margin_right=css.get(str(lcd_type), 'config_menu2_margin_right')
+                           , amostra_margin_left=css.get(str(lcd_type), 'config_amostra_margin_left')
+                           , config_size=css.get(str(lcd_type), 'config_title_size')
+                           , config_margin_left=css.get(str(lcd_type), 'config_title_margin_left')
+                           , config_margin_top=css.get(str(lcd_type), 'config_title_margin_top')
+                           , config_btn_dropbtn_width=css.get(str(lcd_type), 'config_btn_dropbtn_width')
+                           , config_btn_autoteste_margin_left=css.get(str(lcd_type), 'config_btn_autoteste_margin_left')
+                           , config_btn_autoteste_margin_top=css.get(str(lcd_type), 'config_btn_autoteste_margin_top')
+                           , config_btn_autoteste_width=css.get(str(lcd_type), 'config_btn_autoteste_width')
+                           , config_btn_historico_margin_left=css.get(str(lcd_type), 'config_btn_historico_margin_left')
+                           , config_btn_historico_margin_top=css.get(str(lcd_type), 'config_btn_historico_margin_top')
+                           , config_btn_historico_width=css.get(str(lcd_type), 'config_btn_historico_width')
+                           , config_btn_dropdown_margin_left=css.get(str(lcd_type), 'config_btn_dropdown_margin_left')
+                           , config_btn_dropdown_margin_top=css.get(str(lcd_type), 'config_btn_dropdown_margin_top')
+                           , config_btn_dropdown_width=css.get(str(lcd_type), 'config_btn_dropdown_width'))
 
 @app.route("/private", methods=['GET', 'POST'])  # Pagina de configuracao
 def private():

@@ -19,7 +19,7 @@ def verifConf(): # verifica se existe o arquivo conf.ini, se nao tiver ele cria
 
     except IOError:
         config['DEFAULT'] = {'File': 'YES', 'AUTO-TEST': 'NO', 'ERRO-AUTO-TEST': 'ERRO', 'PH': 'kg/hl', 'LANG': 'PT', 'CONTADOR': 0,
-                             'uniTemp': 'C', 'FIRST-TIME': 'YES', 'MEDIA': 'NO', 'lcd_type': '5'}
+                             'uniTemp': 'C', 'FIRST-TIME': 'YES', 'MEDIA': 'NO', 'lcd_type': '5', 'FREQV': 10000}
 
         with open(confDir, 'w') as configfile:
             config.write(configfile)
