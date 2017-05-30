@@ -44,6 +44,8 @@ topDir = 'main/arquivos/top.txt'
 cloudDir = 'main/arquivos/cloud.json'
 cssDir = 'main/arquivos/css.ini'
 tableDir = 'main/arquivos/tab.txt'
+freqvDir = 'main/arquivos/freqv.txt'
+dateDir = 'main/arquivos/date.txt'
 
 windows = 'COM4'
 linux = '/dev/ttyUSB0'
@@ -1190,31 +1192,93 @@ def table():
                            , config_btn_dropdown_width=css.get(str(lcd_type), 'config_btn_dropdown_width'))
 
 
-@app.route("/assistencia/empty", methods=['GET', 'POST'])  # Pagina de configuracao
-def empty():
-    config = configparser.ConfigParser()
-    config.read(confDir)
-    saved = config.get('DEFAULT', 'freqv')
-    freq = 0
+@app.route("/assistencia/freqvazio")
+def freqvazio():
     try:
-        port = serial.Serial(porta, baudrate=115200, timeout=1)
+        port = serial.Serial(porta, baudrate=115200, timeout=.25)
         while True:
             port.write("07FREQV")
             resposta = port.read(64)
             if resposta == '':
                 print 'TIMEOUT'
             else:
-                freq = resposta
+                sensores = resposta.split('split')
+                sensores = sensores[2]
+                return str(sensores)
+                break
     except Exception as e:
         return ("Erro' %s" % e)
 
 
-    if request.method == 'POST':
-        freqvnew = request.form['freqvnew']
+@app.route("/assistencia/empty", methods=['GET', 'POST'])  # Pagina de configuracao
+def empty():
+    freqvnew = request.args.get('freqnew', '', type=str)
+    config = configparser.ConfigParser()
+    config.read(confDir)
+    saved = config.get('DEFAULT', 'freqv')
+    freq = 0
+    lastFreq = '10589, 10865, 10756, 10985, 10918'
+    import time
+    time.strftime("%Y-%m-%d %H:%M")
+
+    #lastDate = ['01/01/2017 15:12h 23C','02/01/2017 16:40h 22C','03/01/2017 17:20h 24C', '04/01/2017 12:44h 23C', '05/01/2017 13:35h 25C']
+    lastDate = []
+    f = open(freqvDir, 'r+')
+    p = open(dateDir, 'r+')
+    dates = p.readlines()
+    lines = f.readlines()
+    lastFreq = lines[0][:-1] + ',' + lines[1][:-1] + ',' + lines[2][:-1] + ',' + lines[3][:-1] + ',' + lines[4][:-1]
+    lastDate.insert(0, dates[0][:-1])
+    lastDate.insert(1, dates[1][:-1])
+    lastDate.insert(2, dates[2][:-1])
+    lastDate.insert(3, dates[3][:-1])
+    lastDate.insert(4, dates[4][:-1])
+    if freqvnew != '':
+        try:
+            port = serial.Serial(porta, baudrate=115200, timeout=.25)
+            while True:
+                port.write("07TEMPA")
+                resposta = port.read(64)
+                if resposta == '':
+                    print 'TIMEOUT'
+                else:
+                    sensores = resposta.split('split')
+                    sensores = sensores[2]
+                    break
+        except Exception as e:
+            return ("Erro' %s" % e)
+
         writeConf("DEFAULT", 'freqv', freqvnew)
+        f.seek(0)
+        f.write(freqvnew + '\n')
+        f.writelines(lines)
+        p.seek(0)
+        p.write(time.strftime("%Y-%m-%d %H:%M") + ' ' + sensores + 'C' + '\n')
+        p.writelines(dates)
+        with f as f:
+            top5len = file_len(freqvDir)
+        for i in range(top5len, 5, -1):
+            lines = file(freqvDir, 'r+').readlines()
+            dates = file(dateDir, 'r+').readlines()
+            del lines[5]
+            del lines[5]
+            del dates[5]
+            del dates[5]
+            lastFreq = lines[0][:-1] + ',' + lines[1][:-1] + ',' + lines[2][:-1] + ',' + lines[3][:-1] + ',' + lines[4][:-1]
+            lastDate.insert(0, dates[0][:-1])
+            lastDate.insert(1, dates[1][:-1])
+            lastDate.insert(2, dates[2][:-1])
+            lastDate.insert(3, dates[3][:-1])
+            lastDate.insert(4, dates[4][:-1])
+
+            file(freqvDir, 'w').writelines(lines)
+            file(dateDir, 'w').writelines(dates)
+        f.close()
+        p.close()
+
     css = configparser.ConfigParser()
     css.read(cssDir)
-    return render_template("empty.html", config=config, saved=saved, new=freq
+    return render_template("empty.html", config=config, saved=saved, new=freq, lastFreq=lastFreq, lastDate=lastDate
                            , jumbotrom_h=css.get(str(lcd_type), 'all_jumbotrom_h')
                            , jumbotrom_w=css.get(str(lcd_type), 'all_jumbotrom_w')
                            , jumbotrom_margin_left=css.get(str(lcd_type), 'all_jumbotrom_margin_left')
@@ -1242,6 +1306,181 @@ def empty():
                            , config_btn_dropdown_margin_left=css.get(str(lcd_type), 'config_btn_dropdown_margin_left')
                            , config_btn_dropdown_margin_top=css.get(str(lcd_type), 'config_btn_dropdown_margin_top')
                            , config_btn_dropdown_width=css.get(str(lcd_type), 'config_btn_dropdown_width'))
+
+
+
+@app.route("/assistencia/calibration")
+def calibration():
+    freqv = request.args.get('freqv', 0, type=float)
+    freqc = request.args.get('freqc', 0, type=float)
+    config = configparser.ConfigParser()
+    config.read(confDir)
+    capx = config.get('DEFAULT', 'capx')
+    dial = config.get('DEFAULT', 'dial')
+    start = config.get('DEFAULT', 'start')
+    if freqv != 0:
+        writeConf("DEFAULT", 'freqvc', str(freqv))
+        writeConf("DEFAULT", 'start', 'true')
+    if freqc != 0:
+        freqv = config.get('DEFAULT', 'freqvc')
+        writeConf("DEFAULT", 'freqcc', str(freqc))
+        print freqv, freqc
+        capx = calcCapx(float(freqv), int(freqc))
+        print capx
+        dialx = getBasicInfoTop(0)
+        dialy = (dialx[10])
+        dialz = float(dialy[0])
+        dial = calcDial(capx,dialz)
+        writeConf("DEFAULT", 'capx', str(capx))
+        writeConf("DEFAULT", 'dial', str(dial))
+        writeConf("DEFAULT", 'start', 'false')
+    print start
+    freqv = config.get('DEFAULT', 'freqvc')
+    freqc = config.get('DEFAULT', 'freqcc')
+    css = configparser.ConfigParser()
+    css.read(cssDir)
+    return render_template("calibration.html", config=config, dial=dial, capx=capx, freqv=freqv, freqc=freqc, start=start
+                           , jumbotrom_h=css.get(str(lcd_type), 'all_jumbotrom_h')
+                           , jumbotrom_w=css.get(str(lcd_type), 'all_jumbotrom_w')
+                           , jumbotrom_margin_left=css.get(str(lcd_type), 'all_jumbotrom_margin_left')
+                           , jumbotrom_margin_top=css.get(str(lcd_type), 'all_jumbotrom_margin_top')
+                           , jumbotrom_padding=css.get(str(lcd_type), 'all_jumbotrom_padding')
+                           , html_h=css.get(str(lcd_type), 'all_html_h')
+                           , html_w=css.get(str(lcd_type), 'all_html_w')
+                           , menu_icon_size=css.get(str(lcd_type), 'config_menu_icon_size')
+                           , menu_width=css.get(str(lcd_type), 'config_menu_width')
+                           , menu_margin_top=css.get(str(lcd_type), 'config_menu_margin_top')
+                           , menu2_width=css.get(str(lcd_type), 'config_menu2_width')
+                           , menu2_height=css.get(str(lcd_type), 'config_menu2_height')
+                           , menu2_margin_right=css.get(str(lcd_type), 'config_menu2_margin_right')
+                           , amostra_margin_left=css.get(str(lcd_type), 'config_amostra_margin_left')
+                           , config_size=css.get(str(lcd_type), 'config_title_size')
+                           , config_margin_left=css.get(str(lcd_type), 'config_title_margin_left')
+                           , config_margin_top=css.get(str(lcd_type), 'config_title_margin_top')
+                           , config_btn_dropbtn_width=css.get(str(lcd_type), 'config_btn_dropbtn_width')
+                           , config_btn_autoteste_margin_left=css.get(str(lcd_type), 'config_btn_autoteste_margin_left')
+                           , config_btn_autoteste_margin_top=css.get(str(lcd_type), 'config_btn_autoteste_margin_top')
+                           , config_btn_autoteste_width=css.get(str(lcd_type), 'config_btn_autoteste_width')
+                           , config_btn_historico_margin_left=css.get(str(lcd_type), 'config_btn_historico_margin_left')
+                           , config_btn_historico_margin_top=css.get(str(lcd_type), 'config_btn_historico_margin_top')
+                           , config_btn_historico_width=css.get(str(lcd_type), 'config_btn_historico_width')
+                           , config_btn_dropdown_margin_left=css.get(str(lcd_type), 'config_btn_dropdown_margin_left')
+                           , config_btn_dropdown_margin_top=css.get(str(lcd_type), 'config_btn_dropdown_margin_top')
+                           , config_btn_dropdown_width=css.get(str(lcd_type), 'config_btn_dropdown_width'))
+
+
+
+@app.route("/assistencia/download")
+def download():
+    freqv = request.args.get('freqv', 0, type=float)
+    freqc = request.args.get('freqc', 0, type=float)
+    config = configparser.ConfigParser()
+    config.read(confDir)
+    capx = config.get('DEFAULT', 'capx')
+    dial = config.get('DEFAULT', 'dial')
+    start = config.get('DEFAULT', 'start')
+    if freqv != 0:
+        writeConf("DEFAULT", 'freqvc', str(freqv))
+        writeConf("DEFAULT", 'start', 'true')
+    if freqc != 0:
+        freqv = config.get('DEFAULT', 'freqvc')
+        writeConf("DEFAULT", 'freqcc', str(freqc))
+        print freqv, freqc
+        capx = calcCapx(float(freqv), int(freqc))
+        print capx
+        dialx = getBasicInfoTop(0)
+        dialy = (dialx[10])
+        dialz = float(dialy[0])
+        dial = calcDial(capx,dialz)
+        writeConf("DEFAULT", 'capx', str(capx))
+        writeConf("DEFAULT", 'dial', str(dial))
+        writeConf("DEFAULT", 'start', 'false')
+    print start
+    freqv = config.get('DEFAULT', 'freqvc')
+    freqc = config.get('DEFAULT', 'freqcc')
+    css = configparser.ConfigParser()
+    css.read(cssDir)
+    return render_template("download.html", config=config, dial=dial, capx=capx, freqv=freqv, freqc=freqc, start=start
+                           , jumbotrom_h=css.get(str(lcd_type), 'all_jumbotrom_h')
+                           , jumbotrom_w=css.get(str(lcd_type), 'all_jumbotrom_w')
+                           , jumbotrom_margin_left=css.get(str(lcd_type), 'all_jumbotrom_margin_left')
+                           , jumbotrom_margin_top=css.get(str(lcd_type), 'all_jumbotrom_margin_top')
+                           , jumbotrom_padding=css.get(str(lcd_type), 'all_jumbotrom_padding')
+                           , html_h=css.get(str(lcd_type), 'all_html_h')
+                           , html_w=css.get(str(lcd_type), 'all_html_w')
+                           , menu_icon_size=css.get(str(lcd_type), 'config_menu_icon_size')
+                           , menu_width=css.get(str(lcd_type), 'config_menu_width')
+                           , menu_margin_top=css.get(str(lcd_type), 'config_menu_margin_top')
+                           , menu2_width=css.get(str(lcd_type), 'config_menu2_width')
+                           , menu2_height=css.get(str(lcd_type), 'config_menu2_height')
+                           , menu2_margin_right=css.get(str(lcd_type), 'config_menu2_margin_right')
+                           , amostra_margin_left=css.get(str(lcd_type), 'config_amostra_margin_left')
+                           , config_size=css.get(str(lcd_type), 'config_title_size')
+                           , config_margin_left=css.get(str(lcd_type), 'config_title_margin_left')
+                           , config_margin_top=css.get(str(lcd_type), 'config_title_margin_top')
+                           , config_btn_dropbtn_width=css.get(str(lcd_type), 'config_btn_dropbtn_width')
+                           , config_btn_autoteste_margin_left=css.get(str(lcd_type), 'config_btn_autoteste_margin_left')
+                           , config_btn_autoteste_margin_top=css.get(str(lcd_type), 'config_btn_autoteste_margin_top')
+                           , config_btn_autoteste_width=css.get(str(lcd_type), 'config_btn_autoteste_width')
+                           , config_btn_historico_margin_left=css.get(str(lcd_type), 'config_btn_historico_margin_left')
+                           , config_btn_historico_margin_top=css.get(str(lcd_type), 'config_btn_historico_margin_top')
+                           , config_btn_historico_width=css.get(str(lcd_type), 'config_btn_historico_width')
+                           , config_btn_dropdown_margin_left=css.get(str(lcd_type), 'config_btn_dropdown_margin_left')
+                           , config_btn_dropdown_margin_top=css.get(str(lcd_type), 'config_btn_dropdown_margin_top')
+                           , config_btn_dropdown_width=css.get(str(lcd_type), 'config_btn_dropdown_width'))
+
+
+
+@app.route("/assistencia/summary")
+def summary():
+    config = configparser.ConfigParser()
+    config.read(confDir)
+    inmetro = config.get('DEFAULT', 'inmetro')
+    a = request.args.get('inmetro', inmetro, type=str)
+    writeConf("DEFAULT", 'inmetro', a)
+    nstep = config.get('DEFAULT', 'nstep')
+    b = request.args.get('nstep', nstep, type=str)
+    writeConf("DEFAULT", 'nstep', b)
+    usda = config.get('DEFAULT', 'usda')
+    c = request.args.get('usda', usda, type=str)
+    writeConf("DEFAULT", 'usda', c)
+
+    digit = config.get('DEFAULT', 'digit')
+    d = request.args.get('digit', digit, type=str)
+    writeConf("DEFAULT", 'digit', d)
+    css = configparser.ConfigParser()
+    css.read(cssDir)
+
+    return render_template("summary.html", config=config, inmetro=inmetro, nstep=nstep, usda=usda, digit=digit
+                           , jumbotrom_h=css.get(str(lcd_type), 'all_jumbotrom_h')
+                           , jumbotrom_w=css.get(str(lcd_type), 'all_jumbotrom_w')
+                           , jumbotrom_margin_left=css.get(str(lcd_type), 'all_jumbotrom_margin_left')
+                           , jumbotrom_margin_top=css.get(str(lcd_type), 'all_jumbotrom_margin_top')
+                           , jumbotrom_padding=css.get(str(lcd_type), 'all_jumbotrom_padding')
+                           , html_h=css.get(str(lcd_type), 'all_html_h')
+                           , html_w=css.get(str(lcd_type), 'all_html_w')
+                           , menu_icon_size=css.get(str(lcd_type), 'config_menu_icon_size')
+                           , menu_width=css.get(str(lcd_type), 'config_menu_width')
+                           , menu_margin_top=css.get(str(lcd_type), 'config_menu_margin_top')
+                           , menu2_width=css.get(str(lcd_type), 'config_menu2_width')
+                           , menu2_height=css.get(str(lcd_type), 'config_menu2_height')
+                           , menu2_margin_right=css.get(str(lcd_type), 'config_menu2_margin_right')
+                           , amostra_margin_left=css.get(str(lcd_type), 'config_amostra_margin_left')
+                           , config_size=css.get(str(lcd_type), 'config_title_size')
+                           , config_margin_left=css.get(str(lcd_type), 'config_title_margin_left')
+                           , config_margin_top=css.get(str(lcd_type), 'config_title_margin_top')
+                           , config_btn_dropbtn_width=css.get(str(lcd_type), 'config_btn_dropbtn_width')
+                           , config_btn_autoteste_margin_left=css.get(str(lcd_type), 'config_btn_autoteste_margin_left')
+                           , config_btn_autoteste_margin_top=css.get(str(lcd_type), 'config_btn_autoteste_margin_top')
+                           , config_btn_autoteste_width=css.get(str(lcd_type), 'config_btn_autoteste_width')
+                           , config_btn_historico_margin_left=css.get(str(lcd_type), 'config_btn_historico_margin_left')
+                           , config_btn_historico_margin_top=css.get(str(lcd_type), 'config_btn_historico_margin_top')
+                           , config_btn_historico_width=css.get(str(lcd_type), 'config_btn_historico_width')
+                           , config_btn_dropdown_margin_left=css.get(str(lcd_type), 'config_btn_dropdown_margin_left')
+                           , config_btn_dropdown_margin_top=css.get(str(lcd_type), 'config_btn_dropdown_margin_top')
+                           , config_btn_dropdown_width=css.get(str(lcd_type), 'config_btn_dropdown_width'))
+
+
 
 @app.route("/private", methods=['GET', 'POST'])  # Pagina de configuracao
 def private():

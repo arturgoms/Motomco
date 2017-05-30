@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Css Custon and Bootstrap Config -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../static/css/bootstrap.css" rel="stylesheet">
+    <style>
+		.jumbotron {
+
+			width: 450px;
+			height: 300px;
+			text-align: center;
+			margin-right: 200px;
+			margin-top: 150px;
+			position: fixed;
+		}
+		.list-group {
+		    width: 450px;
+		    margin-left: 630px;
+		}
+		.table {
+			margin-top: 20px;
+		}
+		.form-control {
+			margin-bottom: 5px;
+		}
+		.selecionado {
+			background-color: yellow;
+		}
+		.negrito {
+			font-weight: bold;
+		}
+		.search {
+		      background: url('../static/img/zoom-out.png') left center no-repeat;
+              padding-left: 15px;
+		}
+		.container{
+            display: flex
+        }
+	</style>
+    <link rel="stylesheet" href="../../static/css/bootstrap-theme.min.css" type="text/css">
+    <link rel="stylesheet" href="../../static/css/master.css" type="text/css" >
+    <link rel="stylesheet" href="../static/css/mdb.css">
+    <!-- Java Script -->
+    <script src="../../static/js/jquery-3.1.0.min.js"></script>
+    <script src="../../static/js/bootstrap.js"></script>
+    <script src="../static/angular.js"></script>
+    <script src="../static/js/Respond.js"></script>
+    {% extends "layout.html" %}
+    {% block body %}
+    <script type="text/javascript">
+  $(function() {
+
+  //função que envia os dados para o servidor
+    var submit_form = function(e) {
+
+    //usa o Jquery para enviar uma Get para o servidor
+      $.getJSON($SCRIPT_ROOT + '/grupo/arroz/list', { //endereço da requisição
+        a: $('input[name="a"]').val(), //obtem o valor do imput de name "a" e envia como variável a
+        b: $('input[name="b"]').val()  //obtem o valor do imput de name "b" e envia como variável b
+      }, function(data) { //função executada quando o servidor responde a requisição
+        $('#result').text(data.result); //coloca o texto DENTRO do elemento de id="result"
+        $('input[name=a]').focus().select(); //coloca o foco no input de name "a"
+      });
+      return false;
+    };
+
+    $('a#calculate').bind('click', submit_form); //associa o clicke do link (tag a), de id "calculate"
+
+    $("curvaInit").click(function(e){
+            submit_form(e);
+       });
+
+    $('input[name=a]').focus(); //coloca o foco no input de name "a"
+  });
+    </script>
+    <!-- Title -->
+    <title>Chip Welcome</title>
+</head>
+    <body>
+        <video width="648" height="432" id="my-video" class="video" autoplay="autoplay" loop="loop" muted="">
+        <source src="/static/img/bg.mp4" type="video/mp4" /></video>
+        <header>
+        </header>
+        <div class="container">
+            <div class="jumbotron"><!-- <a href="/lastcurvas"><img class="animated wow fadeInLeft" src="../static/img/favorite.png" height="60" width="60"></a><br><p> -->
+                <center><h2 color="#FFFFFF" class="animated fadeIn"><p>Seleção de Curvas</p></h2></center>
+                <center><a href="/grupo/arroz"><img class="animated wow fadeInLeft" src="../static/img/botao-grao-arroz.png" height="80" width="80"></a>
+                        <a href="/grupo/feijao"><img class="animated wow fadeInUp" src="../static/img/botao-grao-feijao.png" height="80" width="80"></a>
+                        <a href="/grupo/milho"><img class="animated wow fadeInUp" src="../static/img/botao-grao-milho.png" height="80" width="80"></a>
+                        <a href="/grupo/soja"><img class="animated wow fadeInRight" src="../static/img/botao-grao-soja.png" height="80" width="80"></a></center>
+                <center><a href="/grupo/outros"><img class="animated wow fadeInLeft" src="../static/img/botao-grao-outros.png" height="80" width="80"></a>
+                        <a href="/grupo/trigo"><img class="animated wow fadeInDown" src="../static/img/botao-grao-trigo.png" height="80" width="80"></a>
+                        <a href="/grupo/girassol"><img class="animated wow fadeInDown" src="../static/img/botao-grao-girasol.png" height="80" width="80"></a>
+                        <a href="/grupo/custom"><img class="animated wow fadeInRight" src="../static/img/botao-grao-custom.png" height="80" width="80"></a></center>
+                <center><a href="/" class="btn btn-dark-green">Voltar</a></center>
+            </div>
+
+            <div class="list-group animated wow fadeInLeft" >
+                <center><h2 color="#FFFFFF" class="animated fadeIn list-group-item"><p>Custom</p></h2></center>
+                {% for i in range(0, lencurva) %}
+                      <center>
+                          <!-- a = 0 e b = {{ i }} -->
+                          <a href="/selectcurva?a=6&b={{ i }}" class="list-group-item">
+                              <p>{{ nome[i] }}</p>
+                              <p>{{ temp[i] }}</p>
+                              <p>{{ umidade[i] }}</p>
+                          </a>
+                      </center>
+                    {% endfor %}
+
+            </div>
+<!-- {% endblock %}-->
+        </center>
+        </div>
+        <footer>
+        </footer>
+    </body>
+    <!-- JQuery -->
+    <script type="text/javascript" src="../static/js/jquery-2.2.3.min.js"></script>
+
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../static/js/tether.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../static/js/mdb.min.js"></script>
+</html>
+
+

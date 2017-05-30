@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Css Custon and Bootstrap Config -->
+    <link rel="stylesheet" href="../../static/css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="../../static/css/bootstrap-theme.min.css" type="text/css">
+    <link rel="stylesheet" href="../../static/css/master.css" type="text/css" >
+    <link rel="stylesheet" href="../static/css/mdb.css">
+    <style>
+        .jumbotron {
+			width: {{ jumbotrom_w }}px;
+			height: {{ jumbotrom_h }}px;
+			margin-left: {{ jumbotrom_margin_left }}px;
+            margin-top: {{ jumbotrom_margin_top }}px;
+            padding:{{ jumbotrom_padding }}px;
+			margin-right: auto;
+            text-align: center;
+		}.menu{
+            float: left;
+            width: {{ menu_width }}px;
+            margin-top: {{ menu_margin_top }}px;
+
+		}.menu2{
+            float: left;
+            margin-left: 100px;
+            margin-top: -10px;
+            width: 50px;
+            height: 0px;
+		        padding:0px;
+
+		}.list-group-item {
+		    width: 260px;
+            height: 110px;
+		    padding: 2px;
+
+		}.container {
+            width:100px;
+            padding:0px;
+            }
+        .photo {
+            margin-top: -10px;
+            width:240px;
+            height: 50px;
+            font-size:80%;
+            margin-left: -20px;
+            text-align:center;
+            horiz-align: left;
+            display: inline-flex;
+            padding:5px;
+
+        }.photo2 {
+            margin-top: -10px;
+            width:400px;
+            height: 50px;
+            font-size:80%;
+            margin-left: 20px;
+            text-align:center;
+            horiz-align: left;
+            display: inline-flex;
+            padding:5px;
+
+        }
+
+        @media screen and (min-width: 160px) {
+        .container{width:100px;}
+        }
+        @media screen and (min-width: 240px) {
+        .container{width:150px;}
+        }
+        @media screen and (min-width: 230px) {
+        .container{width:130px;}  .container{height:50px;}
+
+        }body {
+          background: url(../static/img/bg2.jpg) no-repeat center center fixed;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+        }.showScroll {
+            margin-top: -250px;
+            margin-left: 350px;
+            width:300px;
+            height: 330px;
+            overflow:scroll;
+            background-color:transparent;
+        }html{
+            width: 440px;
+            height: 255px;
+                                                     }
+    </style>
+    <!-- Java Script -->
+    <script src="../static/angular.js"></script>
+    <script src="../static/js/Respond.js"></script>
+    <!-- Java Script Respond -->
+    {% extends "layout.html" %}
+    {% block body %}
+    <script type="text/javascript">,
+        function bloquear(e){return false}
+    function desbloquear(){return true}
+    document.onselectstart=new Function (&quot;return false&quot;)
+    if (window.sidebar){document.onmousedown=bloquear
+    document.onclick=desbloquear}
+  $(function() {
+
+  //função que envia os dados para o servidor
+    var submit_form = function(e) {
+
+    //usa o Jquery para enviar uma Get para o servidor
+      $.getJSON($SCRIPT_ROOT + '/grupo/arroz/list', { //endereço da requisição
+        a: $('input[name="a"]').val(), //obtem o valor do imput de name "a" e envia como variável a
+        b: $('input[name="b"]').val()  //obtem o valor do imput de name "b" e envia como variável b
+      }, function(data) { //função executada quando o servidor responde a requisição
+        $('#result').text(data.result); //coloca o texto DENTRO do elemento de id="result"
+        $('input[name=a]').focus().select(); //coloca o foco no input de name "a"
+      });
+      return false;
+    };
+
+    $('a#calculate').bind('click', submit_form); //associa o clicke do link (tag a), de id "calculate"
+
+    $("curvaInit").click(function(e){
+            submit_form(e);
+       });
+
+    $('input[name=a]').focus(); //coloca o foco no input de name "a"
+  });
+    </script>
+    <!-- Title -->
+    <title>Chip Welcome</title>
+</head>
+    <body onselectstart='return false' ondragstart='return false'>
+        <div class="jumbotron ">
+
+                    <div class="menu">
+                     <p>
+                    <br>
+                        <center><a href="/selectcurvatop?a=0"><button class="btn btn-dark-green"><img src="../static/img/medir.png" width="{{ menu_icon_size }}" height="{{ menu_icon_size }}"/></button></a></center>
+                        <center><a href="/top">             <button class="btn btn-dark-green active"><img src="../static/img/search.png" width="{{ menu_icon_size }}" height="{{ menu_icon_size }}"/></button></a></center>
+                        <center><a href="/config">            <button class="btn btn-dark-green "><img src="../static/img/config.png" width="{{ menu_icon_size }}" height="{{ menu_icon_size }}"/></button></a></center>
+                        <span id="result"></span>
+
+                    </div>
+
+            <center><h1 style="margin-left: -70px" color="#FFFFFF" class="animated fadeIn"><p>{{ soja }}</p></h1></center>
+
+             <div class="menu2">
+                <div style="margin-top: 0px; margin-left: -8px" class="photo">
+                    <div class="photo">
+                        <a href="/grupo/arroz"><img src="../static/img/botao-grao-arroz.png" height="80" width="80"><figcaption><h4>{{ arroz }}</h4></figcaption></a>
+                    </div>
+                    <div class="photo">
+                        <a href="/grupo/feijao"><img  src="../static/img/botao-grao-feijao.png" height="80" width="80"><figcaption><h4>{{ feijao }}</h4></figcaption></a>
+                    </div>
+                    <div class="photo">
+                        <a href="/grupo/milho"><img src="../static/img/botao-grao-milho.png" height="80" width="80"><figcaption><h4>{{ milho }}</h4></figcaption></a>
+                    </div>
+                    </div>
+                 </div>
+
+             <div class="menu2">
+                <div style="margin-top: 120px; margin-left: -180px" class="photo">
+                    <div class="photo">
+                        <a href="/grupo/soja"><img src="../static/img/botao-grao-soja.png" height="80" width="80"><figcaption><h4>{{ soja }}</h4></figcaption></a>
+                    </div>
+                    <div class="photo">
+                        <a href="/grupo/outros"><img src="../static/img/botao-grao-outros.png" height="80" width="80"><figcaption><h4>{{ outro }}</h4></figcaption></a>
+                    </div>
+                    <div class="photo">
+                        <a href="/grupo/trigo"><img src="../static/img/botao-grao-trigo.png" height="80" width="80"><figcaption><h4>{{ trigo }}</h4></figcaption></a>
+                    </div>
+                                        </div>
+                 </div>
+             <div class="menu2">
+                <div style="margin-top: 240px; margin-left: -580px; width: 110px" class="photo2">
+                    <div style=" margin-left: -10px"class="photo">
+                        <a href="/grupo/girassol"><img src="../static/img/botao-grao-girasol.png" height="80" width="80"><figcaption><h4>{{ girassol }}</h4></figcaption></a>
+                    </div>
+                    <div class="photo">
+                        <a href="/grupo/custom"><img  src="../static/img/botao-grao-custom.png" height="80" width="80"><figcaption><h4>{{ custom }}</h4></figcaption></a>
+                    </div>
+                    </div>
+                 </div>
+            <div style="margin-top: -0px" class="menu2 showScroll">
+                {% for i in range(0, lencurva) %}
+                      <center>
+                          <!-- a = 0 e b = {{ i }} -->
+                          <a href="/selectcurva?a=3&b={{ i }}" class="list-group-item">
+                              <h7>{{ nome[i] }}</h7><br />
+
+                             <font size="3">{{ temp[i] }}</font><br>
+                             <font size="3">{{ umidade[i] }}</font>
+                          </a>
+                      </center>
+                    {% endfor %}
+            </div>
+
+<!-- {% endblock %}-->
+        </center>
+        </div>
+        <footer>
+        </footer>
+    </body>
+    <!-- JQuery -->
+    <script type="text/javascript" src="../static/js/jquery-2.2.3.min.js"></script>
+
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../static/js/tether.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../static/js/mdb.min.js"></script>
+</html>
+
+

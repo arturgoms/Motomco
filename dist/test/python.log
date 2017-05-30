@@ -1,0 +1,1627 @@
+04/11/2017 11:40:06 AM: INFO - Server Start
+04/11/2017 11:42:16 AM: INFO - Server Start
+04/11/2017 01:26:14 PM: INFO - Server Start
+04/11/2017 01:31:30 PM: INFO - Server Start
+04/11/2017 01:35:28 PM: INFO - Server Start
+04/11/2017 01:35:38 PM: INFO - RWconf - Conf.ini file found
+04/11/2017 01:35:39 PM: INFO - Autotest - Frequency deals successfully 10861.0
+04/11/2017 01:35:39 PM: INFO - Autotest - Temperature deals successfully 28.2
+04/11/2017 01:35:40 PM: INFO - Autotest - Weight read successfully -0.9
+04/11/2017 01:35:40 PM: INFO - Autotest - Autotest successfully done
+04/11/2017 01:35:40 PM: WARNING - Login - Try to log in without authentication
+04/11/2017 01:36:34 PM: INFO - Server Start
+04/11/2017 01:36:35 PM: INFO - RWconf - Conf.ini file found
+04/11/2017 01:36:36 PM: INFO - Autotest - Frequency deals successfully 10861.0
+04/11/2017 01:36:36 PM: INFO - Autotest - Temperature deals successfully 28.2
+04/11/2017 01:36:37 PM: INFO - Autotest - Weight read successfully -1.1
+04/11/2017 01:36:37 PM: INFO - Autotest - Autotest successfully done
+04/11/2017 01:36:37 PM: WARNING - Login - Try to log in without authentication
+04/11/2017 01:44:43 PM: INFO - Server Start
+04/11/2017 01:45:02 PM: INFO - RWconf - Conf.ini file found
+04/11/2017 01:45:02 PM: INFO - Autotest - Frequency deals successfully 10863.0
+04/11/2017 01:45:03 PM: INFO - Autotest - Temperature deals successfully 28.1
+04/11/2017 01:45:04 PM: INFO - Autotest - Weight read successfully -0.7
+04/11/2017 01:45:04 PM: INFO - Autotest - Autotest successfully done
+04/11/2017 01:45:04 PM: WARNING - Login - Try to log in without authentication
+04/11/2017 03:32:03 PM: INFO - Settings - Set language to PT
+04/11/2017 03:32:03 PM: INFO - Settings - Set temperature of humidity to Celsius
+04/11/2017 03:32:05 PM: WARNING - Login - Try to log in without authentication
+04/11/2017 03:38:34 PM: INFO - Register - Error registering [Errno 2] No such file or directory: 'arquivos/cloud.json'
+04/11/2017 03:40:18 PM: INFO - Server Start
+04/11/2017 03:40:24 PM: INFO - Login - User logged in as Luiz
+04/11/2017 03:40:24 PM: INFO - Charts Handler - Chart information returned successfully
+04/11/2017 03:40:24 PM: INFO - Charts Handler - Top Chart returned successfully
+04/11/2017 03:42:37 PM: INFO - Server Start
+04/11/2017 03:42:54 PM: INFO - RWconf - Conf.ini file found
+04/11/2017 03:42:54 PM: INFO - Autotest - Frequency deals successfully 10886.0
+04/11/2017 03:42:55 PM: INFO - Autotest - Temperature deals successfully 26.3
+04/11/2017 03:42:56 PM: INFO - Autotest - Weight read successfully -1.6
+04/11/2017 03:42:56 PM: INFO - Autotest - Autotest successfully done
+04/11/2017 03:42:56 PM: ERROR - Charts Handler - Could not return information from chart - [Errno 2] No such file or directory: 'arquivos/top.txt'
+04/11/2017 03:42:56 PM: ERROR - Charts Handler - Could not return the first top chart - [Errno 2] No such file or directory: 'arquivos/top.txt'
+04/11/2017 03:43:58 PM: INFO - Server Start
+04/11/2017 03:44:07 PM: ERROR - Charts Handler - Could not return information from chart - [Errno 2] No such file or directory: 'arquivos/top.txt'
+04/11/2017 03:44:07 PM: ERROR - Charts Handler - Could not return the first top chart - [Errno 2] No such file or directory: 'arquivos/top.txt'
+04/11/2017 03:45:26 PM: INFO - Server Start
+04/11/2017 03:45:49 PM: INFO - RWconf - Conf.ini file found
+04/11/2017 03:45:50 PM: INFO - Autotest - Frequency deals successfully 10885.0
+04/11/2017 03:45:50 PM: INFO - Autotest - Temperature deals successfully 26.4
+04/11/2017 03:45:52 PM: INFO - Autotest - Weight read successfully -1.7
+04/11/2017 03:45:52 PM: INFO - Autotest - Autotest successfully done
+04/11/2017 03:45:52 PM: ERROR - Charts Handler - Could not return information from chart - [Errno 2] No such file or directory: 'arquivos/top.txt'
+04/11/2017 03:45:52 PM: ERROR - Charts Handler - Could not return the first top chart - [Errno 2] No such file or directory: 'arquivos/top.txt'
+04/11/2017 03:47:41 PM: INFO - Server Start
+04/11/2017 03:48:23 PM: INFO - Server Start
+04/11/2017 03:48:40 PM: INFO - RWconf - Conf.ini file found
+04/11/2017 03:48:41 PM: INFO - Autotest - Frequency deals successfully 10886.0
+04/11/2017 03:48:41 PM: INFO - Autotest - Temperature deals successfully 26.3
+04/11/2017 03:48:42 PM: INFO - Autotest - Weight read successfully -1.4
+04/11/2017 03:48:42 PM: INFO - Autotest - Autotest successfully done
+04/11/2017 03:48:42 PM: ERROR - Charts Handler - Could not return information from chart - [Errno 2] No such file or directory: 'arquivos/top.txt'
+04/11/2017 03:48:42 PM: ERROR - Charts Handler - Could not return the first top chart - [Errno 2] No such file or directory: 'arquivos/top.txt'
+04/11/2017 03:50:25 PM: INFO - Server Start
+04/11/2017 03:50:44 PM: INFO - Server Start
+04/11/2017 03:50:57 PM: INFO - RWconf - Conf.ini file found
+04/11/2017 03:50:58 PM: INFO - Autotest - Frequency deals successfully 10886.0
+04/11/2017 03:50:58 PM: INFO - Autotest - Temperature deals successfully 26.3
+04/11/2017 03:50:59 PM: INFO - Autotest - Weight read successfully -1.7
+04/11/2017 03:50:59 PM: INFO - Autotest - Autotest successfully done
+04/11/2017 03:50:59 PM: ERROR - Charts Handler - Could not return information from chart - [Errno 2] No such file or directory: 'arquivos/top.txt'
+04/11/2017 03:50:59 PM: ERROR - Charts Handler - Could not return the first top chart - [Errno 2] No such file or directory: 'arquivos/top.txt'
+04/12/2017 09:50:04 AM: INFO - Server Start
+04/12/2017 09:50:15 AM: INFO - RWconf - Conf.ini file found
+04/12/2017 09:50:15 AM: INFO - Autotest - Frequency deals successfully 10912.0
+04/12/2017 09:50:16 AM: INFO - Autotest - Temperature deals successfully 23.6
+04/12/2017 09:50:17 AM: INFO - Autotest - Weight read successfully 0.3
+04/12/2017 09:50:17 AM: INFO - Autotest - Autotest successfully done
+04/12/2017 09:50:17 AM: ERROR - Charts Handler - Could not return information from chart - [Errno 2] No such file or directory: 'arquivos/top.txt'
+04/12/2017 09:50:17 AM: ERROR - Charts Handler - Could not return the first top chart - [Errno 2] No such file or directory: 'arquivos/top.txt'
+04/12/2017 10:00:09 AM: INFO - Server Start
+04/12/2017 10:01:49 AM: INFO - Server Start
+04/12/2017 10:04:05 AM: INFO - Server Start
+04/12/2017 10:04:56 AM: INFO - Server Start
+04/12/2017 10:25:07 AM: INFO - Server Start
+04/12/2017 10:25:21 AM: INFO - RWconf - Conf.ini file found
+04/12/2017 10:25:22 AM: INFO - Autotest - Frequency deals successfully 10904.0
+04/12/2017 10:25:22 AM: INFO - Autotest - Temperature deals successfully 24.3
+04/12/2017 10:25:23 AM: INFO - Autotest - Weight read successfully 0.4
+04/12/2017 10:25:23 AM: INFO - Autotest - Autotest successfully done
+04/12/2017 10:25:23 AM: ERROR - Charts Handler - Could not return information from chart - No option 'lang' in section: 'DEFAULT'
+04/12/2017 10:25:23 AM: ERROR - Charts Handler - Could not return the first top chart - [Errno 2] No such file or directory: 'arquivos/top.txt'
+04/12/2017 10:28:24 AM: INFO - Server Start
+04/12/2017 10:28:39 AM: INFO - RWconf - Conf.ini file found
+04/12/2017 10:28:39 AM: INFO - Autotest - Frequency deals successfully 10904.0
+04/12/2017 10:28:40 AM: INFO - Autotest - Temperature deals successfully 24.3
+04/12/2017 10:28:41 AM: INFO - Autotest - Weight read successfully 0.3
+04/12/2017 10:28:41 AM: INFO - Autotest - Autotest successfully done
+04/12/2017 10:28:41 AM: ERROR - Charts Handler - Could not return information from chart - No option 'lang' in section: 'DEFAULT'
+04/12/2017 10:28:41 AM: ERROR - Charts Handler - Could not return the first top chart - [Errno 2] No such file or directory: 'arquivos/top.txt'
+04/12/2017 10:36:49 AM: INFO - Server Start
+04/12/2017 10:37:03 AM: INFO - RWconf - Conf.ini file found
+04/12/2017 10:37:04 AM: INFO - Autotest - Frequency deals successfully 10903.0
+04/12/2017 10:37:04 AM: INFO - Autotest - Temperature deals successfully 24.3
+04/12/2017 10:37:05 AM: INFO - Autotest - Weight read successfully 0.2
+04/12/2017 10:37:05 AM: INFO - Autotest - Autotest successfully done
+04/12/2017 10:37:05 AM: INFO - Charts Handler - Chart information returned successfully
+04/12/2017 10:37:05 AM: INFO - Charts Handler - Top Chart returned successfully
+04/12/2017 10:37:05 AM: INFO - Screen - Measure
+04/12/2017 10:37:09 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:37:13 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:37:14 AM: INFO - Settings - Set language to PT
+04/12/2017 10:37:14 AM: INFO - Settings - Set temperature of humidity to Celsius
+04/12/2017 10:37:16 AM: INFO - Charts Handler - Charts of ARROZ Successfully listed
+04/12/2017 10:37:16 AM: INFO - Charts Handler - Charts of ARROZ Successfully listed
+04/12/2017 10:37:16 AM: INFO - Charts Handler - Successfully separated charts
+04/12/2017 10:37:16 AM: INFO - Charts Handler - Successfully separated charts
+04/12/2017 10:37:16 AM: INFO - Charts Handler - Info OK
+04/12/2017 10:37:16 AM: INFO - Screen - Historic
+04/12/2017 10:37:19 AM: INFO - Screen - Top charts
+04/12/2017 10:37:21 AM: INFO - Charts Handler - Chart information returned successfully
+04/12/2017 10:37:21 AM: INFO - Charts Handler - Top Chart returned successfully
+04/12/2017 10:37:21 AM: INFO - Screen - Measure
+04/12/2017 10:37:23 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:37:27 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:37:31 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:37:35 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:37:39 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:37:44 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:37:47 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:37:51 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:37:55 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:37:59 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:38:03 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:38:07 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:38:11 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:38:15 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:38:18 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:38:22 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:38:26 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:38:30 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:38:34 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:38:38 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:38:41 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:38:45 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:38:49 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:38:53 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:38:57 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:39:01 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:39:04 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:39:08 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:39:12 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:39:16 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:39:20 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:39:24 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:39:28 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:39:31 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:39:35 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:39:39 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:39:43 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:39:47 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:39:51 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:39:54 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:39:58 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:40:02 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:40:06 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:40:10 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:40:14 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:40:18 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:40:21 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:40:25 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:40:29 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:40:33 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:40:37 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:40:41 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:40:45 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:40:48 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:40:53 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:40:57 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:41:01 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:41:05 AM: INFO - Serial - Empty Grain cell
+04/12/2017 10:41:36 AM: INFO - Server Start
+04/17/2017 10:19:14 AM: INFO - Server Start
+04/17/2017 10:52:25 AM: INFO - Server Start
+04/17/2017 10:58:33 AM: INFO - Server Start
+04/17/2017 10:58:45 AM: INFO - Server Start
+04/17/2017 11:18:33 AM: INFO - Server Start
+04/17/2017 01:30:52 PM: INFO - Server Start
+04/17/2017 01:31:22 PM: INFO - RWconf - Conf.ini file found
+04/17/2017 01:31:23 PM: INFO - Autotest - Frequency deals successfully 10889.0
+04/17/2017 01:31:24 PM: INFO - Autotest - Temperature deals successfully 25.9
+04/17/2017 01:31:25 PM: INFO - Autotest - Weight read successfully 9.4
+04/17/2017 01:31:25 PM: INFO - Autotest - Autotest successfully done
+04/17/2017 01:31:25 PM: WARNING - Login - Try to log in without authentication
+04/17/2017 01:36:44 PM: INFO - Server Start
+04/17/2017 01:38:34 PM: INFO - Server Start
+04/17/2017 01:39:32 PM: INFO - Server Start
+04/17/2017 05:38:58 PM: INFO - Server Start
+04/17/2017 05:43:15 PM: INFO - Server Start
+04/17/2017 05:54:24 PM: INFO - Server Start
+04/17/2017 06:04:11 PM: INFO - Server Start
+04/17/2017 06:10:10 PM: INFO - Server Start
+04/17/2017 06:12:54 PM: INFO - Server Start
+04/17/2017 06:19:47 PM: INFO - Server Start
+04/17/2017 06:21:23 PM: INFO - Server Start
+04/17/2017 06:35:54 PM: INFO - Server Start
+04/17/2017 06:41:36 PM: INFO - Server Start
+04/17/2017 06:43:23 PM: INFO - Server Start
+04/17/2017 06:43:26 PM: INFO - RWconf - Conf.ini file found
+04/17/2017 06:43:26 PM: INFO - Autotest - Frequency deals successfully 10885.0
+04/17/2017 06:43:26 PM: INFO - Autotest - Temperature deals successfully 26.3
+04/17/2017 06:43:28 PM: INFO - Autotest - Weight read successfully 4.3
+04/17/2017 06:43:28 PM: INFO - Autotest - Autotest successfully done
+04/17/2017 06:43:28 PM: WARNING - Login - Try to log in without authentication
+04/17/2017 06:43:56 PM: INFO - Login - User logged in as Luiz
+04/17/2017 06:43:56 PM: INFO - Charts Handler - Chart information returned successfully
+04/17/2017 06:43:56 PM: INFO - Charts Handler - Top Chart returned successfully
+04/17/2017 06:43:56 PM: INFO - Screen - Measure
+04/17/2017 06:43:58 PM: INFO - Serial - Empty Grain cell
+04/17/2017 06:44:03 PM: INFO - Serial - Empty Grain cell
+04/17/2017 06:44:06 PM: INFO - Serial - Empty Grain cell
+04/17/2017 06:44:09 PM: INFO - Serial - Empty Grain cell
+04/17/2017 06:44:12 PM: INFO - Serial - Empty Grain cell
+04/17/2017 06:44:15 PM: INFO - Serial - Empty Grain cell
+04/17/2017 06:44:18 PM: INFO - Serial - Empty Grain cell
+04/17/2017 06:44:21 PM: INFO - Serial - Empty Grain cell
+04/17/2017 06:44:24 PM: INFO - Serial - Empty Grain cell
+04/17/2017 06:44:27 PM: INFO - Serial - Empty Grain cell
+04/17/2017 06:44:30 PM: INFO - Serial - Empty Grain cell
+04/17/2017 06:44:33 PM: INFO - Serial - Empty Grain cell
+04/17/2017 06:44:36 PM: INFO - Serial - Empty Grain cell
+04/17/2017 06:44:39 PM: INFO - Serial - Empty Grain cell
+04/17/2017 06:44:42 PM: INFO - Serial - Empty Grain cell
+04/17/2017 06:44:45 PM: INFO - Serial - Empty Grain cell
+04/17/2017 06:44:48 PM: INFO - Serial - Empty Grain cell
+04/17/2017 06:44:51 PM: INFO - Serial - Empty Grain cell
+04/17/2017 06:44:54 PM: INFO - Serial - Empty Grain cell
+04/17/2017 06:44:57 PM: INFO - Serial - Empty Grain cell
+04/17/2017 06:51:07 PM: INFO - Server Start
+04/17/2017 06:51:09 PM: INFO - RWconf - Conf.ini file found
+04/17/2017 06:51:10 PM: INFO - Autotest - Temperature deals successfully 10883.0
+04/17/2017 06:51:11 PM: INFO - Autotest - Weight read successfully 4.7
+04/17/2017 06:51:11 PM: ERROR - Autotest - Erro na Frequencia
+04/17/2017 06:51:11 PM: WARNING - Login - Try to log in without authentication
+04/17/2017 06:53:46 PM: INFO - Server Start
+04/17/2017 06:54:31 PM: INFO - RWconf - Conf.ini file found
+04/17/2017 06:54:32 PM: INFO - Autotest - Frequency deals successfully 10880.0
+04/17/2017 06:54:32 PM: INFO - Autotest - Temperature deals successfully 26.6
+04/17/2017 06:54:33 PM: INFO - Autotest - Weight read successfully 4.6
+04/17/2017 06:54:33 PM: INFO - Autotest - Autotest successfully done
+04/17/2017 06:54:33 PM: WARNING - Login - Try to log in without authentication
+04/17/2017 06:56:42 PM: INFO - Server Start
+04/17/2017 06:59:13 PM: INFO - Server Start
+04/18/2017 12:55:35 PM: INFO - Server Start
+04/18/2017 01:02:55 PM: INFO - Server Start
+04/18/2017 01:37:07 PM: INFO - Server Start
+04/18/2017 01:39:26 PM: INFO - Server Start
+04/18/2017 01:39:28 PM: INFO - RWconf - Conf.ini file found
+04/18/2017 01:39:28 PM: INFO - Autotest - Frequency deals successfully 10905.0
+04/18/2017 01:39:29 PM: INFO - Autotest - Temperature deals successfully 24.4
+04/18/2017 01:39:30 PM: INFO - Autotest - Weight read successfully 4.6
+04/18/2017 01:39:30 PM: INFO - Autotest - Autotest successfully done
+04/18/2017 01:39:30 PM: WARNING - Login - Try to log in without authentication
+04/18/2017 01:41:02 PM: INFO - Server Start
+04/18/2017 01:42:52 PM: INFO - Server Start
+04/18/2017 01:42:53 PM: INFO - RWconf - Conf.ini file found
+04/18/2017 01:42:54 PM: INFO - Autotest - Frequency deals successfully 10905.0
+04/18/2017 01:42:54 PM: INFO - Autotest - Temperature deals successfully 24.4
+04/18/2017 01:42:55 PM: INFO - Autotest - Weight read successfully 4.6
+04/18/2017 01:42:55 PM: INFO - Autotest - Autotest successfully done
+04/18/2017 01:42:55 PM: WARNING - Login - Try to log in without authentication
+04/18/2017 01:45:49 PM: INFO - Server Start
+04/18/2017 01:45:50 PM: INFO - RWconf - Conf.ini file found
+04/18/2017 01:45:51 PM: INFO - Autotest - Frequency deals successfully 10904.0
+04/18/2017 01:45:51 PM: INFO - Autotest - Temperature deals successfully 24.5
+04/18/2017 01:45:52 PM: INFO - Autotest - Weight read successfully 4.7
+04/18/2017 01:45:52 PM: INFO - Autotest - Autotest successfully done
+04/18/2017 01:45:52 PM: WARNING - Login - Try to log in without authentication
+04/18/2017 01:48:44 PM: INFO - Server Start
+04/18/2017 01:48:47 PM: INFO - Server Start
+04/18/2017 02:02:57 PM: INFO - Server Start
+04/18/2017 02:02:58 PM: INFO - RWconf - Conf.ini file found
+04/18/2017 02:02:59 PM: INFO - Autotest - Frequency deals successfully 10897.0
+04/18/2017 02:02:59 PM: INFO - Autotest - Temperature deals successfully 25.1
+04/18/2017 02:03:00 PM: INFO - Autotest - Weight read successfully 4.8
+04/18/2017 02:03:00 PM: INFO - Autotest - Autotest successfully done
+04/18/2017 02:03:00 PM: WARNING - Login - Try to log in without authentication
+05/03/2017 10:37:58 AM: INFO - Server Start
+05/03/2017 10:38:07 AM: INFO - RWconf - Conf.ini file found
+05/03/2017 10:38:07 AM: ERROR - Autotest - Erro no Peso - 1000
+05/03/2017 10:38:07 AM: WARNING - Login - Try to log in without authentication
+05/03/2017 10:38:11 AM: INFO - Login - User logged in as Luiz
+05/03/2017 10:38:11 AM: INFO - Charts Handler - Chart information returned successfully
+05/03/2017 10:38:11 AM: INFO - Charts Handler - Top Chart returned successfully
+05/03/2017 10:38:11 AM: INFO - Screen - Measure
+05/03/2017 10:38:12 AM: INFO - Settings - Set language to PT
+05/03/2017 10:38:12 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/03/2017 10:41:37 AM: INFO - Server Start
+05/03/2017 10:41:38 AM: INFO - Settings - Set language to PT
+05/03/2017 10:41:38 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/03/2017 10:41:40 AM: INFO - Settings - Set language to PT
+05/03/2017 10:41:40 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/03/2017 10:41:45 AM: INFO - Settings - Set language to PT
+05/03/2017 10:41:45 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/03/2017 02:05:59 PM: INFO - Server Start
+05/03/2017 02:06:00 PM: INFO - Settings - Set language to PT
+05/03/2017 02:06:00 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/03/2017 02:06:07 PM: INFO - RWconf - Conf.ini file found
+05/03/2017 02:06:07 PM: ERROR - Autotest - Erro no Peso - 1000
+05/03/2017 02:06:07 PM: INFO - Settings - Set language to PT
+05/03/2017 02:06:07 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/03/2017 02:07:18 PM: INFO - Server Start
+05/03/2017 02:07:20 PM: INFO - Settings - Set language to PT
+05/03/2017 02:07:20 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/03/2017 02:07:22 PM: INFO - Settings - Set language to PT
+05/03/2017 02:07:22 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/03/2017 02:20:22 PM: INFO - Server Start
+05/03/2017 02:20:23 PM: INFO - Settings - Set language to PT
+05/03/2017 02:20:23 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/03/2017 02:26:29 PM: INFO - Server Start
+05/03/2017 02:26:32 PM: INFO - Settings - Set language to PT
+05/03/2017 02:26:32 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/03/2017 02:26:59 PM: INFO - Server Start
+05/03/2017 02:27:01 PM: INFO - Settings - Set language to PT
+05/03/2017 02:27:01 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/03/2017 02:28:20 PM: INFO - Server Start
+05/03/2017 02:28:24 PM: INFO - Settings - Set language to PT
+05/03/2017 02:28:24 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/03/2017 02:29:01 PM: INFO - Server Start
+05/03/2017 02:29:02 PM: INFO - Settings - Set language to PT
+05/03/2017 02:29:02 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/03/2017 02:30:52 PM: INFO - Server Start
+05/03/2017 02:30:54 PM: INFO - Settings - Set language to PT
+05/03/2017 02:30:54 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/03/2017 02:31:17 PM: INFO - Server Start
+05/03/2017 02:31:18 PM: INFO - Settings - Set language to PT
+05/03/2017 02:31:18 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/03/2017 02:32:34 PM: INFO - Server Start
+05/03/2017 02:32:36 PM: INFO - Settings - Set language to PT
+05/03/2017 02:32:36 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/03/2017 02:36:46 PM: INFO - Server Start
+05/03/2017 02:36:48 PM: INFO - Settings - Set language to PT
+05/03/2017 02:36:48 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/03/2017 02:37:45 PM: INFO - Server Start
+05/03/2017 02:37:46 PM: INFO - Settings - Set language to PT
+05/03/2017 02:37:46 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/03/2017 02:42:23 PM: INFO - Server Start
+05/03/2017 02:43:03 PM: INFO - Server Start
+05/03/2017 02:43:35 PM: INFO - Server Start
+05/03/2017 02:43:35 PM: INFO - Settings - Set language to PT
+05/03/2017 02:43:35 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/03/2017 02:47:36 PM: INFO - Server Start
+05/03/2017 02:47:55 PM: INFO - Server Start
+05/03/2017 02:48:41 PM: INFO - Server Start
+05/03/2017 02:49:40 PM: INFO - Server Start
+05/03/2017 02:49:41 PM: INFO - Settings - Set language to PT
+05/03/2017 02:49:41 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/03/2017 02:50:22 PM: INFO - Server Start
+05/03/2017 02:50:23 PM: INFO - Settings - Set language to PT
+05/03/2017 02:50:23 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/03/2017 02:50:32 PM: INFO - Settings - Set language to PT
+05/03/2017 02:50:32 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/03/2017 02:53:32 PM: INFO - Server Start
+05/03/2017 02:53:34 PM: INFO - Settings - Set language to PT
+05/03/2017 02:53:34 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/03/2017 02:54:30 PM: INFO - Server Start
+05/03/2017 02:54:30 PM: INFO - Settings - Set language to PT
+05/03/2017 02:54:30 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/03/2017 02:55:22 PM: INFO - Server Start
+05/03/2017 02:55:22 PM: INFO - Settings - Set language to PT
+05/03/2017 02:55:22 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/03/2017 02:57:46 PM: INFO - Server Start
+05/03/2017 02:57:48 PM: INFO - Settings - Set language to PT
+05/03/2017 02:57:48 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/03/2017 02:58:27 PM: INFO - Server Start
+05/03/2017 02:58:28 PM: INFO - Settings - Set language to PT
+05/03/2017 02:58:28 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/03/2017 02:59:13 PM: INFO - Server Start
+05/03/2017 02:59:14 PM: INFO - Settings - Set language to PT
+05/03/2017 02:59:14 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/03/2017 03:00:31 PM: INFO - Server Start
+05/03/2017 03:00:36 PM: INFO - Settings - Set language to PT
+05/03/2017 03:00:36 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/03/2017 03:01:53 PM: INFO - Server Start
+05/03/2017 03:02:14 PM: INFO - Server Start
+05/03/2017 03:02:14 PM: INFO - Settings - Set language to PT
+05/03/2017 03:02:14 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/03/2017 03:02:38 PM: INFO - Server Start
+05/03/2017 03:02:39 PM: INFO - Settings - Set language to PT
+05/03/2017 03:02:39 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/03/2017 03:03:06 PM: INFO - Server Start
+05/03/2017 03:03:07 PM: INFO - Settings - Set language to PT
+05/03/2017 03:03:07 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/03/2017 03:03:13 PM: INFO - Settings - Set language to PT
+05/03/2017 03:03:13 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/03/2017 03:54:26 PM: INFO - Settings - Set language to PT
+05/03/2017 03:54:26 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/04/2017 09:49:39 AM: INFO - Server Start
+05/04/2017 09:49:43 AM: INFO - RWconf - Conf.ini file found
+05/04/2017 09:49:43 AM: ERROR - Autotest - Erro no Peso - 1000
+05/04/2017 09:49:44 AM: WARNING - Login - Try to log in without authentication
+05/04/2017 09:50:09 AM: INFO - Login - User logged in as Luiz
+05/04/2017 09:50:09 AM: INFO - Charts Handler - Chart information returned successfully
+05/04/2017 09:50:09 AM: INFO - Charts Handler - Top Chart returned successfully
+05/04/2017 09:50:09 AM: INFO - Screen - Measure
+05/04/2017 09:50:10 AM: INFO - Settings - Set language to PT
+05/04/2017 09:50:10 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/04/2017 09:50:12 AM: INFO - Settings - Set language to PT
+05/04/2017 09:50:12 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/04/2017 09:54:01 AM: INFO - RWconf - Conf.ini file found
+05/04/2017 09:54:01 AM: ERROR - Autotest - Erro no Peso - 1000
+05/04/2017 09:54:01 AM: INFO - Settings - Set language to PT
+05/04/2017 09:54:01 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/04/2017 09:54:02 AM: INFO - Settings - Set language to PT
+05/04/2017 09:54:02 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/04/2017 10:35:01 AM: INFO - Server Start
+05/04/2017 10:36:48 AM: INFO - Server Start
+05/04/2017 10:38:05 AM: INFO - Server Start
+05/04/2017 10:38:06 AM: INFO - Settings - Set language to PT
+05/04/2017 10:38:06 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/04/2017 10:39:03 AM: INFO - Server Start
+05/04/2017 10:39:04 AM: INFO - Settings - Set language to PT
+05/04/2017 10:39:04 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/04/2017 10:40:12 AM: INFO - Server Start
+05/04/2017 10:40:13 AM: INFO - Settings - Set language to PT
+05/04/2017 10:40:13 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/04/2017 10:41:35 AM: INFO - Server Start
+05/04/2017 10:41:37 AM: INFO - Settings - Set language to PT
+05/04/2017 10:41:37 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/04/2017 10:43:16 AM: INFO - Server Start
+05/04/2017 10:43:16 AM: INFO - Settings - Set language to PT
+05/04/2017 10:43:16 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/04/2017 10:43:26 AM: INFO - Server Start
+05/04/2017 10:43:27 AM: INFO - Settings - Set language to PT
+05/04/2017 10:43:27 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/04/2017 10:43:40 AM: INFO - Server Start
+05/04/2017 10:43:41 AM: INFO - Settings - Set language to PT
+05/04/2017 10:43:41 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/04/2017 11:00:27 AM: INFO - Server Start
+05/04/2017 11:00:29 AM: INFO - Settings - Set language to PT
+05/04/2017 11:00:29 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/04/2017 11:01:19 AM: INFO - Server Start
+05/04/2017 11:01:21 AM: INFO - Settings - Set language to PT
+05/04/2017 11:01:21 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/04/2017 11:01:50 AM: INFO - Server Start
+05/04/2017 11:01:51 AM: INFO - Settings - Set language to PT
+05/04/2017 11:01:51 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/04/2017 11:02:08 AM: INFO - Server Start
+05/04/2017 11:02:08 AM: INFO - Settings - Set language to PT
+05/04/2017 11:02:08 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/04/2017 11:03:36 AM: INFO - Server Start
+05/04/2017 11:03:37 AM: INFO - Settings - Set language to PT
+05/04/2017 11:03:37 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/04/2017 11:05:44 AM: INFO - Server Start
+05/04/2017 11:05:46 AM: INFO - Settings - Set language to PT
+05/04/2017 11:05:46 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/04/2017 11:06:08 AM: INFO - Server Start
+05/04/2017 11:06:13 AM: INFO - Settings - Set language to PT
+05/04/2017 11:06:13 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/04/2017 11:06:33 AM: INFO - Server Start
+05/04/2017 11:06:33 AM: INFO - Settings - Set language to PT
+05/04/2017 11:06:33 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/04/2017 11:07:20 AM: INFO - Server Start
+05/04/2017 11:08:23 AM: INFO - Server Start
+05/04/2017 11:08:25 AM: INFO - Settings - Set language to PT
+05/04/2017 11:08:25 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/04/2017 11:08:39 AM: INFO - Settings - Set language to PT
+05/04/2017 11:08:39 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/04/2017 11:09:21 AM: INFO - Server Start
+05/04/2017 11:09:22 AM: INFO - Settings - Set language to PT
+05/04/2017 11:09:22 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/04/2017 11:10:54 AM: INFO - Server Start
+05/04/2017 11:10:55 AM: INFO - Settings - Set language to PT
+05/04/2017 11:10:55 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/04/2017 11:11:34 AM: INFO - Server Start
+05/04/2017 11:11:34 AM: INFO - Settings - Set language to PT
+05/04/2017 11:11:34 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/04/2017 11:12:22 AM: INFO - Server Start
+05/04/2017 11:12:22 AM: INFO - Settings - Set language to PT
+05/04/2017 11:12:22 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/04/2017 11:12:39 AM: INFO - Server Start
+05/04/2017 11:12:40 AM: INFO - Settings - Set language to PT
+05/04/2017 11:12:40 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/04/2017 11:13:55 AM: INFO - Server Start
+05/04/2017 11:13:56 AM: INFO - Settings - Set language to PT
+05/04/2017 11:13:56 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/04/2017 11:14:10 AM: INFO - Server Start
+05/04/2017 11:14:24 AM: INFO - Server Start
+05/04/2017 11:14:25 AM: INFO - Settings - Set language to PT
+05/04/2017 11:14:25 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/04/2017 11:14:52 AM: INFO - Server Start
+05/04/2017 11:14:53 AM: INFO - Settings - Set language to PT
+05/04/2017 11:14:53 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/04/2017 11:16:49 AM: INFO - Server Start
+05/04/2017 11:16:49 AM: INFO - Settings - Set language to PT
+05/04/2017 11:16:49 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/04/2017 11:17:50 AM: INFO - Server Start
+05/04/2017 11:17:51 AM: INFO - Settings - Set language to PT
+05/04/2017 11:17:51 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/04/2017 11:18:16 AM: INFO - Server Start
+05/04/2017 11:18:17 AM: INFO - Settings - Set language to PT
+05/04/2017 11:18:17 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/04/2017 11:18:29 AM: INFO - Server Start
+05/04/2017 11:18:29 AM: INFO - Settings - Set language to PT
+05/04/2017 11:18:29 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/04/2017 11:18:36 AM: INFO - Server Start
+05/04/2017 11:18:37 AM: INFO - Settings - Set language to PT
+05/04/2017 11:18:37 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/04/2017 11:18:47 AM: INFO - Server Start
+05/04/2017 11:18:48 AM: INFO - Settings - Set language to PT
+05/04/2017 11:18:48 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/04/2017 11:37:52 AM: INFO - Server Start
+05/04/2017 11:37:57 AM: INFO - Settings - Set language to PT
+05/04/2017 11:37:57 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/04/2017 11:38:26 AM: INFO - Server Start
+05/04/2017 11:38:28 AM: INFO - Settings - Set language to PT
+05/04/2017 11:38:28 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/04/2017 11:40:09 AM: INFO - Server Start
+05/04/2017 11:40:09 AM: INFO - Settings - Set language to PT
+05/04/2017 11:40:09 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/04/2017 11:40:54 AM: INFO - Server Start
+05/04/2017 11:40:55 AM: INFO - Settings - Set language to PT
+05/04/2017 11:40:55 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/04/2017 12:31:26 PM: INFO - Settings - Set language to PT
+05/04/2017 12:31:26 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/04/2017 02:05:45 PM: INFO - Server Start
+05/04/2017 02:05:54 PM: INFO - Server Start
+05/04/2017 02:05:55 PM: INFO - Settings - Set language to PT
+05/04/2017 02:05:55 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/04/2017 02:06:11 PM: INFO - Server Start
+05/04/2017 02:06:12 PM: INFO - Settings - Set language to PT
+05/04/2017 02:06:12 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/04/2017 02:09:15 PM: INFO - Server Start
+05/04/2017 02:13:39 PM: INFO - Server Start
+05/04/2017 02:13:41 PM: INFO - Settings - Set language to PT
+05/04/2017 02:13:41 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/04/2017 02:14:46 PM: INFO - Server Start
+05/04/2017 02:23:34 PM: INFO - Server Start
+05/04/2017 02:23:53 PM: INFO - Server Start
+05/04/2017 02:23:54 PM: INFO - Settings - Set language to PT
+05/04/2017 02:23:54 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/04/2017 02:24:18 PM: INFO - Server Start
+05/04/2017 02:24:18 PM: INFO - Settings - Set language to PT
+05/04/2017 02:24:18 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/04/2017 02:24:44 PM: INFO - Server Start
+05/04/2017 02:24:45 PM: INFO - Settings - Set language to PT
+05/04/2017 02:24:45 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/04/2017 02:24:56 PM: INFO - Server Start
+05/04/2017 02:24:57 PM: INFO - Settings - Set language to PT
+05/04/2017 02:24:57 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/04/2017 02:25:16 PM: INFO - Server Start
+05/04/2017 02:25:17 PM: INFO - Settings - Set language to PT
+05/04/2017 02:25:17 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/04/2017 02:25:24 PM: INFO - Server Start
+05/04/2017 02:25:25 PM: INFO - Settings - Set language to PT
+05/04/2017 02:25:25 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/04/2017 02:26:10 PM: INFO - Server Start
+05/04/2017 02:26:10 PM: INFO - Settings - Set language to PT
+05/04/2017 02:26:10 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/04/2017 02:26:20 PM: INFO - Server Start
+05/04/2017 02:26:21 PM: INFO - Settings - Set language to PT
+05/04/2017 02:26:21 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/04/2017 02:31:28 PM: INFO - Server Start
+05/04/2017 02:31:28 PM: INFO - Settings - Set language to PT
+05/04/2017 02:31:28 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/04/2017 02:31:42 PM: INFO - Server Start
+05/04/2017 02:31:42 PM: INFO - Settings - Set language to PT
+05/04/2017 02:31:42 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 09:23:17 AM: INFO - Server Start
+05/05/2017 09:23:33 AM: INFO - RWconf - Conf.ini file found
+05/05/2017 09:23:33 AM: ERROR - Autotest - Erro no Peso - 1000
+05/05/2017 09:23:33 AM: WARNING - Login - Try to log in without authentication
+05/05/2017 09:23:37 AM: INFO - Login - User logged in as Luiz
+05/05/2017 09:23:38 AM: INFO - Charts Handler - Chart information returned successfully
+05/05/2017 09:23:38 AM: INFO - Charts Handler - Top Chart returned successfully
+05/05/2017 09:23:38 AM: INFO - Screen - Measure
+05/05/2017 09:23:44 AM: INFO - Settings - Set language to PT
+05/05/2017 09:23:44 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 09:23:49 AM: INFO - Settings - Set language to PT
+05/05/2017 09:23:49 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 09:26:44 AM: INFO - RWconf - Conf.ini file found
+05/05/2017 09:26:44 AM: ERROR - Autotest - Erro no Peso - 1000
+05/05/2017 09:26:44 AM: INFO - Charts Handler - Chart information returned successfully
+05/05/2017 09:26:44 AM: INFO - Charts Handler - Top Chart returned successfully
+05/05/2017 09:26:44 AM: INFO - Screen - Measure
+05/05/2017 10:16:37 AM: INFO - Server Start
+05/05/2017 10:17:40 AM: INFO - Server Start
+05/05/2017 10:17:42 AM: INFO - Settings - Set language to PT
+05/05/2017 10:17:42 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 10:18:29 AM: INFO - Settings - Set language to PT
+05/05/2017 10:18:29 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 10:18:52 AM: INFO - Server Start
+05/05/2017 10:18:54 AM: INFO - Settings - Set language to PT
+05/05/2017 10:18:54 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 10:19:07 AM: INFO - Server Start
+05/05/2017 10:19:36 AM: INFO - Server Start
+05/05/2017 10:23:24 AM: INFO - Settings - Set language to PT
+05/05/2017 10:23:24 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 10:38:37 AM: INFO - Settings - Set language to PT
+05/05/2017 10:38:37 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 10:44:37 AM: INFO - Server Start
+05/05/2017 10:44:40 AM: INFO - Settings - Set language to PT
+05/05/2017 10:44:40 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 10:45:24 AM: INFO - Server Start
+05/05/2017 10:45:26 AM: INFO - Settings - Set language to PT
+05/05/2017 10:45:26 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 10:46:00 AM: INFO - Server Start
+05/05/2017 10:46:01 AM: INFO - Settings - Set language to PT
+05/05/2017 10:46:01 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 10:48:41 AM: INFO - Server Start
+05/05/2017 10:48:44 AM: INFO - Settings - Set language to PT
+05/05/2017 10:48:44 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 10:48:46 AM: INFO - Settings - Set language to PT
+05/05/2017 10:48:46 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 10:49:16 AM: INFO - Settings - Set language to PT
+05/05/2017 10:49:16 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 10:49:32 AM: INFO - Server Start
+05/05/2017 10:49:33 AM: INFO - Settings - Set language to PT
+05/05/2017 10:49:33 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 10:50:52 AM: INFO - Server Start
+05/05/2017 10:50:55 AM: INFO - Settings - Set language to PT
+05/05/2017 10:50:55 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 10:51:36 AM: INFO - Server Start
+05/05/2017 10:59:04 AM: INFO - Server Start
+05/05/2017 10:59:48 AM: INFO - Server Start
+05/05/2017 10:59:50 AM: INFO - Settings - Set language to PT
+05/05/2017 10:59:50 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 11:00:52 AM: INFO - Server Start
+05/05/2017 11:00:55 AM: INFO - Settings - Set language to PT
+05/05/2017 11:00:55 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 11:02:40 AM: INFO - Server Start
+05/05/2017 11:02:42 AM: INFO - Settings - Set language to PT
+05/05/2017 11:02:42 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 11:03:40 AM: INFO - Settings - Set language to PT
+05/05/2017 11:03:40 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 11:04:12 AM: INFO - Settings - Set language to PT
+05/05/2017 11:04:12 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 11:06:01 AM: INFO - Server Start
+05/05/2017 11:06:54 AM: INFO - Server Start
+05/05/2017 11:06:55 AM: INFO - Settings - Set language to PT
+05/05/2017 11:06:55 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 11:07:42 AM: INFO - Server Start
+05/05/2017 11:08:13 AM: INFO - Server Start
+05/05/2017 11:08:42 AM: INFO - Server Start
+05/05/2017 11:08:42 AM: INFO - Settings - Set language to PT
+05/05/2017 11:08:42 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 11:09:16 AM: INFO - Settings - Set language to PT
+05/05/2017 11:09:16 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 11:09:37 AM: INFO - Server Start
+05/05/2017 11:09:42 AM: INFO - Settings - Set language to PT
+05/05/2017 11:09:42 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 11:14:15 AM: INFO - Server Start
+05/05/2017 11:14:18 AM: INFO - Settings - Set language to PT
+05/05/2017 11:14:18 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 11:14:20 AM: INFO - Settings - Set language to PT
+05/05/2017 11:14:20 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 11:14:40 AM: INFO - Server Start
+05/05/2017 11:14:40 AM: INFO - Settings - Set language to PT
+05/05/2017 11:14:40 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 11:15:15 AM: INFO - Settings - Set language to PT
+05/05/2017 11:15:15 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 11:16:25 AM: INFO - Settings - Set language to PT
+05/05/2017 11:16:25 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 11:16:38 AM: INFO - Server Start
+05/05/2017 11:16:39 AM: INFO - Settings - Set language to PT
+05/05/2017 11:16:39 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 11:16:52 AM: INFO - Settings - Set language to PT
+05/05/2017 11:16:52 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 11:16:53 AM: INFO - Settings - Set language to PT
+05/05/2017 11:16:53 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 11:17:43 AM: INFO - Server Start
+05/05/2017 11:17:43 AM: INFO - Settings - Set language to PT
+05/05/2017 11:17:43 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 11:17:50 AM: INFO - Server Start
+05/05/2017 11:17:50 AM: INFO - Settings - Set language to PT
+05/05/2017 11:17:50 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 11:18:16 AM: INFO - Server Start
+05/05/2017 11:18:16 AM: INFO - Settings - Set language to PT
+05/05/2017 11:18:16 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 11:18:54 AM: INFO - Server Start
+05/05/2017 11:18:54 AM: INFO - Settings - Set language to PT
+05/05/2017 11:18:54 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 11:19:09 AM: INFO - Server Start
+05/05/2017 11:19:10 AM: INFO - Settings - Set language to PT
+05/05/2017 11:19:10 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 11:19:17 AM: INFO - Server Start
+05/05/2017 11:19:17 AM: INFO - Settings - Set language to PT
+05/05/2017 11:19:17 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 11:19:33 AM: INFO - Server Start
+05/05/2017 11:19:33 AM: INFO - Settings - Set language to PT
+05/05/2017 11:19:33 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 11:19:40 AM: INFO - Server Start
+05/05/2017 11:19:40 AM: INFO - Settings - Set language to PT
+05/05/2017 11:19:40 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 11:19:48 AM: INFO - Server Start
+05/05/2017 11:19:48 AM: INFO - Settings - Set language to PT
+05/05/2017 11:19:48 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 11:19:56 AM: INFO - Server Start
+05/05/2017 11:19:56 AM: INFO - Settings - Set language to PT
+05/05/2017 11:19:56 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 11:21:55 AM: INFO - Server Start
+05/05/2017 11:21:56 AM: INFO - Settings - Set language to PT
+05/05/2017 11:21:56 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 11:22:14 AM: INFO - Server Start
+05/05/2017 11:22:15 AM: INFO - Settings - Set language to PT
+05/05/2017 11:22:15 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 11:23:23 AM: INFO - Server Start
+05/05/2017 11:23:23 AM: INFO - Settings - Set language to PT
+05/05/2017 11:23:23 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 11:24:47 AM: INFO - Server Start
+05/05/2017 11:24:47 AM: INFO - Settings - Set language to PT
+05/05/2017 11:24:47 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 11:25:04 AM: INFO - Settings - Set language to PT
+05/05/2017 11:25:04 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 11:25:10 AM: INFO - Server Start
+05/05/2017 11:25:11 AM: INFO - Settings - Set language to PT
+05/05/2017 11:25:11 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 11:26:32 AM: INFO - Server Start
+05/05/2017 11:26:33 AM: INFO - Settings - Set language to PT
+05/05/2017 11:26:33 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 11:28:17 AM: INFO - Server Start
+05/05/2017 11:28:20 AM: INFO - Settings - Set language to PT
+05/05/2017 11:28:20 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 11:30:13 AM: INFO - Server Start
+05/05/2017 11:30:16 AM: INFO - Settings - Set language to PT
+05/05/2017 11:30:16 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 11:30:26 AM: INFO - Server Start
+05/05/2017 11:30:28 AM: INFO - Settings - Set language to PT
+05/05/2017 11:30:28 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 11:30:48 AM: INFO - Server Start
+05/05/2017 11:30:48 AM: INFO - Settings - Set language to PT
+05/05/2017 11:30:48 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 11:31:29 AM: INFO - Server Start
+05/05/2017 11:31:29 AM: INFO - Settings - Set language to PT
+05/05/2017 11:31:29 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 11:31:44 AM: INFO - Server Start
+05/05/2017 11:31:45 AM: INFO - Settings - Set language to PT
+05/05/2017 11:31:45 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 11:32:34 AM: INFO - Server Start
+05/05/2017 11:32:34 AM: INFO - Settings - Set language to PT
+05/05/2017 11:32:34 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 11:33:37 AM: INFO - Server Start
+05/05/2017 11:33:39 AM: INFO - Settings - Set language to PT
+05/05/2017 11:33:39 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 11:34:58 AM: INFO - Server Start
+05/05/2017 11:34:59 AM: INFO - Settings - Set language to PT
+05/05/2017 11:34:59 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 01:08:56 PM: INFO - Settings - Set language to PT
+05/05/2017 01:08:56 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 01:09:36 PM: INFO - Settings - Set language to PT
+05/05/2017 01:09:36 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 01:09:49 PM: INFO - Server Start
+05/05/2017 01:09:51 PM: INFO - Settings - Set language to PT
+05/05/2017 01:09:51 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 01:10:27 PM: INFO - Settings - Set language to PT
+05/05/2017 01:10:27 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 01:10:31 PM: INFO - Settings - Set language to PT
+05/05/2017 01:10:31 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 01:10:42 PM: INFO - Settings - Set language to PT
+05/05/2017 01:10:42 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 01:11:03 PM: INFO - Settings - Set language to PT
+05/05/2017 01:11:03 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 01:11:26 PM: INFO - Settings - Set language to PT
+05/05/2017 01:11:26 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 01:13:34 PM: INFO - Settings - Set language to PT
+05/05/2017 01:13:34 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/05/2017 01:13:36 PM: INFO - Settings - Set language to PT
+05/05/2017 01:13:36 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/09/2017 09:48:14 AM: INFO - Server Start
+05/09/2017 09:50:17 AM: INFO - Login - User logged in as Luiz
+05/09/2017 09:50:17 AM: INFO - Charts Handler - Chart information returned successfully
+05/09/2017 09:50:17 AM: INFO - Charts Handler - Top Chart returned successfully
+05/09/2017 09:50:17 AM: INFO - Screen - Measure
+05/09/2017 09:50:30 AM: INFO - Settings - Set language to PT
+05/09/2017 09:50:30 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/09/2017 10:21:36 AM: INFO - Server Start
+05/09/2017 10:21:39 AM: INFO - RWconf - Conf.ini file found
+05/09/2017 10:21:39 AM: ERROR - Autotest - Erro no Peso - 1000
+05/09/2017 10:21:39 AM: WARNING - Login - Try to log in without authentication
+05/09/2017 10:21:43 AM: INFO - Login - User logged in as Luiz
+05/09/2017 10:21:43 AM: INFO - Charts Handler - Chart information returned successfully
+05/09/2017 10:21:43 AM: INFO - Charts Handler - Top Chart returned successfully
+05/09/2017 10:21:43 AM: INFO - Screen - Measure
+05/09/2017 10:21:45 AM: INFO - Settings - Set language to PT
+05/09/2017 10:21:45 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/09/2017 10:21:50 AM: INFO - Settings - Set language to PT
+05/09/2017 10:21:50 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/09/2017 10:27:52 AM: INFO - Server Start
+05/09/2017 10:27:53 AM: INFO - Settings - Set language to PT
+05/09/2017 10:27:53 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/09/2017 10:38:25 AM: INFO - Settings - Set language to PT
+05/09/2017 10:38:25 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/09/2017 10:38:34 AM: INFO - Settings - Set language to PT
+05/09/2017 10:38:34 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/09/2017 10:40:22 AM: INFO - Server Start
+05/09/2017 10:40:24 AM: INFO - Settings - Set language to PT
+05/09/2017 10:40:24 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/09/2017 10:40:30 AM: INFO - Settings - Set language to PT
+05/09/2017 10:40:30 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/09/2017 01:35:23 PM: INFO - Server Start
+05/09/2017 01:35:26 PM: INFO - Settings - Set language to PT
+05/09/2017 01:35:26 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/09/2017 01:39:48 PM: INFO - Server Start
+05/09/2017 01:39:49 PM: INFO - Settings - Set language to PT
+05/09/2017 01:39:49 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/09/2017 01:41:14 PM: INFO - Server Start
+05/09/2017 01:41:52 PM: INFO - Settings - Set language to PT
+05/09/2017 01:41:52 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/09/2017 01:45:01 PM: INFO - Server Start
+05/09/2017 01:45:03 PM: INFO - Settings - Set language to PT
+05/09/2017 01:45:03 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/09/2017 01:45:58 PM: INFO - Server Start
+05/09/2017 01:46:01 PM: INFO - Settings - Set language to PT
+05/09/2017 01:46:01 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/09/2017 01:46:18 PM: INFO - Server Start
+05/09/2017 01:46:21 PM: INFO - Settings - Set language to PT
+05/09/2017 01:46:21 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/09/2017 01:49:24 PM: INFO - Server Start
+05/09/2017 01:49:26 PM: INFO - Settings - Set language to PT
+05/09/2017 01:49:26 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/09/2017 01:49:47 PM: INFO - Server Start
+05/09/2017 01:49:48 PM: INFO - Settings - Set language to PT
+05/09/2017 01:49:48 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/09/2017 01:49:58 PM: INFO - Server Start
+05/09/2017 01:50:00 PM: INFO - Settings - Set language to PT
+05/09/2017 01:50:00 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/09/2017 01:50:48 PM: INFO - Server Start
+05/09/2017 01:50:49 PM: INFO - Settings - Set language to PT
+05/09/2017 01:50:49 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/09/2017 01:52:27 PM: INFO - Server Start
+05/09/2017 01:52:29 PM: INFO - Settings - Set language to PT
+05/09/2017 01:52:29 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/09/2017 01:53:27 PM: INFO - Server Start
+05/09/2017 01:53:29 PM: INFO - Settings - Set language to PT
+05/09/2017 01:53:29 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/09/2017 01:54:45 PM: INFO - Server Start
+05/09/2017 01:55:02 PM: INFO - Server Start
+05/09/2017 01:55:05 PM: INFO - Settings - Set language to PT
+05/09/2017 01:55:05 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/09/2017 01:55:47 PM: INFO - Server Start
+05/09/2017 02:09:17 PM: INFO - Settings - Set language to PT
+05/09/2017 02:09:17 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/09/2017 02:25:35 PM: INFO - Server Start
+05/09/2017 02:25:49 PM: INFO - Settings - Set language to PT
+05/09/2017 02:25:49 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/09/2017 02:34:53 PM: INFO - Server Start
+05/09/2017 02:35:12 PM: INFO - Settings - Set language to PT
+05/09/2017 02:35:12 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/09/2017 02:36:31 PM: INFO - Server Start
+05/09/2017 02:36:34 PM: INFO - Settings - Set language to PT
+05/09/2017 02:36:34 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/09/2017 02:48:37 PM: INFO - Settings - Set language to PT
+05/09/2017 02:48:37 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/10/2017 03:03:16 PM: INFO - Server Start
+05/10/2017 03:09:22 PM: INFO - RWconf - Conf.ini file found
+05/10/2017 03:09:22 PM: ERROR - Autotest - Erro no Peso - 1000
+05/10/2017 03:09:22 PM: WARNING - Login - Try to log in without authentication
+05/10/2017 03:09:26 PM: INFO - Login - User logged in as Luiz
+05/10/2017 03:09:26 PM: INFO - Charts Handler - Chart information returned successfully
+05/10/2017 03:09:26 PM: INFO - Charts Handler - Top Chart returned successfully
+05/10/2017 03:09:26 PM: INFO - Screen - Measure
+05/10/2017 03:09:44 PM: INFO - Settings - Set language to PT
+05/10/2017 03:09:44 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/10/2017 03:09:50 PM: INFO - Settings - Set language to PT
+05/10/2017 03:09:50 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/10/2017 03:10:39 PM: INFO - Server Start
+05/10/2017 03:10:40 PM: INFO - Settings - Set language to PT
+05/10/2017 03:10:40 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/10/2017 03:11:08 PM: INFO - Server Start
+05/10/2017 03:11:08 PM: INFO - Settings - Set language to PT
+05/10/2017 03:11:08 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/10/2017 03:11:18 PM: INFO - Server Start
+05/10/2017 03:11:19 PM: INFO - Settings - Set language to PT
+05/10/2017 03:11:19 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/10/2017 03:17:45 PM: INFO - Server Start
+05/10/2017 03:17:47 PM: INFO - Settings - Set language to PT
+05/10/2017 03:17:47 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/10/2017 03:18:28 PM: INFO - Settings - Set language to PT
+05/10/2017 03:18:28 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/10/2017 03:18:35 PM: INFO - Server Start
+05/10/2017 03:18:36 PM: INFO - Settings - Set language to PT
+05/10/2017 03:18:36 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/10/2017 03:19:08 PM: INFO - Server Start
+05/10/2017 03:19:08 PM: INFO - Settings - Set language to PT
+05/10/2017 03:19:08 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/10/2017 03:21:20 PM: INFO - Server Start
+05/10/2017 03:21:21 PM: INFO - Settings - Set language to PT
+05/10/2017 03:21:21 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/10/2017 03:23:00 PM: INFO - Server Start
+05/10/2017 03:23:02 PM: INFO - Settings - Set language to PT
+05/10/2017 03:23:02 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/10/2017 03:23:15 PM: INFO - Settings - Set language to PT
+05/10/2017 03:23:15 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/10/2017 03:23:21 PM: INFO - Server Start
+05/10/2017 03:23:55 PM: INFO - Server Start
+05/10/2017 03:23:57 PM: INFO - Settings - Set language to PT
+05/10/2017 03:23:57 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/10/2017 03:24:05 PM: INFO - Settings - Set language to PT
+05/10/2017 03:24:05 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/10/2017 03:24:11 PM: INFO - Server Start
+05/10/2017 03:24:27 PM: INFO - Server Start
+05/10/2017 03:24:27 PM: INFO - Settings - Set language to PT
+05/10/2017 03:24:27 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/10/2017 03:24:36 PM: INFO - Settings - Set language to PT
+05/10/2017 03:24:36 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/10/2017 03:24:44 PM: INFO - Server Start
+05/10/2017 03:24:52 PM: INFO - Server Start
+05/10/2017 03:24:55 PM: INFO - Settings - Set language to PT
+05/10/2017 03:24:55 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/10/2017 03:25:13 PM: INFO - Server Start
+05/10/2017 03:25:13 PM: INFO - Settings - Set language to PT
+05/10/2017 03:25:13 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/10/2017 03:25:35 PM: INFO - Server Start
+05/10/2017 03:25:37 PM: INFO - Settings - Set language to PT
+05/10/2017 03:25:37 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/10/2017 03:26:55 PM: INFO - Server Start
+05/10/2017 03:26:57 PM: INFO - Settings - Set language to PT
+05/10/2017 03:26:57 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/10/2017 03:28:15 PM: INFO - Server Start
+05/10/2017 03:28:15 PM: INFO - Settings - Set language to PT
+05/10/2017 03:28:15 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/10/2017 03:28:51 PM: INFO - Server Start
+05/10/2017 03:28:51 PM: INFO - Settings - Set language to PT
+05/10/2017 03:28:51 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/10/2017 03:29:16 PM: INFO - Server Start
+05/10/2017 03:29:17 PM: INFO - Settings - Set language to PT
+05/10/2017 03:29:17 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/10/2017 03:31:35 PM: INFO - Server Start
+05/10/2017 03:31:36 PM: INFO - Settings - Set language to PT
+05/10/2017 03:31:36 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/10/2017 03:34:47 PM: INFO - Server Start
+05/10/2017 03:34:47 PM: INFO - Settings - Set language to PT
+05/10/2017 03:34:47 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/10/2017 03:35:29 PM: INFO - Server Start
+05/10/2017 03:35:30 PM: INFO - Settings - Set language to PT
+05/10/2017 03:35:30 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/10/2017 03:36:14 PM: INFO - Server Start
+05/10/2017 03:36:14 PM: INFO - Settings - Set language to PT
+05/10/2017 03:36:14 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/10/2017 03:36:41 PM: INFO - Server Start
+05/10/2017 03:36:41 PM: INFO - Settings - Set language to PT
+05/10/2017 03:36:41 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/10/2017 03:37:09 PM: INFO - Server Start
+05/10/2017 03:37:10 PM: INFO - Settings - Set language to PT
+05/10/2017 03:37:10 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/10/2017 03:38:56 PM: INFO - Settings - Set language to PT
+05/10/2017 03:38:56 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/10/2017 03:39:01 PM: INFO - Server Start
+05/10/2017 03:39:28 PM: INFO - Server Start
+05/10/2017 03:39:29 PM: INFO - Settings - Set language to PT
+05/10/2017 03:39:29 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/10/2017 03:40:10 PM: INFO - Server Start
+05/10/2017 03:40:10 PM: INFO - Settings - Set language to PT
+05/10/2017 03:40:10 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/11/2017 10:49:14 AM: INFO - Server Start
+05/11/2017 10:49:48 AM: INFO - RWconf - Conf.ini file found
+05/11/2017 10:49:48 AM: ERROR - Autotest - Erro no Peso - 1000
+05/11/2017 10:49:48 AM: WARNING - Login - Try to log in without authentication
+05/11/2017 10:49:52 AM: INFO - Login - User logged in as Luiz
+05/11/2017 10:49:52 AM: INFO - Charts Handler - Chart information returned successfully
+05/11/2017 10:49:52 AM: INFO - Charts Handler - Top Chart returned successfully
+05/11/2017 10:49:52 AM: INFO - Screen - Measure
+05/11/2017 10:49:53 AM: INFO - Settings - Set language to PT
+05/11/2017 10:49:53 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/11/2017 10:49:57 AM: INFO - Settings - Set language to PT
+05/11/2017 10:49:57 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/11/2017 10:55:14 AM: INFO - Server Start
+05/11/2017 10:55:18 AM: INFO - Settings - Set language to PT
+05/11/2017 10:55:18 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/11/2017 10:55:45 AM: INFO - Settings - Set language to PT
+05/11/2017 10:55:45 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/11/2017 11:02:27 AM: INFO - Settings - Set language to PT
+05/11/2017 11:02:27 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/11/2017 11:02:28 AM: INFO - Settings - Set language to PT
+05/11/2017 11:02:28 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/11/2017 11:02:29 AM: INFO - Settings - Set language to PT
+05/11/2017 11:02:29 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/11/2017 11:03:14 AM: INFO - Server Start
+05/11/2017 11:03:17 AM: INFO - Settings - Set language to PT
+05/11/2017 11:03:17 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/11/2017 11:09:23 AM: INFO - Settings - Set language to PT
+05/11/2017 11:09:23 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/11/2017 11:09:35 AM: INFO - Server Start
+05/11/2017 11:09:35 AM: INFO - Settings - Set language to PT
+05/11/2017 11:09:35 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/11/2017 11:09:39 AM: INFO - Settings - Set language to PT
+05/11/2017 11:09:39 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/11/2017 01:29:42 PM: INFO - Server Start
+05/11/2017 01:29:45 PM: INFO - Settings - Set language to PT
+05/11/2017 01:29:45 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/11/2017 01:29:55 PM: INFO - Server Start
+05/11/2017 01:29:56 PM: INFO - Settings - Set language to PT
+05/11/2017 01:29:56 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/11/2017 01:30:37 PM: INFO - Server Start
+05/11/2017 01:32:01 PM: INFO - Server Start
+05/11/2017 01:32:01 PM: INFO - Settings - Set language to PT
+05/11/2017 01:32:01 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/11/2017 01:32:03 PM: INFO - Settings - Set language to PT
+05/11/2017 01:32:03 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/11/2017 01:34:17 PM: INFO - Settings - Set language to PT
+05/11/2017 01:34:17 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/11/2017 01:54:19 PM: INFO - Settings - Set language to PT
+05/11/2017 01:54:19 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/11/2017 01:58:33 PM: INFO - Server Start
+05/11/2017 01:58:33 PM: INFO - Settings - Set language to PT
+05/11/2017 01:58:33 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/11/2017 02:04:43 PM: INFO - Server Start
+05/11/2017 02:04:47 PM: INFO - Settings - Set language to PT
+05/11/2017 02:04:47 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/11/2017 02:04:48 PM: INFO - Settings - Set language to PT
+05/11/2017 02:04:48 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/11/2017 02:04:49 PM: INFO - Settings - Set language to PT
+05/11/2017 02:04:49 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/11/2017 02:05:34 PM: INFO - Settings - Set language to PT
+05/11/2017 02:05:34 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/11/2017 02:05:55 PM: INFO - Server Start
+05/11/2017 02:05:55 PM: INFO - Settings - Set language to PT
+05/11/2017 02:05:55 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/11/2017 02:06:03 PM: INFO - Settings - Set language to PT
+05/11/2017 02:06:03 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/11/2017 02:06:05 PM: INFO - Settings - Set language to PT
+05/11/2017 02:06:05 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/11/2017 02:06:07 PM: INFO - Settings - Set language to PT
+05/11/2017 02:06:07 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/11/2017 02:06:13 PM: INFO - Settings - Set language to PT
+05/11/2017 02:06:13 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/11/2017 02:06:14 PM: INFO - Settings - Set language to PT
+05/11/2017 02:06:14 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/12/2017 01:07:07 PM: INFO - Server Start
+05/12/2017 01:07:11 PM: INFO - RWconf - Conf.ini file found
+05/12/2017 01:07:11 PM: ERROR - Autotest - Erro no Peso - 1000
+05/12/2017 01:07:11 PM: WARNING - Login - Try to log in without authentication
+05/12/2017 01:07:14 PM: INFO - Login - User logged in as Luiz
+05/12/2017 01:07:14 PM: INFO - Charts Handler - Chart information returned successfully
+05/12/2017 01:07:14 PM: INFO - Charts Handler - Top Chart returned successfully
+05/12/2017 01:07:14 PM: INFO - Screen - Measure
+05/12/2017 01:07:16 PM: INFO - Settings - Set language to PT
+05/12/2017 01:07:16 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/12/2017 01:07:20 PM: INFO - Settings - Set language to PT
+05/12/2017 01:07:20 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/12/2017 01:07:34 PM: INFO - Settings - Set language to PT
+05/12/2017 01:07:34 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/12/2017 01:07:39 PM: INFO - Settings - Set language to PT
+05/12/2017 01:07:39 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/12/2017 01:08:09 PM: INFO - Settings - Set language to PT
+05/12/2017 01:08:09 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/12/2017 01:08:41 PM: INFO - Settings - Set language to PT
+05/12/2017 01:08:41 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/12/2017 01:08:58 PM: INFO - Settings - Set language to PT
+05/12/2017 01:08:58 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/12/2017 01:09:05 PM: INFO - Settings - Set language to PT
+05/12/2017 01:09:05 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/12/2017 01:09:21 PM: INFO - Settings - Set language to PT
+05/12/2017 01:09:21 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/12/2017 01:24:24 PM: INFO - Server Start
+05/12/2017 01:24:25 PM: INFO - Settings - Set language to PT
+05/12/2017 01:24:25 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/12/2017 01:29:30 PM: INFO - Server Start
+05/12/2017 01:29:32 PM: INFO - Settings - Set language to PT
+05/12/2017 01:29:32 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/12/2017 01:37:52 PM: INFO - Server Start
+05/12/2017 01:37:53 PM: INFO - Settings - Set language to PT
+05/12/2017 01:37:53 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/12/2017 01:38:25 PM: INFO - Server Start
+05/12/2017 01:38:25 PM: INFO - Settings - Set language to PT
+05/12/2017 01:38:25 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/12/2017 01:38:38 PM: INFO - Server Start
+05/12/2017 01:38:38 PM: INFO - Settings - Set language to PT
+05/12/2017 01:38:38 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/12/2017 01:39:28 PM: INFO - Server Start
+05/12/2017 01:39:28 PM: INFO - Settings - Set language to PT
+05/12/2017 01:39:28 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/12/2017 01:46:37 PM: INFO - Server Start
+05/12/2017 01:46:38 PM: INFO - Settings - Set language to PT
+05/12/2017 01:46:38 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/12/2017 01:48:58 PM: INFO - Server Start
+05/12/2017 01:48:59 PM: INFO - Settings - Set language to PT
+05/12/2017 01:48:59 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/12/2017 01:50:18 PM: INFO - Server Start
+05/12/2017 01:50:24 PM: INFO - Server Start
+05/12/2017 01:50:27 PM: INFO - Settings - Set language to PT
+05/12/2017 01:50:27 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/12/2017 01:50:39 PM: INFO - Server Start
+05/12/2017 01:50:40 PM: INFO - Settings - Set language to PT
+05/12/2017 01:50:40 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/12/2017 01:50:52 PM: INFO - Server Start
+05/12/2017 01:50:53 PM: INFO - Settings - Set language to PT
+05/12/2017 01:50:53 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/12/2017 01:51:38 PM: INFO - Server Start
+05/12/2017 01:51:39 PM: INFO - Settings - Set language to PT
+05/12/2017 01:51:39 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/12/2017 01:52:04 PM: INFO - Server Start
+05/12/2017 01:52:04 PM: INFO - Settings - Set language to PT
+05/12/2017 01:52:04 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/12/2017 01:53:46 PM: INFO - Server Start
+05/12/2017 01:53:47 PM: INFO - Settings - Set language to PT
+05/12/2017 01:53:47 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/12/2017 01:54:26 PM: INFO - Server Start
+05/12/2017 01:54:26 PM: INFO - Settings - Set language to PT
+05/12/2017 01:54:26 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/12/2017 01:54:49 PM: INFO - Server Start
+05/12/2017 01:54:49 PM: INFO - Settings - Set language to PT
+05/12/2017 01:54:49 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/12/2017 02:12:38 PM: INFO - Settings - Set language to PT
+05/12/2017 02:12:38 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/12/2017 02:12:52 PM: INFO - Settings - Set language to PT
+05/12/2017 02:12:52 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/12/2017 02:12:54 PM: INFO - Settings - Set language to PT
+05/12/2017 02:12:54 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/12/2017 02:13:08 PM: INFO - Server Start
+05/12/2017 02:13:09 PM: INFO - Settings - Set language to PT
+05/12/2017 02:13:09 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/12/2017 02:21:51 PM: INFO - Server Start
+05/12/2017 02:32:09 PM: INFO - Server Start
+05/12/2017 02:33:07 PM: INFO - Server Start
+05/12/2017 02:33:23 PM: INFO - Server Start
+05/12/2017 02:33:31 PM: INFO - Server Start
+05/12/2017 02:34:18 PM: INFO - Server Start
+05/12/2017 02:36:33 PM: INFO - Server Start
+05/12/2017 02:36:47 PM: INFO - Server Start
+05/12/2017 02:37:37 PM: INFO - Server Start
+05/12/2017 02:38:00 PM: INFO - Server Start
+05/12/2017 02:39:12 PM: INFO - Server Start
+05/12/2017 02:39:15 PM: INFO - Settings - Set language to PT
+05/12/2017 02:39:15 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/12/2017 02:39:18 PM: INFO - Settings - Set language to PT
+05/12/2017 02:39:18 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/12/2017 02:39:21 PM: INFO - Settings - Set language to PT
+05/12/2017 02:39:21 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/12/2017 02:39:33 PM: INFO - Server Start
+05/12/2017 02:39:34 PM: INFO - Settings - Set language to PT
+05/12/2017 02:39:34 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/12/2017 02:41:03 PM: INFO - Settings - Set language to PT
+05/12/2017 02:41:03 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/12/2017 02:46:22 PM: INFO - Settings - Set language to PT
+05/12/2017 02:46:22 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/12/2017 03:03:26 PM: INFO - Settings - Set language to PT
+05/12/2017 03:03:26 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/12/2017 03:05:42 PM: INFO - Server Start
+05/12/2017 03:06:50 PM: INFO - Server Start
+05/12/2017 03:15:00 PM: INFO - Settings - Set language to PT
+05/12/2017 03:15:00 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/12/2017 03:15:31 PM: INFO - Server Start
+05/12/2017 03:22:22 PM: INFO - Settings - Set language to PT
+05/12/2017 03:22:22 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/15/2017 11:12:21 AM: INFO - Server Start
+05/15/2017 11:12:24 AM: INFO - RWconf - Conf.ini file found
+05/15/2017 11:12:24 AM: ERROR - Autotest - Erro no Peso - 1000
+05/15/2017 11:12:25 AM: WARNING - Login - Try to log in without authentication
+05/15/2017 11:12:42 AM: INFO - Login - User logged in as Luiz
+05/15/2017 11:12:42 AM: INFO - Charts Handler - Chart information returned successfully
+05/15/2017 11:12:42 AM: INFO - Charts Handler - Top Chart returned successfully
+05/15/2017 11:12:42 AM: INFO - Screen - Measure
+05/15/2017 11:12:45 AM: INFO - Settings - Set language to PT
+05/15/2017 11:12:45 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/15/2017 11:12:51 AM: INFO - Settings - Set language to PT
+05/15/2017 11:12:51 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/15/2017 11:13:00 AM: INFO - Settings - Set language to PT
+05/15/2017 11:13:00 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/15/2017 11:13:07 AM: INFO - Settings - Set language to PT
+05/15/2017 11:13:07 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/15/2017 11:15:31 AM: INFO - Server Start
+05/15/2017 11:15:45 AM: INFO - Server Start
+05/15/2017 11:24:08 AM: INFO - Server Start
+05/15/2017 11:42:05 AM: INFO - Server Start
+05/15/2017 11:46:18 AM: INFO - Server Start
+05/15/2017 03:41:52 PM: INFO - Server Start
+05/15/2017 03:42:04 PM: INFO - Server Start
+05/15/2017 03:42:58 PM: INFO - Server Start
+05/15/2017 03:52:27 PM: INFO - Server Start
+05/16/2017 09:46:12 AM: INFO - Server Start
+05/16/2017 09:46:17 AM: INFO - Settings - Set language to PT
+05/16/2017 09:46:17 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/16/2017 09:47:03 AM: INFO - Server Start
+05/16/2017 09:59:00 AM: INFO - Server Start
+05/16/2017 09:59:26 AM: INFO - Server Start
+05/16/2017 10:00:35 AM: INFO - Server Start
+05/16/2017 10:00:50 AM: INFO - Server Start
+05/16/2017 10:01:07 AM: INFO - Server Start
+05/16/2017 10:01:19 AM: INFO - Server Start
+05/16/2017 10:01:38 AM: INFO - Server Start
+05/16/2017 10:02:57 AM: INFO - Server Start
+05/16/2017 10:03:10 AM: INFO - Settings - Set language to PT
+05/16/2017 10:03:10 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/16/2017 10:09:56 AM: INFO - Server Start
+05/16/2017 10:10:44 AM: INFO - Server Start
+05/16/2017 10:11:08 AM: INFO - Server Start
+05/16/2017 10:11:37 AM: INFO - Server Start
+05/16/2017 10:12:19 AM: INFO - Server Start
+05/16/2017 10:12:51 AM: INFO - Server Start
+05/16/2017 10:13:48 AM: INFO - Server Start
+05/16/2017 10:16:17 AM: INFO - Server Start
+05/16/2017 10:17:22 AM: INFO - Server Start
+05/16/2017 10:17:36 AM: INFO - Server Start
+05/16/2017 10:19:57 AM: INFO - Server Start
+05/16/2017 10:20:37 AM: INFO - Server Start
+05/16/2017 10:20:57 AM: INFO - Server Start
+05/16/2017 10:21:29 AM: INFO - Server Start
+05/16/2017 10:24:49 AM: INFO - Server Start
+05/16/2017 10:27:14 AM: INFO - Server Start
+05/16/2017 10:27:24 AM: INFO - Server Start
+05/16/2017 10:28:10 AM: INFO - Server Start
+05/16/2017 10:28:27 AM: INFO - Server Start
+05/16/2017 10:33:32 AM: INFO - Server Start
+05/16/2017 10:45:49 AM: INFO - Settings - Set language to PT
+05/16/2017 10:45:49 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/16/2017 10:47:25 AM: INFO - Server Start
+05/16/2017 10:47:25 AM: INFO - Settings - Set language to PT
+05/16/2017 10:47:25 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/16/2017 10:55:20 AM: INFO - Server Start
+05/16/2017 10:55:26 AM: INFO - RWconf - Conf.ini file found
+05/16/2017 10:55:26 AM: ERROR - Autotest - Erro no Peso - 1000
+05/16/2017 10:55:27 AM: WARNING - Login - Try to log in without authentication
+05/16/2017 10:55:41 AM: INFO - Login - User logged in as Luiz
+05/16/2017 10:55:41 AM: INFO - Charts Handler - Chart information returned successfully
+05/16/2017 10:55:41 AM: INFO - Charts Handler - Top Chart returned successfully
+05/16/2017 10:55:42 AM: INFO - Screen - Measure
+05/16/2017 10:55:49 AM: INFO - Settings - Set language to PT
+05/16/2017 10:55:49 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/16/2017 10:56:16 AM: INFO - Settings - Set language to PT
+05/16/2017 10:56:16 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/16/2017 10:56:48 AM: INFO - Settings - Set language to PT
+05/16/2017 10:56:48 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/16/2017 10:57:18 AM: INFO - Server Start
+05/16/2017 10:58:03 AM: INFO - Server Start
+05/17/2017 09:43:19 AM: INFO - Server Start
+05/17/2017 09:43:38 AM: INFO - RWconf - Conf.ini file found
+05/17/2017 09:43:38 AM: ERROR - Autotest - Erro no Peso - 1000
+05/17/2017 09:43:38 AM: WARNING - Login - Try to log in without authentication
+05/17/2017 09:43:43 AM: INFO - Login - User logged in as Luiz
+05/17/2017 09:43:43 AM: INFO - Charts Handler - Chart information returned successfully
+05/17/2017 09:43:43 AM: INFO - Charts Handler - Top Chart returned successfully
+05/17/2017 09:43:43 AM: INFO - Screen - Measure
+05/17/2017 09:44:07 AM: INFO - Settings - Set language to PT
+05/17/2017 09:44:07 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/17/2017 09:44:11 AM: INFO - Settings - Set language to PT
+05/17/2017 09:44:11 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/17/2017 10:50:45 AM: INFO - Server Start
+05/17/2017 10:52:17 AM: INFO - Server Start
+05/17/2017 10:52:38 AM: INFO - Server Start
+05/17/2017 10:54:22 AM: INFO - Server Start
+05/17/2017 11:02:26 AM: INFO - Server Start
+05/17/2017 11:03:36 AM: INFO - Server Start
+05/17/2017 11:03:50 AM: INFO - Server Start
+05/17/2017 11:05:24 AM: INFO - Server Start
+05/17/2017 11:06:57 AM: INFO - Server Start
+05/17/2017 11:08:44 AM: INFO - Server Start
+05/17/2017 11:09:02 AM: INFO - Server Start
+05/17/2017 11:09:19 AM: INFO - Server Start
+05/17/2017 11:09:38 AM: INFO - Server Start
+05/17/2017 11:10:29 AM: INFO - Server Start
+05/17/2017 11:10:42 AM: INFO - Server Start
+05/17/2017 11:10:58 AM: INFO - Server Start
+05/17/2017 11:11:36 AM: INFO - Server Start
+05/17/2017 11:12:58 AM: INFO - Server Start
+05/17/2017 11:13:18 AM: INFO - Server Start
+05/17/2017 11:13:44 AM: INFO - Server Start
+05/17/2017 11:17:04 AM: INFO - Server Start
+05/17/2017 11:18:11 AM: INFO - Server Start
+05/17/2017 11:19:30 AM: INFO - Server Start
+05/17/2017 11:20:21 AM: INFO - Server Start
+05/17/2017 11:22:47 AM: INFO - Server Start
+05/17/2017 11:23:37 AM: INFO - Server Start
+05/17/2017 11:25:43 AM: INFO - Server Start
+05/17/2017 11:28:08 AM: INFO - Server Start
+05/17/2017 11:28:45 AM: INFO - Server Start
+05/17/2017 11:30:45 AM: INFO - Server Start
+05/17/2017 11:31:35 AM: INFO - Server Start
+05/17/2017 11:31:52 AM: INFO - Settings - Set language to PT
+05/17/2017 11:31:52 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/17/2017 01:04:32 PM: INFO - Server Start
+05/17/2017 01:04:45 PM: INFO - Server Start
+05/17/2017 01:05:02 PM: INFO - Server Start
+05/17/2017 01:06:33 PM: INFO - Server Start
+05/17/2017 01:06:40 PM: INFO - Server Start
+05/17/2017 01:07:28 PM: INFO - Server Start
+05/17/2017 01:08:08 PM: INFO - Server Start
+05/17/2017 01:08:34 PM: INFO - Server Start
+05/17/2017 01:09:02 PM: INFO - Server Start
+05/17/2017 01:09:29 PM: INFO - Settings - Set language to PT
+05/17/2017 01:09:29 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/17/2017 01:09:48 PM: INFO - Server Start
+05/17/2017 01:16:18 PM: INFO - Server Start
+05/17/2017 01:18:15 PM: INFO - Server Start
+05/17/2017 01:22:01 PM: INFO - Server Start
+05/17/2017 01:22:16 PM: INFO - Server Start
+05/17/2017 01:25:14 PM: INFO - Server Start
+05/17/2017 01:27:37 PM: INFO - Server Start
+05/17/2017 01:27:50 PM: INFO - Server Start
+05/17/2017 02:22:12 PM: INFO - Settings - Set language to PT
+05/17/2017 02:22:12 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/17/2017 02:54:08 PM: INFO - Server Start
+05/17/2017 03:18:03 PM: INFO - Settings - Set language to PT
+05/17/2017 03:18:03 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/17/2017 03:19:56 PM: INFO - Server Start
+05/17/2017 03:20:07 PM: INFO - Server Start
+05/17/2017 03:20:24 PM: INFO - Server Start
+05/17/2017 03:25:24 PM: INFO - Server Start
+05/17/2017 03:27:18 PM: INFO - Server Start
+05/17/2017 03:28:05 PM: INFO - Server Start
+05/17/2017 03:28:48 PM: INFO - Server Start
+05/17/2017 03:29:06 PM: INFO - Server Start
+05/17/2017 03:29:27 PM: INFO - Server Start
+05/18/2017 10:21:56 AM: INFO - Server Start
+05/18/2017 10:24:14 AM: INFO - Server Start
+05/18/2017 10:24:16 AM: INFO - Settings - Set language to PT
+05/18/2017 10:24:16 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/18/2017 10:54:39 AM: INFO - Settings - Set language to PT
+05/18/2017 10:54:39 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/18/2017 10:56:46 AM: INFO - Server Start
+05/18/2017 10:57:19 AM: INFO - Server Start
+05/18/2017 10:58:35 AM: INFO - Server Start
+05/18/2017 11:22:22 AM: INFO - Server Start
+05/18/2017 11:24:31 AM: INFO - Server Start
+05/18/2017 11:24:53 AM: INFO - Server Start
+05/18/2017 11:24:55 AM: INFO - Settings - Set language to PT
+05/18/2017 11:24:55 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/18/2017 01:14:56 PM: INFO - Server Start
+05/18/2017 01:15:15 PM: INFO - Server Start
+05/18/2017 01:16:32 PM: INFO - Settings - Set language to PT
+05/18/2017 01:16:32 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/18/2017 01:49:30 PM: INFO - Server Start
+05/18/2017 01:49:51 PM: INFO - Server Start
+05/18/2017 01:50:30 PM: INFO - Server Start
+05/18/2017 01:50:37 PM: INFO - Server Start
+05/18/2017 01:51:39 PM: INFO - Server Start
+05/18/2017 01:52:11 PM: INFO - Server Start
+05/18/2017 01:53:27 PM: INFO - Server Start
+05/18/2017 01:53:37 PM: INFO - Server Start
+05/18/2017 01:53:52 PM: INFO - Server Start
+05/18/2017 01:54:25 PM: INFO - Server Start
+05/18/2017 01:54:39 PM: INFO - Server Start
+05/18/2017 01:56:28 PM: INFO - Server Start
+05/18/2017 02:00:05 PM: INFO - Server Start
+05/18/2017 02:22:34 PM: INFO - Server Start
+05/18/2017 02:23:11 PM: INFO - Server Start
+05/18/2017 02:23:58 PM: INFO - Server Start
+05/18/2017 02:26:49 PM: INFO - Server Start
+05/18/2017 02:27:09 PM: INFO - Server Start
+05/18/2017 02:28:27 PM: INFO - Server Start
+05/18/2017 02:30:23 PM: INFO - Server Start
+05/18/2017 02:31:58 PM: INFO - Server Start
+05/18/2017 02:32:22 PM: INFO - Server Start
+05/18/2017 02:32:43 PM: INFO - Server Start
+05/18/2017 02:32:53 PM: INFO - Server Start
+05/18/2017 02:33:14 PM: INFO - Server Start
+05/18/2017 02:33:21 PM: INFO - Server Start
+05/18/2017 02:33:37 PM: INFO - Server Start
+05/18/2017 02:34:30 PM: INFO - Server Start
+05/18/2017 02:35:12 PM: INFO - Settings - Set language to PT
+05/18/2017 02:35:12 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/18/2017 02:35:24 PM: INFO - Server Start
+05/18/2017 02:36:31 PM: INFO - Server Start
+05/18/2017 02:49:28 PM: INFO - Server Start
+05/18/2017 02:50:10 PM: INFO - Server Start
+05/18/2017 02:50:22 PM: INFO - Settings - Set language to PT
+05/18/2017 02:50:22 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/18/2017 02:50:39 PM: INFO - Server Start
+05/18/2017 02:50:58 PM: INFO - Server Start
+05/18/2017 02:54:42 PM: INFO - Server Start
+05/18/2017 03:04:09 PM: INFO - Server Start
+05/18/2017 03:07:04 PM: INFO - Server Start
+05/18/2017 03:07:07 PM: INFO - RWconf - Conf.ini file found
+05/18/2017 03:07:07 PM: ERROR - Autotest - Erro no Peso - 1000
+05/18/2017 03:07:07 PM: WARNING - Login - Try to log in without authentication
+05/18/2017 03:07:10 PM: INFO - Login - User logged in as Luiz
+05/18/2017 03:07:10 PM: INFO - Charts Handler - Chart information returned successfully
+05/18/2017 03:07:10 PM: INFO - Charts Handler - Top Chart returned successfully
+05/18/2017 03:07:10 PM: INFO - Screen - Measure
+05/18/2017 03:07:12 PM: INFO - Settings - Set language to PT
+05/18/2017 03:07:12 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/18/2017 03:07:17 PM: INFO - Settings - Set language to PT
+05/18/2017 03:07:17 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/18/2017 03:07:17 PM: INFO - Settings - Set language to PT
+05/18/2017 03:07:17 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/18/2017 03:07:50 PM: INFO - Server Start
+05/18/2017 03:12:49 PM: INFO - Server Start
+05/18/2017 03:13:28 PM: INFO - Server Start
+05/18/2017 03:14:45 PM: INFO - Server Start
+05/18/2017 03:18:56 PM: INFO - Server Start
+05/18/2017 03:19:20 PM: INFO - Server Start
+05/18/2017 03:25:29 PM: INFO - Server Start
+05/18/2017 03:30:09 PM: INFO - Server Start
+05/18/2017 03:31:14 PM: INFO - Server Start
+05/18/2017 03:33:21 PM: INFO - Server Start
+05/18/2017 03:45:43 PM: INFO - Server Start
+05/18/2017 03:46:31 PM: INFO - Server Start
+05/18/2017 03:46:48 PM: INFO - Server Start
+05/19/2017 10:05:00 AM: INFO - Server Start
+05/19/2017 10:44:44 AM: INFO - Server Start
+05/19/2017 10:45:04 AM: INFO - Server Start
+05/19/2017 10:53:26 AM: INFO - Server Start
+05/19/2017 10:53:29 AM: INFO - RWconf - Conf.ini file found
+05/19/2017 10:53:29 AM: ERROR - Autotest - Erro no Peso - 1000
+05/19/2017 10:53:29 AM: WARNING - Login - Try to log in without authentication
+05/19/2017 10:53:35 AM: INFO - Login - User logged in as Luiz
+05/19/2017 10:53:35 AM: INFO - Charts Handler - Chart information returned successfully
+05/19/2017 10:53:35 AM: INFO - Charts Handler - Top Chart returned successfully
+05/19/2017 10:53:35 AM: INFO - Screen - Measure
+05/19/2017 10:53:37 AM: INFO - Settings - Set language to PT
+05/19/2017 10:53:37 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/19/2017 10:54:25 AM: INFO - Server Start
+05/19/2017 10:57:28 AM: INFO - Server Start
+05/19/2017 10:59:56 AM: INFO - Server Start
+05/19/2017 11:01:29 AM: INFO - Server Start
+05/19/2017 11:01:41 AM: INFO - Server Start
+05/19/2017 11:06:53 AM: INFO - Server Start
+05/19/2017 11:07:27 AM: INFO - Server Start
+05/19/2017 11:07:40 AM: INFO - Server Start
+05/19/2017 11:09:04 AM: INFO - Server Start
+05/19/2017 11:11:53 AM: INFO - Server Start
+05/19/2017 11:14:17 AM: INFO - Server Start
+05/19/2017 11:24:57 AM: INFO - Server Start
+05/19/2017 11:25:39 AM: INFO - Server Start
+05/19/2017 11:26:16 AM: INFO - Server Start
+05/19/2017 11:35:08 AM: INFO - Server Start
+05/19/2017 11:35:30 AM: INFO - Server Start
+05/19/2017 01:01:32 PM: INFO - Server Start
+05/19/2017 01:02:16 PM: INFO - Server Start
+05/19/2017 01:03:49 PM: INFO - Server Start
+05/19/2017 01:04:42 PM: INFO - Server Start
+05/19/2017 01:04:54 PM: INFO - Server Start
+05/19/2017 01:05:31 PM: INFO - Server Start
+05/19/2017 01:06:50 PM: INFO - Server Start
+05/19/2017 01:07:23 PM: INFO - Server Start
+05/19/2017 01:07:33 PM: INFO - Server Start
+05/19/2017 01:09:12 PM: INFO - Server Start
+05/19/2017 01:09:30 PM: INFO - Server Start
+05/19/2017 01:09:40 PM: INFO - Server Start
+05/19/2017 01:10:02 PM: INFO - Server Start
+05/19/2017 01:10:15 PM: INFO - Server Start
+05/19/2017 01:43:23 PM: INFO - Server Start
+05/19/2017 01:43:39 PM: INFO - Server Start
+05/19/2017 01:48:15 PM: INFO - Server Start
+05/19/2017 01:48:28 PM: INFO - Server Start
+05/19/2017 01:48:45 PM: INFO - Server Start
+05/19/2017 01:59:57 PM: INFO - Server Start
+05/19/2017 02:00:21 PM: INFO - Server Start
+05/19/2017 02:00:53 PM: INFO - Server Start
+05/19/2017 02:04:10 PM: INFO - Server Start
+05/19/2017 02:04:38 PM: INFO - Server Start
+05/19/2017 02:05:07 PM: INFO - Server Start
+05/19/2017 02:07:01 PM: INFO - Server Start
+05/19/2017 02:07:50 PM: INFO - Server Start
+05/19/2017 02:08:38 PM: INFO - Server Start
+05/19/2017 02:08:52 PM: INFO - Server Start
+05/19/2017 02:09:28 PM: INFO - Server Start
+05/19/2017 02:09:52 PM: INFO - Server Start
+05/19/2017 02:10:04 PM: INFO - Server Start
+05/19/2017 02:10:33 PM: INFO - Server Start
+05/19/2017 02:10:47 PM: INFO - Server Start
+05/19/2017 02:11:17 PM: INFO - Server Start
+05/19/2017 02:11:38 PM: INFO - Server Start
+05/19/2017 02:11:51 PM: INFO - Server Start
+05/19/2017 02:12:10 PM: INFO - Server Start
+05/19/2017 02:12:22 PM: INFO - Server Start
+05/19/2017 02:14:25 PM: INFO - Server Start
+05/19/2017 02:15:25 PM: INFO - Server Start
+05/19/2017 02:18:00 PM: INFO - Server Start
+05/19/2017 02:18:25 PM: INFO - Server Start
+05/19/2017 02:33:47 PM: INFO - Server Start
+05/19/2017 02:35:10 PM: INFO - Server Start
+05/19/2017 02:36:04 PM: INFO - Server Start
+05/19/2017 02:37:05 PM: INFO - Server Start
+05/19/2017 02:38:38 PM: INFO - Server Start
+05/19/2017 02:38:55 PM: INFO - Server Start
+05/19/2017 02:39:26 PM: INFO - Server Start
+05/19/2017 03:10:50 PM: INFO - Screen - Top charts
+05/19/2017 03:41:47 PM: INFO - Server Start
+05/19/2017 03:42:56 PM: INFO - Server Start
+05/19/2017 03:43:11 PM: INFO - Server Start
+05/19/2017 03:46:49 PM: INFO - Screen - Top charts
+05/19/2017 03:48:26 PM: INFO - Server Start
+05/19/2017 03:48:28 PM: INFO - Settings - Set language to PT
+05/19/2017 03:48:28 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/19/2017 03:50:39 PM: INFO - Server Start
+05/19/2017 03:53:07 PM: INFO - Server Start
+05/19/2017 03:54:00 PM: INFO - Server Start
+05/19/2017 03:55:26 PM: INFO - Server Start
+05/19/2017 03:56:23 PM: INFO - Server Start
+05/19/2017 03:56:42 PM: INFO - Server Start
+05/19/2017 03:57:10 PM: INFO - Server Start
+05/19/2017 03:57:43 PM: INFO - Server Start
+05/19/2017 03:58:15 PM: INFO - Server Start
+05/19/2017 03:59:20 PM: INFO - Server Start
+05/19/2017 03:59:28 PM: INFO - Server Start
+05/23/2017 09:16:13 AM: INFO - Server Start
+05/23/2017 09:16:14 AM: INFO - RWconf - Conf.ini file found
+05/23/2017 09:16:14 AM: ERROR - Autotest - Erro no Peso - 1000
+05/23/2017 09:16:14 AM: WARNING - Login - Try to log in without authentication
+05/23/2017 09:16:18 AM: INFO - Login - User logged in as Luiz
+05/23/2017 09:16:18 AM: INFO - Charts Handler - Chart information returned successfully
+05/23/2017 09:16:18 AM: INFO - Charts Handler - Top Chart returned successfully
+05/23/2017 09:16:18 AM: INFO - Screen - Measure
+05/23/2017 09:16:20 AM: INFO - Settings - Set language to PT
+05/23/2017 09:16:20 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/23/2017 09:16:26 AM: INFO - Settings - Set language to PT
+05/23/2017 09:16:26 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/23/2017 09:16:30 AM: INFO - Settings - Set language to PT
+05/23/2017 09:16:30 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/23/2017 09:16:34 AM: INFO - Settings - Set language to PT
+05/23/2017 09:16:34 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/23/2017 09:16:38 AM: INFO - Settings - Set language to PT
+05/23/2017 09:16:38 AM: INFO - Settings - Set temperature of humidity to Celsius
+05/23/2017 09:21:09 AM: INFO - Server Start
+05/23/2017 09:23:52 AM: INFO - Server Start
+05/23/2017 09:24:21 AM: INFO - Server Start
+05/23/2017 09:25:01 AM: INFO - Server Start
+05/23/2017 09:54:34 AM: INFO - Server Start
+05/23/2017 09:59:23 AM: INFO - Server Start
+05/23/2017 09:59:48 AM: INFO - Server Start
+05/23/2017 10:00:12 AM: INFO - Server Start
+05/23/2017 10:00:36 AM: INFO - Server Start
+05/23/2017 10:08:35 AM: INFO - Server Start
+05/23/2017 10:09:28 AM: INFO - Server Start
+05/23/2017 10:10:26 AM: INFO - Server Start
+05/23/2017 10:11:08 AM: INFO - Server Start
+05/23/2017 10:12:25 AM: INFO - Server Start
+05/23/2017 10:14:55 AM: INFO - Server Start
+05/23/2017 10:16:26 AM: INFO - Server Start
+05/23/2017 10:17:21 AM: INFO - Server Start
+05/23/2017 10:20:57 AM: INFO - Server Start
+05/23/2017 10:21:13 AM: INFO - Server Start
+05/23/2017 10:21:21 AM: INFO - Server Start
+05/23/2017 10:21:28 AM: INFO - Server Start
+05/23/2017 10:21:38 AM: INFO - Server Start
+05/23/2017 10:22:11 AM: INFO - Server Start
+05/23/2017 10:23:40 AM: INFO - Server Start
+05/23/2017 10:24:26 AM: INFO - Server Start
+05/23/2017 10:24:51 AM: INFO - Server Start
+05/23/2017 02:41:00 PM: INFO - Server Start
+05/23/2017 02:42:46 PM: INFO - Server Start
+05/23/2017 02:45:56 PM: INFO - Server Start
+05/23/2017 02:46:32 PM: INFO - Server Start
+05/23/2017 02:47:46 PM: INFO - Server Start
+05/23/2017 02:49:17 PM: INFO - Server Start
+05/23/2017 03:01:58 PM: INFO - Server Start
+05/23/2017 03:03:48 PM: INFO - Server Start
+05/23/2017 03:05:25 PM: INFO - Server Start
+05/23/2017 03:05:38 PM: INFO - Server Start
+05/23/2017 03:07:50 PM: INFO - Server Start
+05/23/2017 03:08:11 PM: INFO - Server Start
+05/23/2017 03:09:02 PM: INFO - Server Start
+05/23/2017 03:10:25 PM: INFO - Server Start
+05/23/2017 03:10:58 PM: INFO - Server Start
+05/23/2017 03:11:20 PM: INFO - Server Start
+05/23/2017 03:12:31 PM: INFO - Server Start
+05/23/2017 03:12:43 PM: INFO - Server Start
+05/23/2017 03:13:23 PM: INFO - Server Start
+05/23/2017 03:25:32 PM: INFO - Server Start
+05/23/2017 03:26:55 PM: INFO - Server Start
+05/23/2017 03:27:25 PM: INFO - Server Start
+05/23/2017 03:29:42 PM: INFO - Server Start
+05/23/2017 03:31:23 PM: INFO - Server Start
+05/23/2017 03:31:23 PM: INFO - RWconf - Conf.ini file found
+05/23/2017 03:31:24 PM: ERROR - Autotest - Erro no Peso - 1000
+05/23/2017 03:31:24 PM: INFO - Charts Handler - Chart information returned successfully
+05/23/2017 03:31:24 PM: INFO - Charts Handler - Top Chart returned successfully
+05/23/2017 03:31:24 PM: INFO - Screen - Measure
+05/23/2017 03:31:27 PM: INFO - Settings - Set language to PT
+05/23/2017 03:31:27 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/23/2017 03:31:59 PM: INFO - Server Start
+05/23/2017 03:33:23 PM: INFO - Server Start
+05/23/2017 03:44:02 PM: INFO - Server Start
+05/23/2017 03:44:19 PM: INFO - Server Start
+05/23/2017 03:44:55 PM: INFO - Server Start
+05/23/2017 03:47:25 PM: INFO - Server Start
+05/23/2017 03:48:28 PM: INFO - Settings - Set language to PT
+05/23/2017 03:48:28 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/23/2017 03:49:55 PM: INFO - Settings - Set language to PT
+05/23/2017 03:49:55 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/24/2017 01:02:41 PM: INFO - Server Start
+05/24/2017 01:03:39 PM: INFO - Server Start
+05/24/2017 01:04:20 PM: INFO - Login - User logged in as Luiz
+05/24/2017 01:04:20 PM: INFO - Charts Handler - Chart information returned successfully
+05/24/2017 01:04:20 PM: INFO - Charts Handler - Top Chart returned successfully
+05/24/2017 01:04:20 PM: INFO - Screen - Measure
+05/24/2017 01:04:22 PM: INFO - Settings - Set language to PT
+05/24/2017 01:04:22 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/24/2017 01:04:29 PM: INFO - Settings - Set language to PT
+05/24/2017 01:04:29 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/24/2017 01:07:27 PM: INFO - Server Start
+05/24/2017 02:37:02 PM: INFO - Server Start
+05/24/2017 02:37:06 PM: INFO - RWconf - Conf.ini file found
+05/24/2017 02:37:06 PM: ERROR - Autotest - Erro no Peso - 1000
+05/24/2017 02:37:06 PM: INFO - Charts Handler - Chart information returned successfully
+05/24/2017 02:37:06 PM: INFO - Charts Handler - Top Chart returned successfully
+05/24/2017 02:37:06 PM: INFO - Screen - Measure
+05/24/2017 02:37:09 PM: INFO - Settings - Set language to PT
+05/24/2017 02:37:09 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/24/2017 02:37:14 PM: INFO - Settings - Set language to PT
+05/24/2017 02:37:14 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/24/2017 02:37:14 PM: INFO - Settings - Set language to PT
+05/24/2017 02:37:14 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/24/2017 02:37:18 PM: INFO - Settings - Set language to PT
+05/24/2017 02:37:18 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/24/2017 02:37:20 PM: INFO - Charts Handler - Chart information returned successfully
+05/24/2017 02:37:20 PM: INFO - Charts Handler - Top Chart returned successfully
+05/24/2017 02:37:20 PM: INFO - Screen - Measure
+05/24/2017 02:37:24 PM: INFO - RWconf - Conf.ini file found
+05/24/2017 02:37:24 PM: ERROR - Autotest - Erro no Peso - 1000
+05/24/2017 02:37:24 PM: INFO - Charts Handler - Chart information returned successfully
+05/24/2017 02:37:24 PM: INFO - Charts Handler - Top Chart returned successfully
+05/24/2017 02:37:24 PM: INFO - Screen - Measure
+05/24/2017 02:37:26 PM: INFO - Settings - Set language to PT
+05/24/2017 02:37:26 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/24/2017 02:52:17 PM: INFO - Server Start
+05/24/2017 02:52:19 PM: INFO - RWconf - Conf.ini file found
+05/24/2017 02:52:19 PM: ERROR - Autotest - Erro no Peso - 1000
+05/24/2017 02:52:19 PM: INFO - Charts Handler - Chart information returned successfully
+05/24/2017 02:52:19 PM: INFO - Charts Handler - Top Chart returned successfully
+05/24/2017 02:52:19 PM: INFO - Screen - Measure
+05/24/2017 02:52:21 PM: INFO - Settings - Set language to PT
+05/24/2017 02:52:21 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/24/2017 02:52:23 PM: INFO - Settings - Set language to PT
+05/24/2017 02:52:23 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/24/2017 02:52:30 PM: INFO - Settings - Set language to PT
+05/24/2017 02:52:30 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/24/2017 02:52:59 PM: INFO - Settings - Set language to PT
+05/24/2017 02:52:59 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/24/2017 02:53:10 PM: INFO - Settings - Set language to PT
+05/24/2017 02:53:10 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/24/2017 02:54:10 PM: INFO - Settings - Set language to PT
+05/24/2017 02:54:10 PM: INFO - Settings - Set temperature of humidity to Celsius
+05/24/2017 02:54:12 PM: INFO - Screen - Top charts
+05/24/2017 02:54:15 PM: INFO - Charts Handler - Chart information returned successfully
+05/24/2017 02:54:15 PM: INFO - Charts Handler - Top Chart returned successfully
+05/24/2017 02:54:15 PM: INFO - Screen - Measure
+05/24/2017 02:55:06 PM: INFO - Server Start

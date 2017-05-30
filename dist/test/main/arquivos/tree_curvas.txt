@@ -1,0 +1,13 @@
+curva.txt
+└── grupo
+    └── name            ┐
+        ├── português ──┤
+        ├── inglês    ──┤
+        ├── espanhol  ──┼─ país            ┐
+        ├── francês   ──┤   ├── BRA      ──┤
+        ├── italiano  ──┤   ├── ARG      ──┤
+        └── alemão    ──┤   ├── EUA      ──┼─ peso
+                        ┘   ├── ESP_GERAL──┤    └── 200 ── dialTab
+                            ├── MEX      ──┤                  └──── 63 ── uniTemp                                           ┘
+                                                                             └──── C ──
+126 curvas

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Css Custon and Bootstrap Config -->
+    <!-- Css Custon and Bootstrap Config -->
+    <link rel="stylesheet" href="../../static/css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="../../static/css/bootstrap-theme.min.css" type="text/css">
+    <link rel="stylesheet" href="../../static/css/master.css" type="text/css" >
+    <link rel="stylesheet" href="../static/css/mdb.css">
+    <!-- Java Script -->
+    <script src="../static/angular.js"></script>
+    <script src="../static/js/Respond.js"></script>
+    <!-- Java Script Respond -->
+    <script src="../static/js/Respond.js"></script>
+    <!-- Java Script Respond -->
+    {% extends "layout.html" %}
+    {% block body %}
+    <script type="text/javascript">
+  $(function() {
+
+  //função que envia os dados para o servidor
+    var submit_form = function(e) {
+
+    //usa o Jquery para enviar uma Get para o servidor
+      $.getJSON($SCRIPT_ROOT + '/grupo/arroz/list', { //endereço da requisição
+        a: $('input[name="a"]').val(), //obtem o valor do imput de name "a" e envia como variável a
+        b: $('input[name="b"]').val()  //obtem o valor do imput de name "b" e envia como variável b
+      }, function(data) { //função executada quando o servidor responde a requisição
+        $('#result').text(data.result); //coloca o texto DENTRO do elemento de id="result"
+        $('input[name=a]').focus().select(); //coloca o foco no input de name "a"
+      });
+      return false;
+    };
+
+    $('a#calculate').bind('click', submit_form); //associa o clicke do link (tag a), de id "calculate"
+
+    $("curvaInit").click(function(e){
+            submit_form(e);
+       });
+
+    $('input[name=a]').focus(); //coloca o foco no input de name "a"
+  });
+    </script>
+    <!-- Title -->
+    <title>Chip Welcome</title>
+</head>
+    <body>
+        <video width="648" height="432" id="my-video" class="video" autoplay="autoplay" loop="loop" muted="">
+        <source src="/static/img/bg.mp4" type="video/mp4" /></video>
+        <header>
+        </header>
+        <center><h1>Seleção de Curvas</h1></center>
+            <p>
+                {% for i in range(0, lencurva) %}
+                    <center><div>
+                          <a href="/selectcurvatop?a={{ i }}"> <!-- a = 0 e b = {{ i }} -->
+                          <ul>
+                            <li><br>
+                              <p>{{ nome[i] }}</p>
+                              <p>{{ temp[i] }}</p>
+                              <p>{{ umidade[i] }}</p>
+                              <span id="result"></span><br>
+                            </li></a>
+                          </ul>
+                    </div></center>
+                    {% endfor %}
+
+        {% endblock %}
+        <footer>
+        </footer>
+        <script type="text/javascript" src="../static/js/jquery-2.2.3.min.js"></script>
+
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="../static/js/tether.min.js"></script>
+
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="../static/js/mdb.min.js"></script>
+    </body>
+</html>
+
+

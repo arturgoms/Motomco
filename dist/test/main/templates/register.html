@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/bootstrap-theme.min.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/mdb.css">
+
+    <link href="../static/docs/css/jquery-ui.min.css" rel="stylesheet">
+    <script src="../static/docs/js/jquery-latest.min.js"></script>
+	<script src="../static/docs/js/jquery-ui.min.js"></script>
+	<!-- jQuery (required) & jQuery UI + theme (optional) -->
+	<link href="../static/docs/css/jquery-ui.min.css" rel="stylesheet">
+	<!-- still using jQuery v2.2.4 because Bootstrap doesn't support v3+ -->
+	<script src="../static/docs/js/jquery-latest.min.js"></script>
+	<script src="../static/docs/js/jquery-ui.min.js"></script>
+	<!-- <script src="docs/js/jquery-migrate-3.0.0.min.js"></script> -->
+
+	<!-- keyboard widget css & script (required) -->
+	<link href="../static/css/keyboard.css" rel="stylesheet">
+	<script src="../static/js/jquery.keyboard.js"></script>
+
+
+	<!-- keyboard extensions (optional) -->
+	<script src="../static/js/jquery.mousewheel.js"></script>
+	<script src="../static/js/jquery.keyboard.extension-typing.js"></script>
+	<script src="../static/js/jquery.keyboard.extension-autocomplete.js"></script>
+	<script src="../static/js/jquery.keyboard.extension-caret.js"></script>
+	<script src="../static/docs/js/bootstrap.min.js"></script>
+	<script src="../static/docs/js/demo.js"></script>
+	<script src="../static/docs/js/jquery.tipsy.min.js"></script>
+	<script src="../static/docs/js/prettify.js"></script>
+    <style>
+        .jumbotron {
+			width: {{ jumbotrom_w }}px;
+			height: {{ jumbotrom_h }}px;
+			margin-left: {{ jumbotrom_margin_left }}px;
+            margin-top: {{ jumbotrom_margin_top }}px;
+            padding:{{ jumbotrom_padding }}px;
+			margin-right: auto;
+            text-align: center;
+		}
+        .menu{
+            float: left;
+            width: 70px;
+            height: 10px;
+            margin-top: 100px;
+		}
+        .amostra{
+		    margin-top: 55px;
+            margin-left:100px;
+            padding:0px;
+            width: 400px;
+            border:0px;
+		}
+        img {
+            vertical-align: bottom;
+        }
+        body {
+          background: url(../static/img/bg2.jpg) no-repeat center center fixed;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+        }
+        input#confirm{
+            height: 20px;
+                          }
+        input#password{
+            height: 20px;
+                          }
+        input#firstname{
+            height: 15px;
+                          }
+        input#lastname{
+            height: 20px;
+                          }
+        input#username{
+            height: 20px;
+                          }html{
+            width: 440px;
+            height: 255px;
+         }
+    </style>
+    <!-- Java Script -->
+    <script src="../static/angular.js"></script>
+    <script src="../static/js/Respond.js"></script>
+    <!-- Java Script Respond -->
+    {% extends "layout.html" %}
+    {% block body %}
+    <script type="text/javascript">
+        $(function() {
+
+      //função que envia os dados para o servidor
+        var submit_form = function(e) {
+
+        //usa o Jquery para enviar uma Get para o servidor
+          $.getJSON($SCRIPT_ROOT + '/grupo/arroz/list', { //endereço da requisição
+            a: $('input[name="a"]').val(), //obtem o valor do imput de name "a" e envia como variável a
+            b: $('input[name="b"]').val()  //obtem o valor do imput de name "b" e envia como variável b
+          }, function(data) { //função executada quando o servidor responde a requisição
+            $('#result').text(data.result); //coloca o texto DENTRO do elemento de id="result"
+            $('input[name=a]').focus().select(); //coloca o foco no input de name "a"
+          });
+          return false;
+        };
+
+        $('a#calculate').bind('click', submit_form); //associa o clicke do link (tag a), de id "calculate"
+
+        $("curvaInit").click(function(e){
+                submit_form(e);
+           });
+
+        $('input[name=a]').focus(); //coloca o foco no input de name "a"
+      });
+        $('#alpha')
+            .keyboard({ layout: 'alpha' })
+            .addTyping();
+    $('#text')
+	.keyboard({ layout: 'qwerty' })
+	.autocomplete({
+		source: availableTags
+	})
+	// position options added after v1.23.4
+	.addAutocomplete({
+		position : {
+			of : null,        // when null, element will default to kb.$keyboard
+			my : 'right top', // 'center top', (position under keyboard)
+			at : 'left top',  // 'center bottom',
+			collision: 'flip'
+		}
+	})
+	.addTyping();
+        $('#name')
+	.keyboard({ layout: 'qwerty' })
+	.autocomplete({
+		source: availableTags
+	})
+	// position options added after v1.23.4
+	.addAutocomplete({
+		position : {
+			of : null,        // when null, element will default to kb.$keyboard
+			my : 'right top', // 'center top', (position under keyboard)
+			at : 'left top',  // 'center bottom',
+			collision: 'flip'
+		}
+	})
+	.addTyping();
+    $('#qwerty-mod2')
+	.keyboard({
+		lockInput: true, // prevent manual keyboard entry
+		layout: 'custom',
+		customLayout: {
+			'normal': [
+				'` 1 2 3 4 5 6 7 8 9 0 - = {bksp}',
+				'{tab} q w e r t y u i o p [ ] \\',
+				'a s d f g h j k l ; \' {enter}',
+				'{shift} x z c v b n m , . / {shift}',
+				'{accept} {space} {left} {right}'
+			],
+			'shift': [
+				'~ ! @ # $ % ^ & * ( ) _ + {bksp}',
+				'{tab} Q W E R T Y U I O P { } |',
+				'A S D F G H J K L : " {enter}',
+				'{shift} Z X C V B N M &lt; &gt; ? {shift}',
+				'{accept} {space} {left} {right}'
+			]
+		}
+	})
+	.addCaret({
+		// extra class name added to the caret
+		// "ui-keyboard-caret" class is always added
+		caretClass : '',
+		// *** for future use ***
+		// data-attribute containing the character(s) next to the caret
+		charAttr   : 'data-character',
+		// # character(s) next to the caret (can be negative for RTL)
+		charIndex  : 1,
+		// caret position adjustments
+		offsetX    : 0,
+		offsetY    : 0
+	})
+	.addTyping();
+    $('#password')
+	.keyboard({
+		layout : 'qwerty'
+	})
+	.addTyping();
+    </script>
+    <!-- Title -->
+    <title>Chip Welcome</title>
+</head>
+    <body>
+
+                <div class="jumbotron ">
+
+                    <center><h{{ register_title_size }} style="margin-left: {{ register_title_margin_left }}px; " color="#FFFFFF" class="animated fadeIn"><p>Register</p></h{{ register_title_size }}></center>
+
+                    <div style="margin-top: {{ register_menu_margin_top }}px" class="menu">
+
+                      <center><a href="/login/"><img src="../static/img/back-g.png" width="{{ register_btn_arrow_width }}" height="{{ register_btn_arrow_height }}"/></a></center>
+
+                    </div>
+
+                    <div style="margin-left:{{ register_amostra_margin_left }}px; width: {{ register_amostra_width }}px" class = "amostra">
+                            {% from "_formhelpers.html" import render_field %}
+                            <form style="width: {{ register_amostra_width }}px; " method=post action="/register/">
+                                <input id="text" type="text" placeholder="Username" name="username" value="{{request.form.username }}">
+                                <input id="alpha" type="text" placeholder="Name" name="firstname" value="{{request.form.firstname }}">
+                                <input id="alpha" type="text" placeholder="Last" name="lastname" value="{{request.form.lastname }}">
+                                <input id="qwerty-mod" type="password" placeholder="Password" name="password" value="{{request.form.password }}">
+                                <input id="qwerty-mod" type="password" placeholder="Repeat" name="confirm" value="{{request.form.confirm }}">
+                                <dl style="width: {{ register_amostra_accept_tos_width }}px; margin-left: {{ register_amostra_accept_tos_margin_left }}px">{{render_field(form.accept_tos)}}</dl>
+                                <p><input style="margin-top: {{ register_amostra_btn_register_margin_top }}px; margin-left: {{ register_amostra_btn_register_margin_left }}px" class="btn btn-primary btn-dark-green" type=submit value=Register></p>
+                            </form>
+
+                            {% if error %}
+                                <p style="margin-top: {{ register_amostra_error_margin_top }}px" class="error"><strong>Error:</strong>  {{error}}</p>
+                            {% endif %}
+
+                    </div>
+
+
+
+
+                </div>
+        <!-- {% endblock %}-->
+
+        <!--  -->
+        <footer>
+
+        </footer>
+
+    <script type="text/javascript" src="../static/js/jquery-2.2.3.min.js"></script>
+
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../static/js/tether.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../static/js/mdb.min.js"></script>
+    </body>
+</html>

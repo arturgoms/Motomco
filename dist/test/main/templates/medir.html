@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Css Custon and Bootstrap Config-->
+    <link rel="stylesheet" href="../../static/css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="../../static/css/bootstrap-theme.min.css" type="text/css">
+    <link rel="stylesheet" href="../../static/css/master.css" type="text/css" >
+    <link rel="stylesheet" href="../static/css/mdb.css">
+    <style>
+        .jumbotron {
+			width: {{ jumbotrom_w }}px;
+			height: {{ jumbotrom_h }}px;
+			margin-left: {{ jumbotrom_margin_left }}px;
+            margin-top: {{ jumbotrom_margin_top }}px;
+            padding:{{ jumbotrom_padding }}px;
+			margin-right: auto;
+            text-align: center;
+		}.menu{
+            float: left;
+            width: {{ menu_width }}px;
+            margin-top: {{ menu_margin_top }}px;
+
+		}.amostra{
+		        margin-left: {{ amostra_margin_left }}px;
+		}.menu2{
+            float: left;
+            width: 150px;
+            height: 20px;
+            margin-right: 8px;
+
+		}body {
+          background: url(../static/img/bg2.jpg) no-repeat center center fixed;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+        }html{
+            width: 440px;
+            height: 255px;
+                                                     }
+    </style>
+    {% extends "layout.html" %}
+    {% block body %}
+    <script type="text/javascript">
+
+    function run() {
+    umidade()
+      function umidade() {
+        $('#content')
+          .load('/umidade', function(response, status, xhr) {
+            response.async = false;
+            if (response == 1) {
+              $("#content").text("{{ copoVazio }}");
+                $('#contentss').hide().ajaxStart( function() {
+                $(this).hide();
+                });
+              setTimeout(function() {
+                $("#content").text("{{ insiraAmortra }}");
+                umidade()
+              }, 2000);
+            } else if (response == 2) {
+              $("#content").text("{{copoCheio}}");
+                $('#contentss').hide().ajaxStart( function() {
+                $(this).hide();
+                });
+              setTimeout(function() {
+                $("#content").text("{{retireAmostra}}");
+                umidade()
+              }, 2000);
+            } else if (response == 3) {
+              $("#content").text("{{amostraReconhecida}}");
+                window.location.replace("/result");
+            } else if (response == 4) {
+              $("#content").text("{{erroCopo}}");
+              $('#contentss').hide().ajaxStart( function() {
+              $(this).hide();
+              });
+              setTimeout(function() {
+                $("#content").text("{{erroCopo2}}");
+
+                umidade()
+              }, 2000);
+            }else if (response == 5) {
+              $("#content").text("{{erroAutotest}}");
+              setTimeout(function() {
+                $("#content").text("{{erroAutotest2}}");
+                $("#contentss").show();
+
+              }, 2000);
+            }
+        });
+      }
+    }
+    $(document)
+      .ready(function() {
+        $('#contentss').hide().ajaxStart( function() {
+        $(this).hide();
+        });
+        run();
+      });
+    $(function() {
+        var submit_form = function(e) {
+          $.getJSON($SCRIPT_ROOT + '/medir', {
+          }, function(data) {
+            $('#result').text(data.result);
+          });
+          return false;
+        };
+          $("#buttonInit").click(function(e){
+            submit_form(e);
+       });
+      });
+    </script>
+    <!-- Title -->
+    <title>Chip Welcome</title>
+</head>
+    <body onselectstart='return false' ondragstart='return false'>
+
+            <div class="jumbotron ">
+
+                    <div class="menu">
+                     <p>
+                    <br>
+                        <center><a href="/selectcurvatop?a=0"><button class="btn btn-dark-green active"><img src="../static/img/medir.png" width="{{ menu_icon_size }}" height="{{ menu_icon_size }}"/></button></a></center>
+                        <center><a href="/top">             <button class="btn btn-dark-green"><img src="../static/img/search.png" width="{{ menu_icon_size }}" height="{{ menu_icon_size }}"/></button></a></center>
+                        <center><a href="/config">            <button class="btn btn-dark-green "><img src="../static/img/config.png" width="{{ menu_icon_size }}" height="{{ menu_icon_size }}"/></button></a></center>
+                        <span id="result"></span>
+
+                    </div>
+            <div class="card-block amostra">
+            <center><h{{ medir_title_size }} style="margin-left: -15px; margin-top: -15px" color="#FFFFFF" class="animated fadeIn"><p>{{ bemvindo }}, {{user}}</p></h{{ medir_title_size }}></center>
+            <p>
+            <div style="margin-left: {{ medir_amostra_margin_left }}px; width: {{ medir_amostra_width }}px; margin-top: {{ medir_amostra_margin_top }}px" class="amostra">
+            <center>
+                <center><img style="margin-top: {{ medir_img_grao_margin_top }}px; margin-left: {{ medir_img_grao_margin_left }}px" src="../static/img/botao-grao-{{tipo}}.png" width="{{ medir_img_grao_width }}" height="{{ medir_img_grao_height }}" class="img-fluid" alt=""></center>
+
+                <!--Title-->
+                <h{{ medir_nome_size }} class="card-title">{{ nome }}</h{{ medir_nome_size }}>
+                <h{{ medir_temp_size }} class="card-text">{{ temp }}</h{{ medir_temp_size }}>
+                <h{{ medir_umid_size }} class="card-text">{{ umidade }}</h{{ medir_umid_size }}><br>
+
+            </center>
+            </div>
+              <center>
+
+             <h{{ medir_info_size }}><div style="margin-top: {{ medir_info_margin_top }}px" id="content">
+
+            </div></h{{ medir_info_size }}>
+             <h3><div style="margin-top: -25px" id="contentss">
+             <a href="/selectcurvatop?a=0"><button class="btn btn-dark-green animated fadeIn" id="buttonInit"><img src="../static/img/autoteste.png" width="20" height="20"/></button></a>
+
+            </div></h3></center>
+            </div>
+            </div>
+        <!-- {% endblock %}-->
+
+        <!--  -->
+        <footer>
+
+        </footer>
+
+    <script type="text/javascript" src="../static/js/jquery-2.2.3.min.js"></script>
+
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../static/js/tether.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../static/js/mdb.min.js"></script>
+    </body>
+</html>
+
+

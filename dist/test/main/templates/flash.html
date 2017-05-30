@@ -1,0 +1,9 @@
+{% with msgs = get_flashed_messages(with_categories=true) %}
+        {% if msgs %}
+          {%- for category, msg in msgs %}
+            <div class="animated wow fadeInRight">
+              <h3>{{ msg }}</h3>
+            </div>
+          {% endfor -%}
+        {% endif %}
+{% endwith %}

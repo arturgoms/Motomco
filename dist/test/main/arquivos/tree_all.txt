@@ -1,0 +1,101 @@
+../src/
+├── arquivos
+│   ├── __init__.py
+│   ├── assinatura.txt
+│   ├── autoteste.py
+│   ├── cloud.json
+│   ├── cloud.py
+│   ├── connection.py
+│   ├── curva.txt
+│   ├── curvasHandler.py
+│   ├── db.py
+│   ├── getSerial.py
+│   ├── historic.py
+│   ├── jsonHandler.py
+│   ├── measure.py
+│   ├── readwrite.py
+│   ├── rwconf.py
+│   ├── SerialTTY.py
+│   ├── tab.txt
+│   ├── top.txt
+│   ├── tree_all.txt
+│   ├── tree_curvas.txt
+│   ├── tree_directories.txt
+│   └── umidade.py
+│
+├── common
+│   └── __init__.py
+│
+├── __init__.py
+├── models
+│   └── __init__.py
+│
+├── static
+│   ├── css
+│   │   ├── bootstrap.css
+│   │   ├── bootstrap.css.map
+│   │   ├── bootstrap.min.css
+│   │   ├── bootstrap.min.css.map
+│   │   ├── bootstrap-theme.css
+│   │   ├── bootstrap-theme.css.map
+│   │   ├── bootstrap-theme.min.css
+│   │   ├── bootstrap-theme.min.css.map
+│   │   ├── master.css
+│   │   └── normalize.css
+│   ├── fonts
+│   │   ├── glyphicons-halflings-regular.eot
+│   │   ├── glyphicons-halflings-regular.svg
+│   │   ├── glyphicons-halflings-regular.ttf
+│   │   ├── glyphicons-halflings-regular.woff
+│   │   └── glyphicons-halflings-regular.woff2
+│   ├── js
+│   │   ├── bootstrap.js
+│   │   ├── bootstrap.min.js
+│   │   ├── jquery-3.1.0.min.js
+│   │   ├── main.js
+│   │   ├── npm.js
+│   │   └── Respond.js
+│   └── ReadMe.txt
+│
+├── templates
+│   ├── _formhelpers.html
+│   ├── arroz.html
+│   ├── config.html
+│   ├── connection.html
+│   ├── custom.html
+│   ├── editpage.html
+│   ├── feijao.html
+│   ├── flash.html
+│   ├── girassol.html
+│   ├── grupo.html
+│   ├── historico.html
+│   ├── historicoLista.html
+│   ├── language.html
+│   ├── lastcurvas.html
+│   ├── layout.html
+│   ├── listview.html
+│   ├── login.html
+│   ├── medir.html
+│   ├── milho.html
+│   ├── outros.html
+│   ├── password.html
+│   ├── register.html
+│   ├── result.html
+│   ├── script.js
+│   ├── signUp.html
+│   ├── soja.html
+│   ├── top.html
+│   ├── trigo.html
+│   └── index.html
+│
+├── README.md
+├── requirements.txt
+├── run.py
+├── conf.ini
+├── lang.ini
+├── main.py
+├── app.py
+├── python.log
+└── howtoinstall.txt
+
+7 directories, 53 files

@@ -1,0 +1,121 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "virtual-keyboard",
+        "scope": null,
+        "escapedName": "virtual-keyboard",
+        "name": "virtual-keyboard",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "C:\\Users\\artur.oliveira\\Desktop\\loader"
+    ]
+  ],
+  "_from": "virtual-keyboard@latest",
+  "_id": "virtual-keyboard@1.26.22",
+  "_inCache": true,
+  "_location": "/virtual-keyboard",
+  "_nodeVersion": "7.9.0",
+  "_npmOperationalInternal": {
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/virtual-keyboard-1.26.22.tgz_1493376880980_0.22385617322288454"
+  },
+  "_npmUser": {
+    "name": "mottie",
+    "email": "wowmotty@gmail.com"
+  },
+  "_npmVersion": "4.2.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "virtual-keyboard",
+    "scope": null,
+    "escapedName": "virtual-keyboard",
+    "name": "virtual-keyboard",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/virtual-keyboard/-/virtual-keyboard-1.26.22.tgz",
+  "_shasum": "eb72993c260ac377a27a4ecad74aba435142ca01",
+  "_shrinkwrap": null,
+  "_spec": "virtual-keyboard",
+  "_where": "C:\\Users\\artur.oliveira\\Desktop\\loader",
+  "author": {
+    "name": "Jeremy Satterfield",
+    "url": "https://github.com/jsatt"
+  },
+  "bugs": {
+    "url": "https://github.com/Mottie/Keyboard/issues"
+  },
+  "demo": "http://mottie.github.io/Keyboard/",
+  "dependencies": {
+    "jquery": ">=3.2.1",
+    "jquery-ui": ">=1.12.1"
+  },
+  "description": "Virtual Keyboard using jQuery UI",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^2.1.0",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-qunit": "^2.0.0",
+    "grunt-contrib-uglify": "^2.3.0",
+    "grunt-contrib-watch": "^1.0.0"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "eb72993c260ac377a27a4ecad74aba435142ca01",
+    "tarball": "https://registry.npmjs.org/virtual-keyboard/-/virtual-keyboard-1.26.22.tgz"
+  },
+  "docs": "https://github.com/Mottie/Keyboard/wiki",
+  "files": [
+    "dist/**/*"
+  ],
+  "gitHead": "164828c757a306f05b7d3d0031e3fcd5ac5d5e91",
+  "homepage": "https://github.com/Mottie/Keyboard",
+  "keywords": [
+    "customizable",
+    "keyboard",
+    "ui",
+    "accessibility",
+    "osk",
+    "jquery-plugin"
+  ],
+  "license": "MIT",
+  "main": "dist/js/jquery.keyboard.min.js",
+  "maintainers": [
+    {
+      "name": "mottie",
+      "email": "wowmotty@gmail.com"
+    }
+  ],
+  "name": "virtual-keyboard",
+  "npmFileMap": [
+    {
+      "basePath": "dist",
+      "files": [
+        "**/*"
+      ]
+    }
+  ],
+  "npmName": "virtual-keyboard",
+  "optionalDependencies": {
+    "jquery-ui": ">=1.12.1"
+  },
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Mottie/keyboard.git"
+  },
+  "scripts": {},
+  "title": "Keyboard",
+  "version": "1.26.22"
+}

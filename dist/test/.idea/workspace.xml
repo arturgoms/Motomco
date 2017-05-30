@@ -1,0 +1,1904 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2978df6e-3c0b-4a61-8e54-99cc7780465e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/autocomplete/images/ui-anim_basic_16x16.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/checkboxradio/images/jquery.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/checkboxradio/images/qunit.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/droppable/images/high_tatras3_min.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/droppable/images/high_tatras4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/images/demo-config-on-tile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/images/demo-spindown-closed.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/position/images/earth.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/position/images/flight.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/position/images/rocket.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/tooltip/images/st-stephens.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/tooltip/images/tower-bridge.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/datepicker/images/calendar.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/resizable/images/test.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/visual/effects/image.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/themes/base/images/ui-icons_555555_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/demos/checkboxradio/images/jquery.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/demos/datepicker/images/calendar.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/demos/droppable/images/high_tatras3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/demos/images/icon-docs-info.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/demos/selectmenu/images/24-podcast-square.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/images/jqueryui_32x32.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/unit/resizable/images/test.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/visual/effects/image.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/themes/base/images/ui-icons_777777_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Setup.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/static/highcharts-3d.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/static/highcharts.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/static/highstock.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/static/js/exporting.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/static/js/highcharts-3d.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/static/js/highcharts-more.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/static/js/highcharts.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/static/js/highcharts.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/static/js/highstock.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/static/js/modules/accessibility.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/static/js/modules/annotations.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/static/js/modules/annotations.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/static/js/modules/boost-canvas.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/static/js/modules/boost.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/static/js/modules/broken-axis.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/static/js/modules/canvasrenderer.experimental.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/static/js/modules/data.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/static/js/modules/drilldown.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/static/js/modules/export-data.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/static/js/modules/exporting.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/static/js/modules/funnel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/static/js/modules/gantt.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/static/js/modules/grid-axis.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/static/js/modules/map-parser.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/static/js/modules/no-data-to-display.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/static/js/modules/overlapping-datalabels.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/static/js/modules/series-label.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/static/js/modules/solid-gauge.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/static/js/modules/static-scale.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/static/js/modules/treemap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/static/js/themes/grid-light.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/static/js/themes/sand-signika.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/static/js/themes/skies.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/static/lib/jspdf.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/static/lib/svg2pdf.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/static/modules/accessibility.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/static/modules/annotations.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/static/modules/boost-canvas.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/static/modules/boost.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/static/modules/broken-axis.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/static/modules/broken-axis.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/static/modules/data.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/static/modules/drilldown.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/static/modules/export-data.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/static/modules/exporting.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/static/modules/funnel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/static/modules/funnel.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/static/modules/gantt.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/static/modules/map.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/static/modules/overlapping-datalabels.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/static/modules/series-label.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/static/modules/solid-gauge.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/static/modules/solid-gauge.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/static/modules/static-scale.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/static/modules/treemap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/static/modules/xrange-series.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/static/modules/xrange-series.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/static/readme.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/static/themes/dark-blue.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/static/themes/dark-unica.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/static/themes/grid.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/templates/calibration.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/.mailmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/CONTRIBUTING.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/accordion/collapsible.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/accordion/custom-icons.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/accordion/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/autocomplete/custom-data.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/autocomplete/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/autocomplete/multiple-remote.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/autocomplete/remote-with-cache.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/autocomplete/remote.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/button/icons.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/button/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/checkboxradio/radiogroup.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/controlgroup/splitbutton.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/controlgroup/toolbar.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/datepicker/date-range.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/datepicker/dropdown-month-year.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/datepicker/min-max.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/datepicker/other-months.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/dialog/modal-confirmation.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/draggable/cursor-style.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/draggable/events.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/draggable/handle.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/draggable/snap-to.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/droppable/accepted-elements.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/droppable/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/droppable/propagation.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/droppable/visual-feedback.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/effect/animate.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/effect/easing.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/effect/hide.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/effect/removeClass.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/effect/switchClass.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/menu/default.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/position/cycler.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/position/default.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/resizable/constrain-area.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/resizable/default.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/resizable/synchronous-resize.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/resizable/textarea.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/selectmenu/custom_render.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/slider/default.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/slider/hotelrooms.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/slider/multiple-vertical.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/slider/slider-vertical.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/sortable/display-grid.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/sortable/items.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/sortable/portlets.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/spinner/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/spinner/overflow.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/spinner/time.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/tabs/ajax/content1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/tabs/ajax/content2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/tabs/ajax/content4-broken.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/tabs/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/tabs/sortable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/tooltip/forms.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/demos/widget/default.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/external/globalize/globalize.culture.de-DE.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/external/globalize/globalize.culture.ja-JP.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/external/jquery-1.10.0/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/external/jquery-1.11.3/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/external/jquery-1.12.0/LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/external/jquery-1.12.1/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/external/jquery-1.12.3/LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/external/jquery-1.12.4/LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/external/jquery-1.7.0/MIT-LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/external/jquery-1.7.1/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/external/jquery-1.7.2/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/external/jquery-1.8.0/MIT-LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/external/jquery-1.8.3/MIT-LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/external/jquery-2.0.0/MIT-LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/external/jquery-2.0.1/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/external/jquery-2.0.3/MIT-LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/external/jquery-2.1.3/MIT-LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/external/jquery-2.1.3/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/external/jquery-2.1.4/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/external/jquery-2.2.0/LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/external/jquery-2.2.3/LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/external/jquery-2.2.3/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/external/jquery-2.2.4/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/external/jquery-3.0.0/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/external/jquery-custom/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/external/jquery-mousewheel/LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/external/jquery-mousewheel/jquery.mousewheel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/external/jquery-simulate/LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/external/jquery-simulate/jquery.simulate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/external/jshint/jshint.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/external/qunit-assert-classes/qunit-assert-classes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/external/qunit-composite/LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/external/qunit/LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/external/requirejs/require.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/index.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/lib/bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/lib/common.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/lib/css.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/accordion/all.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/accordion/common.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/accordion/core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/accordion/helper.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/all.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/autocomplete/all.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/autocomplete/events.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/autocomplete/remote_object_array_labels.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/button/core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/button/deprecated.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/button/options.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/checkboxradio/all.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/checkboxradio/checkboxradio.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/checkboxradio/options.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/controlgroup/all.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/controlgroup/common.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/controlgroup/controlgroup.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/core/selector.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/datepicker/core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/dialog/common.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/dialog/deprecated.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/dialog/helper.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/draggable/events.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/draggable/methods.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/draggable/options.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/droppable/helper.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/droppable/options.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/effects/all.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/effects/core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/effects/effects.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/form-reset-mixin/all.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/form-reset-mixin/core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/menu/events.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/menu/helper.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/menu/menu.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/menu/methods.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/position/all.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/progressbar/common.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/progressbar/core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/progressbar/events.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/progressbar/options.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/resizable/methods.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/selectable/all.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/selectable/events.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/slider/common.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/slider/core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/slider/methods.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/slider/slider.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/sortable/all.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/sortable/core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/sortable/sortable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/spinner/common.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/spinner/helper.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/subsuite.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/tabs/core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/tabs/data/test.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/tabs/helper.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/tooltip/deprecated.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/widget/all.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/widget/classes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/unit/widget/widget.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/visual/accordion/icons.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/visual/compound/accordion_tabs.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/visual/compound/datepicker_dialog.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/visual/compound/dialog_widgets.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/visual/compound/draggable_accordion.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/visual/compound/draggable_resizable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/visual/dialog/form.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/visual/effects/clip.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/visual/effects/shake.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/tests/visual/selectmenu/selectmenu.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/themes/base/button.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/themes/base/controlgroup.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/themes/base/core.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/themes/base/dialog.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/themes/base/menu.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/themes/base/theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/themes/base/tooltip.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/ui/effects/effect-explode.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/ui/effects/effect-highlight.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/ui/form-reset-mixin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/ui/i18n/datepicker-af.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/ui/i18n/datepicker-bs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/ui/i18n/datepicker-ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/ui/i18n/datepicker-eo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/ui/i18n/datepicker-fa.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/ui/i18n/datepicker-fr-CA.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/ui/i18n/datepicker-fr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/ui/i18n/datepicker-gl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/ui/i18n/datepicker-hi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/ui/i18n/datepicker-it.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/ui/i18n/datepicker-ka.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/ui/i18n/datepicker-kk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/ui/i18n/datepicker-km.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/ui/i18n/datepicker-ko.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/ui/i18n/datepicker-ms.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/ui/i18n/datepicker-nl-BE.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/ui/i18n/datepicker-pt-BR.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/ui/i18n/datepicker-sq.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/ui/i18n/datepicker-sr-SR.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/ui/i18n/datepicker-ta.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/ui/i18n/datepicker-tr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/ui/i18n/datepicker-vi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/ui/widgets/autocomplete.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/ui/widgets/checkboxradio.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/ui/widgets/draggable.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/ui/widgets/menu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery-ui/ui/widgets/tooltip.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/AUTHORS.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/external/sizzle/dist/sizzle.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/.eslintrc.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/ajax/jsonp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/ajax/load.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/ajax/parseXML.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/ajax/var/location.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/ajax/var/nonce.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/ajax/xhr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/attributes/prop.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/attributes/val.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/callbacks.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/DOMEval.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/nodeName.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/var/rsingleTag.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/curCSS.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/hiddenVisibleSelectors.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/var/cssExpand.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/var/rmargin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/data.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/deferred.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/deprecated.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/dimensions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/effects/Tween.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/event/alias.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/event/focusin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/_evalUrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/support.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/wrapMap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/selector-sizzle.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/arr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/document.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/push.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/support.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/toString.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/virtual-keyboard/dist/js/jquery.keyboard.extension-altkeyspopup.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/virtual-keyboard/dist/js/jquery.keyboard.extension-autocomplete.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/virtual-keyboard/dist/js/jquery.mousewheel.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/virtual-keyboard/dist/languages/hu.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/virtual-keyboard/dist/languages/it.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/virtual-keyboard/dist/languages/sq.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/virtual-keyboard/dist/layouts/arabic.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/virtual-keyboard/dist/layouts/danish.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/virtual-keyboard/dist/layouts/german.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/virtual-keyboard/dist/layouts/keyboard-layouts-microsoft.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/virtual-keyboard/dist/layouts/latvian.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/virtual-keyboard/dist/layouts/ms-Assamese.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/virtual-keyboard/dist/layouts/ms-Bashkir.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/virtual-keyboard/dist/layouts/ms-Belgian.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/virtual-keyboard/dist/layouts/ms-Canadian.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/virtual-keyboard/dist/layouts/ms-Danish.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/virtual-keyboard/dist/layouts/ms-Dutch.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/virtual-keyboard/dist/layouts/ms-Greenlandic.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/virtual-keyboard/dist/layouts/ms-Hebrew.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/virtual-keyboard/dist/layouts/ms-Hindi.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/virtual-keyboard/dist/layouts/ms-Igbo.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/virtual-keyboard/dist/layouts/ms-Japanese-Hiragana.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/virtual-keyboard/dist/layouts/ms-Lao.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/virtual-keyboard/dist/layouts/ms-Lithuanian.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/virtual-keyboard/dist/layouts/ms-Nepali.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/virtual-keyboard/dist/layouts/ms-Pashto.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/virtual-keyboard/dist/layouts/ms-Punjabi.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/virtual-keyboard/dist/layouts/ms-Romanian.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/virtual-keyboard/dist/layouts/ms-Sami.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/virtual-keyboard/dist/layouts/ms-Setswana.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/virtual-keyboard/dist/layouts/ms-Slovak.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/virtual-keyboard/dist/layouts/ms-Swiss-German.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/virtual-keyboard/dist/layouts/ms-Tatar.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/virtual-keyboard/dist/layouts/ms-Tibetan.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/virtual-keyboard/dist/layouts/ms-Urdu.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/virtual-keyboard/dist/layouts/ms-Uzbek-Cyrillic.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/virtual-keyboard/dist/layouts/ms-Wolof.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/virtual-keyboard/dist/layouts/persian.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/virtual-keyboard/dist/layouts/portuguese.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/virtual-keyboard/dist/layouts/serbian.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/virtual-keyboard/dist/layouts/spanish.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/virtual-keyboard/dist/layouts/vietnamese.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/keyboard-previewkeyset.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/.csslintrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/.mailmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/AUTHORS.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/Gruntfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/build/tasks/build.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/build/tasks/testswarm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/demos/accordion/collapsible.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/demos/accordion/custom-icons.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/demos/accordion/sortable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/demos/autocomplete/combobox.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/demos/autocomplete/custom-data.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/demos/autocomplete/folding.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/demos/autocomplete/remote-jsonp.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/demos/autocomplete/xml.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/demos/bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/demos/checkboxradio/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/demos/checkboxradio/product-selector.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/demos/controlgroup/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/demos/datepicker/alt-field.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/demos/datepicker/animation.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/demos/datepicker/buttonbar.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/demos/datepicker/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/demos/datepicker/inline.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/demos/datepicker/multiple-calendars.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/demos/dialog/default.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/demos/dialog/modal-confirmation.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/demos/dialog/modal-form.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/demos/draggable/cursor-style.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/demos/draggable/events.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/demos/draggable/handle.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/demos/draggable/revert.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/demos/draggable/visual-feedback.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/demos/droppable/accepted-elements.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/demos/droppable/default.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/demos/droppable/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/demos/droppable/propagation.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/demos/effect/switchClass.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/demos/menu/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/demos/position/default.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/demos/progressbar/default.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/demos/progressbar/download.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/demos/progressbar/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/demos/resizable/helper.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/demos/resizable/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/demos/resizable/max-min.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/demos/resizable/visual-feedback.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/demos/selectable/serialize.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/demos/selectmenu/default.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/demos/selectmenu/product-selection.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/demos/slider/default.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/demos/slider/slider-vertical.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/demos/spinner/decimal.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/demos/spinner/time.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/demos/tabs/ajax.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/demos/tabs/mouseover.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/demos/widget/default.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/demos/widget/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/external/globalize/globalize.culture.de-DE.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/external/globalize/globalize.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/external/jquery-1.10.1/MIT-LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/external/jquery-1.11.1/MIT-LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/external/jquery-1.11.2/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/external/jquery-1.11.3/MIT-LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/external/jquery-1.11.3/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/external/jquery-1.12.0/LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/external/jquery-1.12.0/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/external/jquery-1.12.3/LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/external/jquery-1.12.4/LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/external/jquery-1.7.1/MIT-LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/external/jquery-1.8.1/MIT-LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/external/jquery-1.8.3/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/external/jquery-1.9.0/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/external/jquery-2.0.1/MIT-LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/external/jquery-2.0.3/MIT-LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/external/jquery-2.1.2/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/external/jquery-2.1.3/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/external/jquery-2.2.1/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/external/jquery-2.2.2/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/external/jquery-2.2.3/LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/external/jquery-2.2.4/LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/external/jquery-custom/MIT-LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/external/jquery-mousewheel/LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/external/jquery-mousewheel/jquery.mousewheel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/external/jquery-simulate/LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/external/jshint/LICENSE/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/external/qunit-assert-classes/LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/external/qunit/LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/external/qunit/qunit.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/.jshintrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/lib/helper.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/unit/accordion/events.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/unit/accordion/helper.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/unit/accordion/methods.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/unit/autocomplete/events.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/unit/autocomplete/methods.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/unit/autocomplete/remote_object_array_values.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/unit/button/all.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/unit/button/common-deprecated.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/unit/button/deprecated.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/unit/button/deprecated.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/unit/checkboxradio/all.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/unit/checkboxradio/core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/unit/checkboxradio/events.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/unit/controlgroup/all.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/unit/controlgroup/common.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/unit/controlgroup/core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/unit/core/selector.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/unit/datepicker/core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/unit/datepicker/datepicker.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/unit/datepicker/helper.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/unit/dialog/dialog.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/unit/draggable/core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/unit/draggable/options.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/unit/droppable/core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/unit/droppable/methods.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/unit/effects/effects.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/unit/effects/scale.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/unit/menu/all.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/unit/menu/core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/unit/menu/events.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/unit/progressbar/all.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/unit/progressbar/events.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/unit/progressbar/options.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/unit/resizable/common.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/unit/resizable/helper.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/unit/resizable/options.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/unit/selectable/all.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/unit/selectable/core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/unit/selectable/selectable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/unit/selectmenu/core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/unit/selectmenu/methods.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/unit/slider/all.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/unit/slider/common.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/unit/sortable/common.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/unit/sortable/core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/unit/sortable/sortable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/unit/spinner/events.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/unit/spinner/methods.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/unit/tabs/all.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/unit/tabs/common.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/unit/tabs/options.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/unit/tooltip/methods.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/unit/widget/widget.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/visual/accordion/icons.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/visual/compound/draggable_accordion_accordion_tabs_draggable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/visual/compound/tabs_selectmenu.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/visual/compound/tabs_tooltips.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/visual/dialog/complex-dialogs.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/visual/dialog/form.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/visual/effects/all.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/visual/position/position_feedback.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/visual/slider/range_slider.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/tests/visual/tooltip/animations.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/themes/base/accordion.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/themes/base/all.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/themes/base/base.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/themes/base/checkboxradio.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/themes/base/draggable.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/themes/base/resizable.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/themes/base/selectmenu.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/themes/base/slider.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/themes/base/spinner.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/ui/core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/ui/disable-selection.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/ui/effects/effect-blind.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/ui/effects/effect-puff.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/ui/effects/effect-size.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/ui/escape-selector.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/ui/i18n/datepicker-be.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/ui/i18n/datepicker-bg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/ui/i18n/datepicker-cs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/ui/i18n/datepicker-da.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/ui/i18n/datepicker-de.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/ui/i18n/datepicker-en-AU.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/ui/i18n/datepicker-et.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/ui/i18n/datepicker-fo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/ui/i18n/datepicker-fr-CA.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/ui/i18n/datepicker-hy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/ui/i18n/datepicker-id.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/ui/i18n/datepicker-is.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/ui/i18n/datepicker-lb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/ui/i18n/datepicker-nl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/ui/i18n/datepicker-nn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/ui/i18n/datepicker-pt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/ui/i18n/datepicker-rm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/ui/i18n/datepicker-ro.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/ui/i18n/datepicker-sr-SR.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/ui/i18n/datepicker-sr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/ui/i18n/datepicker-uk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/ui/jquery-1-7.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/ui/labels.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/ui/scroll-parent.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/ui/version.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/ui/widget.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/ui/widgets/accordion.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/ui/widgets/autocomplete.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/ui/widgets/checkboxradio.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/ui/widgets/datepicker.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/ui/widgets/dialog.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/ui/widgets/draggable.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/ui/widgets/spinner.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-ui/ui/widgets/tabs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery/LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery/dist/core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery/dist/jquery.min.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery/dist/jquery.slim.min.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery/external/sizzle/dist/sizzle.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery/src/.eslintrc.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery/src/ajax.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery/src/ajax/parseXML.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery/src/ajax/var/rquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery/src/attributes/attr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery/src/attributes/prop.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery/src/core/init.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery/src/core/nodeName.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery/src/core/parseHTML.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery/src/core/ready-no-deferred.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery/src/core/stripAndCollapse.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery/src/core/support.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery/src/css/support.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery/src/css/var/isHiddenWithinTree.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery/src/css/var/rnumnonpx.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery/src/css/var/swap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery/src/data/var/dataUser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery/src/effects/Tween.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery/src/event/alias.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery/src/exports/global.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery/src/offset.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery/src/queue.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery/src/serialize.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery/src/traversing/var/dir.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery/src/var/ObjectFunctionString.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery/src/var/concat.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery/src/var/getProto.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery/src/var/support.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/jquery.keyboard.extension-altkeyspopup.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/jquery.keyboard.extension-mobile.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/jquery.keyboard.extension-navigation.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/jquery.keyboard.extension-scramble.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/jquery.keyboard.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/languages/fr.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/languages/hu.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/languages/pl.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/layouts/albanian.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/layouts/bengali.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/layouts/bulgarian.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/layouts/catalan.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/layouts/chinese.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/layouts/hebrew.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/layouts/hungarian.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/layouts/ms-Arabic.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/layouts/ms-Bengali.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/layouts/ms-French.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/layouts/ms-Gaelic.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/layouts/ms-German.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/layouts/ms-Greenlandic.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/layouts/ms-Hausa.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/layouts/ms-Hindi.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/layouts/ms-Icelandic.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/layouts/ms-Igbo.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/layouts/ms-Inuktitut.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/layouts/ms-Irish.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/layouts/ms-Italian.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/layouts/ms-Japanese-Hiragana.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/layouts/ms-Kannada.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/layouts/ms-Lao.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/layouts/ms-Latvian.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/layouts/ms-Maori.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/layouts/ms-Persian.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/layouts/ms-Portuguese.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/layouts/ms-Serbian.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/layouts/ms-Slovak.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/layouts/ms-Sorbian.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/layouts/ms-Spanish.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/layouts/ms-Swedish.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/layouts/ms-Swiss-German.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/layouts/ms-Tamil.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/layouts/ms-Thai.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/layouts/ms-Turkish.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/layouts/ms-Turkmen.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/layouts/ms-United-Kingdom.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/layouts/ms-Urdu.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/layouts/ms-Vietnamese.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/layouts/persian.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/layouts/romanian.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/layouts/spanish.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/layouts/swedish.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/layouts/thai.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/layouts/turkish.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/virtual-keyboard/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/virtual-keyboard/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/virtual-keyboard/dist/css/keyboard-basic.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/virtual-keyboard/dist/css/keyboard-previewkeyset.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/virtual-keyboard/dist/css/keyboard.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/virtual-keyboard/dist/js/jquery.keyboard.extension-all.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/virtual-keyboard/dist/languages/de.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/virtual-keyboard/dist/languages/fa.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/virtual-keyboard/dist/languages/ro.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/virtual-keyboard/dist/languages/ru.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/virtual-keyboard/dist/layouts/albanian.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/virtual-keyboard/dist/layouts/arabic.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/virtual-keyboard/dist/layouts/bengali.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/virtual-keyboard/dist/layouts/hindi.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/virtual-keyboard/dist/layouts/hungarian.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/virtual-keyboard/dist/layouts/keyboard-layouts-greywyvern.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/virtual-keyboard/dist/layouts/mongolian.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/virtual-keyboard/dist/layouts/ms-Arabic.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/virtual-keyboard/dist/layouts/ms-Armenian.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/virtual-keyboard/dist/layouts/ms-Assamese.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/virtual-keyboard/dist/layouts/ms-Azeri.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/virtual-keyboard/dist/layouts/ms-Canadian.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/virtual-keyboard/dist/layouts/ms-Czech.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/virtual-keyboard/dist/layouts/ms-Divehi.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/virtual-keyboard/dist/layouts/ms-German.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/virtual-keyboard/dist/layouts/ms-Greek.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/virtual-keyboard/dist/layouts/ms-Greenlandic.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/virtual-keyboard/dist/layouts/ms-Hausa.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/virtual-keyboard/dist/layouts/ms-Icelandic.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/virtual-keyboard/dist/layouts/ms-Inuktitut.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/virtual-keyboard/dist/layouts/ms-Irish.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/virtual-keyboard/dist/layouts/ms-Italian.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/virtual-keyboard/dist/layouts/ms-Japanese-Hiragana.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/virtual-keyboard/dist/layouts/ms-Korean.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/virtual-keyboard/dist/layouts/ms-Lao.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/virtual-keyboard/dist/layouts/ms-Maori.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/virtual-keyboard/dist/layouts/ms-Mongolian-Cyrillic.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/virtual-keyboard/dist/layouts/ms-Persian.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/virtual-keyboard/dist/layouts/ms-Sami.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/virtual-keyboard/dist/layouts/ms-Serbian.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/virtual-keyboard/dist/layouts/ms-Setswana.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/virtual-keyboard/dist/layouts/ms-Slovak.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/virtual-keyboard/dist/layouts/ms-Spanish.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/virtual-keyboard/dist/layouts/ms-Swiss-German.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/virtual-keyboard/dist/layouts/ms-Syriac.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/virtual-keyboard/dist/layouts/ms-Tamil.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/virtual-keyboard/dist/layouts/ms-Thai.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/virtual-keyboard/dist/layouts/ms-Tibetan.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/virtual-keyboard/dist/layouts/ms-Turkish.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/virtual-keyboard/dist/layouts/ms-United-Kingdom.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/virtual-keyboard/dist/layouts/ms-Urdu.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/virtual-keyboard/dist/layouts/ms-Vietnamese.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/virtual-keyboard/dist/layouts/persian.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/virtual-keyboard/dist/layouts/romanian.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/virtual-keyboard/dist/layouts/serbian.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/virtual-keyboard/dist/layouts/spanish.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/virtual-keyboard/dist/layouts/swedish.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/virtual-keyboard/dist/layouts/tamil.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/virtual-keyboard/package.json" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/main/static/ReadMe.txt" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/untitled.iml" afterPath="$PROJECT_DIR$/.idea/untitled.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/home.py" afterPath="$PROJECT_DIR$/main/home.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/templates/empty.html" afterPath="$PROJECT_DIR$/main/templates/empty.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python.log" afterPath="$PROJECT_DIR$/python.log" />
+    </list>
+    <ignored path="untitled.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/loader$teste.coverage" NAME="teste Coverage Results" MODIFIED="1491850117355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/loader$Setup.coverage" NAME="Setup Coverage Results" MODIFIED="1495647308245" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/loader$home.coverage" NAME="home Coverage Results" MODIFIED="1493833997948" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/main" />
+    <SUITE FILE_PATH="coverage/loader$main.coverage" NAME="main Coverage Results" MODIFIED="1492091640482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/loader$loader.coverage" NAME="loader Coverage Results" MODIFIED="1495642037726" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/loader$loginform.coverage" NAME="loginform Coverage Results" MODIFIED="1493987801514" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/main/arquivos" />
+    <SUITE FILE_PATH="coverage/loader$private.coverage" NAME="private Coverage Results" MODIFIED="1493992753012" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/main/arquivos" />
+    <SUITE FILE_PATH="coverage/loader$readwrite.coverage" NAME="readwrite Coverage Results" MODIFIED="1494859317867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/main/arquivos" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="untitled" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="home.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main/home.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="14" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="calibration.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main/templates/calibration.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="137" column="181" lean-forward="false" selection-start-line="137" selection-start-column="181" selection-end-line="137" selection-end-column="181" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Setup.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Setup.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="123" lean-forward="false" selection-start-line="16" selection-start-column="123" selection-end-line="16" selection-end-column="123" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/requirements.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="company.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main/templates/company.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2584">
+              <caret line="152" column="0" lean-forward="false" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="conf.ini" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main/conf.ini">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="34" lean-forward="false" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="freqv.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main/arquivos/freqv.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="7" lean-forward="false" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="date.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main/arquivos/date.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="empty.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main/templates/empty.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="348">
+              <caret line="175" column="6" lean-forward="false" selection-start-line="175" selection-start-column="6" selection-end-line="175" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Flask Main" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>/sens</find>
+      <find>seria</find>
+      <find>content</find>
+      <find>/sensor</find>
+      <find>table</find>
+      <find>/empty</find>
+      <find>/empt</find>
+      <find>top</find>
+      <find>wri</find>
+      <find>/selec</find>
+      <find>/emp</find>
+      <find>empty</find>
+      <find>import tim</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/untitled.py" />
+        <option value="$PROJECT_DIR$/teste.py" />
+        <option value="$PROJECT_DIR$/conf.ini" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/main/arquivos/umidade.py" />
+        <option value="$PROJECT_DIR$/main/arquivos/SerialTTY.py" />
+        <option value="$PROJECT_DIR$/main/arquivos/autoteste.py" />
+        <option value="$PROJECT_DIR$/main/arquivos/cloud.py" />
+        <option value="$PROJECT_DIR$/main/arquivos/db.py" />
+        <option value="$PROJECT_DIR$/main/arquivos/jsonHandler.py" />
+        <option value="$PROJECT_DIR$/main/lang.ini" />
+        <option value="$PROJECT_DIR$/loader.py" />
+        <option value="$PROJECT_DIR$/main/templates/config.html" />
+        <option value="$PROJECT_DIR$/main/static/js/jquery.qrcode.min.js" />
+        <option value="$PROJECT_DIR$/main/arquivos/loginform.py" />
+        <option value="$PROJECT_DIR$/main/templates/private.html" />
+        <option value="$PROJECT_DIR$/main/arquivos/css.ini" />
+        <option value="$PROJECT_DIR$/main/templates/assistencia.html" />
+        <option value="$PROJECT_DIR$/main/templates/company.html" />
+        <option value="$PROJECT_DIR$/main/arquivos/private.py" />
+        <option value="$PROJECT_DIR$/main/arquivos/readwrite.py" />
+        <option value="$PROJECT_DIR$/main/templates/login.html" />
+        <option value="$PROJECT_DIR$/main/templates/sensors.html" />
+        <option value="$PROJECT_DIR$/main/templates/table.html" />
+        <option value="$PROJECT_DIR$/main/templates/frequency.html" />
+        <option value="$PROJECT_DIR$/main/arquivos/rwconf.py" />
+        <option value="$PROJECT_DIR$/main/templates/empty2.html" />
+        <option value="$PROJECT_DIR$/main/static/js/highcharts.js" />
+        <option value="$PROJECT_DIR$/main/static/js/exporting.js" />
+        <option value="$PROJECT_DIR$/main/templates/empty22.html" />
+        <option value="$PROJECT_DIR$/main/arquivos/freqv.txt" />
+        <option value="$PROJECT_DIR$/main/conf.ini" />
+        <option value="$PROJECT_DIR$/main/arquivos/date.txt" />
+        <option value="$PROJECT_DIR$/main/templates/empty.html" />
+        <option value="$PROJECT_DIR$/main/home.py" />
+        <option value="$PROJECT_DIR$/main/templates/calibration.html" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/Setup.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Python</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>PyPep8NamingInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="loader" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="loader" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="loader" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="loader" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/py2exe2msi-master" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\arturgomes\Desktop\loader\main\templates" />
+      <recent name="C:\Users\artur.oliveira\Desktop\loader\main\arquivos" />
+      <recent name="C:\Users\artur.oliveira\Desktop\loader\main\static" />
+      <recent name="C:\Users\artur.oliveira\Desktop\loader\main\templates" />
+      <recent name="C:\Users\artur.oliveira\PycharmProjects\loader\templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\artur.oliveira\Desktop\loader\main\static\js" />
+      <recent name="C:\Users\artur.oliveira\Desktop\loader\main\static\js\sass" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.Setup">
+    <configuration default="false" name="private" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/main/arquivos" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main/arquivos/private.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="loginform" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/main/arquivos" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main/arquivos/loginform.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="readwrite" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/main/arquivos" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main/arquivos/readwrite.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="loader" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Python27\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/loader.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Setup" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Setup.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <module name="untitled" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_regexPattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <configuration default="false" name="untitled" type="PythonConfigurationType" factoryName="Python" singleton="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/untitled.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <list size="6">
+      <item index="0" class="java.lang.String" itemvalue="Python.untitled" />
+      <item index="1" class="java.lang.String" itemvalue="Python.private" />
+      <item index="2" class="java.lang.String" itemvalue="Python.loginform" />
+      <item index="3" class="java.lang.String" itemvalue="Python.readwrite" />
+      <item index="4" class="java.lang.String" itemvalue="Python.loader" />
+      <item index="5" class="java.lang.String" itemvalue="Python.Setup" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.Setup" />
+        <item index="1" class="java.lang.String" itemvalue="Python.loader" />
+        <item index="2" class="java.lang.String" itemvalue="Python.readwrite" />
+        <item index="3" class="java.lang.String" itemvalue="Python.private" />
+        <item index="4" class="java.lang.String" itemvalue="Python.loginform" />
+      </list>
+    </recent_temporary>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2978df6e-3c0b-4a61-8e54-99cc7780465e" name="Default" comment="" />
+      <created>1491842353749</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1491842353749</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Adicionada tela de sensores na /Assistência">
+      <created>1494872265248</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1494872265248</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Adicionada tela de frequencia e tabela na /Assistência">
+      <created>1495130929530</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1495130929530</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13177083" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33932346" sideWeight="0.5109375" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33932346" sideWeight="0.4890625" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32756758" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32864866" sideWeight="0.46341464" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32502708" sideWeight="0.5365854" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33945945" sideWeight="0.52134144" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32756758" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13006397" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32864866" sideWeight="0.46341464" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Adicionada tela de sensores na /Assistência" />
+    <MESSAGE value="Adicionada tela de frequencia e tabela na /Assistência" />
+    <MESSAGE value="Finalizada tela de frequencia e tabela na /Assistência" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finalizada tela de frequencia e tabela na /Assistência" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/main/arquivos/private.py</url>
+          <line>53</line>
+          <option name="timeStamp" value="150" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="157" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/main/arquivos/SerialTTY.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2448">
+          <caret line="144" column="12" lean-forward="false" selection-start-line="144" selection-start-column="12" selection-end-line="144" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/loader.py" />
+    <entry file="file://$PROJECT_DIR$/main/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="39" lean-forward="false" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/lang.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="16" lean-forward="false" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/arquivos/cloud.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="939" column="0" lean-forward="false" selection-start-line="939" selection-start-column="0" selection-end-line="939" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/arquivos/jsonHandler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2040">
+          <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/passlib/utils/handlers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="121" column="0" lean-forward="false" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/static/js/jquery.qrcode.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/static/js/qrcode.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="60" column="26" lean-forward="false" selection-start-line="60" selection-start-column="26" selection-end-line="60" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/random.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="889" column="0" lean-forward="false" selection-start-line="889" selection-start-column="0" selection-end-line="889" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/templates/arroz.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="97" column="0" lean-forward="false" selection-start-line="97" selection-start-column="0" selection-end-line="98" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/pycharm.jar!/resources/html5-schema/html5/web-forms.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-11">
+          <caret line="217" column="29" lean-forward="false" selection-start-line="217" selection-start-column="29" selection-end-line="217" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/arquivos/loginform.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-119">
+          <caret line="83" column="12" lean-forward="false" selection-start-line="83" selection-start-column="12" selection-end-line="83" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/howtoinstall.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="72" lean-forward="false" selection-start-line="9" selection-start-column="72" selection-end-line="9" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/arquivos/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="7" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/arquivos/css.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="69" column="31" lean-forward="false" selection-start-line="69" selection-start-column="31" selection-end-line="69" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/templates/assistencia.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="297" column="20" lean-forward="false" selection-start-line="297" selection-start-column="20" selection-end-line="297" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/templates/config.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/templates/private.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="226" column="74" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="232" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/arquivos/private.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="62" column="31" lean-forward="false" selection-start-line="62" selection-start-column="31" selection-end-line="62" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/templates/medir.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2366">
+          <caret line="91" column="0" lean-forward="false" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5408">
+          <caret line="208" column="24" lean-forward="false" selection-start-line="208" selection-start-column="24" selection-end-line="208" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/templates/historicoLista.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3250">
+          <caret line="125" column="124" lean-forward="false" selection-start-line="125" selection-start-column="124" selection-end-line="125" selection-end-column="126" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="590">
+          <caret line="528" column="16" lean-forward="true" selection-start-line="528" selection-start-column="16" selection-end-line="528" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/templates/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="16" column="3" lean-forward="true" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/arquivos/umidade.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/arquivos/measure.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="11" column="14" lean-forward="false" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/templates/sensors.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4342">
+          <caret line="167" column="12" lean-forward="false" selection-start-line="116" selection-start-column="4" selection-end-line="167" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/templates/frequency.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="144" column="69" lean-forward="true" selection-start-line="144" selection-start-column="69" selection-end-line="144" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/arquivos/tab.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="61" lean-forward="false" selection-start-line="0" selection-start-column="61" selection-end-line="0" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/static/js/exporting.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="18" column="49" lean-forward="true" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/static/js/highcharts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7089">
+          <caret line="395" column="148" lean-forward="false" selection-start-line="395" selection-start-column="148" selection-end-line="395" selection-end-column="148" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/static/css/highcharts.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/templates/empty2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="37" column="3" lean-forward="false" selection-start-line="3" selection-start-column="31" selection-end-line="37" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/templates/empty22.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="874">
+          <caret line="45" column="9" lean-forward="true" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/templates/table.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3406">
+          <caret line="131" column="63" lean-forward="false" selection-start-line="131" selection-start-column="63" selection-end-line="131" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/static/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-556">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/arquivos/curvasHandler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="366" column="13" lean-forward="false" selection-start-line="366" selection-start-column="12" selection-end-line="366" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/arquivos/readwrite.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1211">
+          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/arquivos/rwconf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1872">
+          <caret line="73" column="19" lean-forward="false" selection-start-line="73" selection-start-column="18" selection-end-line="73" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/arquivos/autoteste.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/conf.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="34" lean-forward="false" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/templates/company.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2584">
+          <caret line="152" column="0" lean-forward="false" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/arquivos/freqv.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="7" lean-forward="false" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/arquivos/date.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/templates/empty.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="175" column="6" lean-forward="false" selection-start-line="175" selection-start-column="6" selection-end-line="175" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/templates/calibration.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="137" column="181" lean-forward="false" selection-start-line="137" selection-start-column="181" selection-end-line="137" selection-end-column="181" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/home.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="14" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="123" lean-forward="false" selection-start-line="16" selection-start-column="123" selection-end-line="16" selection-end-column="123" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

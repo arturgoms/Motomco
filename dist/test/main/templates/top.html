@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Css Custon and Bootstrap Config -->
+    <link rel="stylesheet" href="../../static/css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="../../static/css/bootstrap-theme.min.css" type="text/css">
+    <link rel="stylesheet" href="../../static/css/master.css" type="text/css" >
+    <link rel="stylesheet" href="../static/css/mdb.css">
+    <style>
+
+        .jumbotron {
+			width: {{ jumbotrom_w }}px;
+			height: {{ jumbotrom_h }}px;
+			margin-left: {{ jumbotrom_margin_left }}px;
+            margin-top: {{ jumbotrom_margin_top }}px;
+            padding:{{ jumbotrom_padding }}px;
+			margin-right: auto;
+            text-align: center;
+		}
+        .menu{
+            float: left;
+            width: {{ menu_width }}px;
+            margin-top: {{ menu_margin_top }}px;
+
+		}.amostra{
+		    margin-top: {{ top_amostra_margin_top }}px;
+            margin-left: {{ top_amostra_margin_left }}px;
+		}.menu2{
+            float: left;
+            margin-left: {{ top_menu2_margin_left }}px;
+            margin-top: {{ top_menu2_margin_top }}px;
+            width: {{ top_menu2_width }}px;
+
+		}.list-group {
+		    width: 170px;
+            height: 80px;
+
+		}.list-group-item {
+		    width: {{ top_list_group_item_width }}px;
+            height: {{ top_list_group_item_height }}px;
+		    padding: {{ top_list_group_item_padding }}px;
+
+		}.outros {
+            margin-top: {{ top_outros_margin_top }}px ;
+            margin-left: {{ top_outros_margin_left }}px;
+		    width: {{ top_outros_height }}px;
+            height: {{ top_outros_width }}px;
+            position: fixed;
+
+		}body {
+          background: url(../static/img/bg2.jpg) no-repeat center center fixed;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+        }.showScroll {
+            width:180px;
+            height: 220px;
+            overflow:scroll;
+            background-color:transparent;
+        }html{
+            width: 440px;
+            height: 255px;
+                                                     }
+    </style>
+    <!-- Java Script -->
+    <script src="../static/angular.js"></script>
+    <script src="../static/js/Respond.js"></script>
+    <!-- Java Script Respond -->
+    {% extends "layout.html" %}
+    {% block body %}
+    <script type="text/javascript">
+            function bloquear(e){return false}
+    function desbloquear(){return true}
+    document.onselectstart=new Function (&quot;return false&quot;)
+    if (window.sidebar){document.onmousedown=bloquear
+    document.onclick=desbloquear}
+  $(function() {
+
+  //função que envia os dados para o servidor
+    var submit_form = function(e) {
+
+    //usa o Jquery para enviar uma Get para o servidor
+      $.getJSON($SCRIPT_ROOT + '/grupo/arroz/list', { //endereço da requisição
+        a: $('input[name="a"]').val(), //obtem o valor do imput de name "a" e envia como variável a
+        b: $('input[name="b"]').val()  //obtem o valor do imput de name "b" e envia como variável b
+      }, function(data) { //função executada quando o servidor responde a requisição
+        $('#result').text(data.result); //coloca o texto DENTRO do elemento de id="result"
+        $('input[name=a]').focus().select(); //coloca o foco no input de name "a"
+      });
+      return false;
+    };
+
+    $('a#calculate').bind('click', submit_form); //associa o clicke do link (tag a), de id "calculate"
+
+    $("curvaInit").click(function(e){
+            submit_form(e);
+       });
+
+    $('input[name=a]').focus(); //coloca o foco no input de name "a"
+  });
+    </script>
+    <!-- Title -->
+    <title>Chip Welcome</title>
+</head>
+    <body onselectstart='return false' ondragstart='return false'>
+        <div class="jumbotron ">
+
+                    <div class="menu">
+                     <p>
+                    <br>
+                        <center><a href="/selectcurvatop?a=0"><button class="btn btn-dark-green"><img src="../static/img/medir.png" width="{{ menu_icon_size }}" height="{{ menu_icon_size }}"/></button></a></center>
+                        <center><a href="/top">             <button class="btn btn-dark-green active"><img src="../static/img/search.png" width="{{ menu_icon_size }}" height="{{ menu_icon_size }}"/></button></a></center>
+                        <center><a href="/config">            <button class="btn btn-dark-green "><img src="../static/img/config.png" width="{{ menu_icon_size }}" height="{{ menu_icon_size }}"/></button></a></center>
+                        <span id="result"></span>
+
+                    </div>
+
+
+            <div class="menu2">
+
+                {% for i in range(0, lencurva1) %}
+                      <center>
+                          <a href="/selectcurvatop?a={{ i }}" class="list-group-item animated fadeIn">
+                              <font size="{{ top_outros_size_1 }}">{{ nome[i] }}</font><br />
+
+                             <font size="{{ top_outros_size_2 }}">{{ temp[i] }}</font><br>
+                             <font size="{{ top_outros_size_2 }}">{{ umidade[i] }}</font>
+                          </a>
+                      </center>
+                    {% endfor %}
+
+
+            </div>
+
+            <div class="amostra">
+                {% for i in range(3, lencurva) %}
+                      <center>
+                          <!-- a = 0 e b = {{ i }} -->
+                          <a href="/selectcurvatop?a={{ i }}" class="list-group-item animated fadeIn">
+                              <font size="{{ top_outros_size_1 }}">{{ nome[i] }}</font><br />
+
+                             <font size="{{ top_outros_size_2 }}">{{ temp[i] }}</font><br>
+                             <font size="{{ top_outros_size_2 }}">{{ umidade[i] }}</font>
+                          </a>
+                      </center>
+                    {% endfor %}
+
+
+                <div class="outros animated wow fadeInRight " >
+                      <center>
+                          <a href="/top/grupo" class="list-group-item animated fadeIn">
+                             <img style="margin-top: {{ top_outros_img_margin_top }}px; padding: 2px;" src="../static/img/searchtop.png" width="50" height="50"/><h6>{{ outros }}</h6>
+                          </a>
+                      </center>
+
+                </div>
+
+            </div>
+</div>
+        <!-- {% endblock %}-->
+
+        <!--  -->
+        <footer>
+
+        </footer>
+
+    <script type="text/javascript" src="../static/js/jquery-2.2.3.min.js"></script>
+
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../static/js/tether.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../static/js/mdb.min.js"></script>
+    </body>
+</html>
+
+
